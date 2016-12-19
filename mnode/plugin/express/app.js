@@ -134,17 +134,21 @@ ExpressPlugin.prototype.env = function () {
 ExpressPlugin.prototype.start = function (callback) {
     var self = this;
     Http.createServer(this.app).listen(this.port, function () {
+        //self.app.configure('development', function () {
+        //
+        //});
         self.emit('ready');
     });
 
     self.on('ready', function () {
-
         self.app.set('views', Path.join(self.path, 'views'));
         self.app.set('view engine', "ejs");
         self.app.use(MorganLogger('dev'));
         self.app.use(BodyParser.json());
         self.app.use(BodyParser.urlencoded({extended: false}));
         self.app.use(CookieParser());
+
+        //self.use(Express.errorHandler({ dumpExceptions: true, showStack: true }));
 
         self.app.use(Session({
             secret: 'express-secret',

@@ -30,7 +30,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
     function getSideBarList(callback) {
         MongooseManager.schema('sidebar').model(function (err, model, release) {
             if (!err) {
-                model.getData({}, {}, function (err, docs) {
+                model.getData({}, {_id: 0}, function (err, docs) {
                     if (!err) {
                         callback(docs);
                     } else {
