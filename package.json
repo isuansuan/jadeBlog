@@ -1,0 +1,30 @@
+{
+  "name": "jadeBlog",
+  "version": "1.0.0",
+  "description": "jadeBlog",
+  "main": "app.js",
+  "dependencies": {
+    "async": "*",
+    "express": "4.x",
+    "lodash": "3.10.1"
+  },
+  "scripts": {
+    "test": "grunt mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhengjinwei123/jadeBlog.git"
+  },
+  "keywords": [
+    "blog",
+    "jadeBlog"
+  ],
+  "author": [
+    {
+      "name": "郑金玮",
+      "email": "2538698032@qq.com"
+    }
+  ],
+  "contributors": [],
+  "license": "MIT"
+}
