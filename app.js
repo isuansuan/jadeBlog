@@ -3,11 +3,17 @@
  */
 var JadeLoader = require("./mnode/app").plugin.JadeLoader;
 var Path = require("path");
+var Singleton = require("./mnode/app").utils.Singleton;
+var Logger = Singleton.getInstance(require("./mnode/app").utils.Logger, Path.join(__dirname, "./web/config/logger.json"), Path.join(__dirname, "./logs"));
 
 JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
-    console.log("jade Loader Finished");
+    Logger.info("jadeLoader", "jade Loader Finished");
+
+    JadeLoader.set('logger', Logger);//将logger保存
+
     var Express = JadeLoader.Jader('plugin').getInstance('express', '127.0.0.1', 8085, Path.join(__dirname, "./web"));
 
+    //定义过滤器中间件，消息先在这里进行过滤，然后进用户
     Express.use(function (req, res, next) {
         var url = req.originalUrl;
         if (!Express.routesList[url]) {
@@ -25,21 +31,37 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
         }
     });
 
-    Express.start(function () {
-        console.log("ready");
+    //定义消息派递中间件
+    Express.dispatch(function (req, res, next) {
+        if (req.template && req.template.data && req.template.render) {
+            if (req.session && req.session.user) {
+                req.template.data.user = req.session.user;
+            }
+            res.render(req.template.render, req.template.data);
+        } else {
+            next("<h1>invalid request</h1>");
+        }
     });
 
+    //启动express
+    Express.start(function () {
+        Logger.debug('blog', "express already listen on port 8085");
+    });
+
+    //拦截异常
     Express.on('uncaughtException', function (err) {
-        console.error('Got uncaughtException', err.stack, err);
+        console.error('blog', 'Got uncaughtException', err.stack, err);
         if (d.env() == 'development') {
             process.exit(1);
         }
     });
 });
 
+//监听热加载器的error事件
 JadeLoader.on("error", function (err) {
-    console.error(err);
+    Logger.error('jadeLoader', err);
 });
+//监听热加载器的定时加载事件
 JadeLoader.on("hotLoad", function (resp) {
-    console.log(resp);
+    Logger.debug('jadeLoader', resp);
 });
