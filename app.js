@@ -12,6 +12,33 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
     JadeLoader.set('logger', Logger);//将logger保存
     JadeLoader.set('settings', require("./web/config/settings"));
 
+    //启用mongoose
+    var settings = JadeLoader.get('settings');
+    var MongooseManager = JadeLoader.Jader('utils').getInstance('db-mongodb', settings.db.mongodb.host, settings.db.mongodb.port, settings.db.mongodb.db, settings.db.mongodb.auth, Path.join(__dirname, "./web/schemas"));
+    MongooseManager.on("error", function (error) {
+        Logger.error("blog", "mongoose error" + error);
+    });
+    MongooseManager.on("connect", function (options) {
+        Logger.debug("blog", "success conncted to " + options.host + " on port " + options.port);
+        getSideBarList();
+    });
+
+
+    //获取侧边栏列表数据
+    function getSideBarList() {
+        MongooseManager.schema('sidebar').model(function (err, model, release) {
+            if (!err) {
+                model.getData({},{},function (err, docs) {
+                    console.log(err, docs);
+                    release();
+                })
+            } else {
+                console.error(err);
+            }
+        });
+    }
+
+
     var Express = JadeLoader.Jader('plugin').getInstance('express', '127.0.0.1', 8085, Path.join(__dirname, "./web"));
 
     //定义过滤器中间件，消息先在这里进行过滤，然后进用户
@@ -62,15 +89,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
         }
     });
 
-    //启用mongoose
-    var settings = JadeLoader.get('settings');
-    var MongooseManager = JadeLoader.Jader('utils').getInstance('db-mongodb', settings.db.mongodb.host, settings.db.mongodb.port, settings.db.mongodb.db, settings.db.mongodb.auth, Path.join(__dirname, "./web/schemas"));
-    MongooseManager.on("error", function (error) {
-        Logger.error("blog", "mongoose error" + error);
-    });
-    MongooseManager.on("connect", function (options) {
-        Logger.debug("blog", "success conncted to " + options.host + " on port " + options.port);
-    })
+
 });
 
 //监听热加载器的error事件

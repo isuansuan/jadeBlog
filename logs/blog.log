@@ -32,3 +32,7 @@
 [2016-12-19 19:27:19.257] [DEBUG] blog - success conncted to 127.0.0.1 on port 27017  
 [2016-12-19 19:35:26.972] [DEBUG] blog - express already listen on port 8085  
 [2016-12-19 19:35:26.986] [DEBUG] blog - success conncted to 127.0.0.1 on port 27017  
+[2016-12-19 20:02:44.808] [DEBUG] blog - express already listen on port 8085  
+[2016-12-19 20:02:44.818] [DEBUG] blog - success conncted to 127.0.0.1 on port 27017  
+[2016-12-19 20:03:38.494] [DEBUG] blog - express already listen on port 8085  
+[2016-12-19 20:03:38.757] [DEBUG] blog - success conncted to 127.0.0.1 on port 27017  
