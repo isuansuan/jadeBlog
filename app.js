@@ -64,7 +64,13 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
 
     //启用mongoose
     var settings = JadeLoader.get('settings');
-    JadeLoader.Jader('utils').getInstance('db-mongodb',settings.db.mongodb.host, settings.db.mongodb.port, settings.db.mongodb.db, settings.db.mongodb.auth, Path.join(__dirname, "./web/schemas"));
+    var MongooseManager = JadeLoader.Jader('utils').getInstance('db-mongodb', settings.db.mongodb.host, settings.db.mongodb.port, settings.db.mongodb.db, settings.db.mongodb.auth, Path.join(__dirname, "./web/schemas"));
+    MongooseManager.on("error", function (error) {
+        Logger.error("blog", "mongoose error" + error);
+    });
+    MongooseManager.on("connect", function (options) {
+        Logger.debug("blog", "success conncted to " + options.host + " on port " + options.port);
+    })
 });
 
 //监听热加载器的error事件
