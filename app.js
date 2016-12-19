@@ -20,20 +20,26 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
     });
     MongooseManager.on("connect", function (options) {
         Logger.debug("blog", "success conncted to " + options.host + " on port " + options.port);
-        getSideBarList();
+        getSideBarList(function (list) {
+            JadeLoader.set('sidebar', list);
+        });
     });
 
 
     //获取侧边栏列表数据
-    function getSideBarList() {
+    function getSideBarList(callback) {
         MongooseManager.schema('sidebar').model(function (err, model, release) {
             if (!err) {
-                model.getData({},{},function (err, docs) {
-                    console.log(err, docs);
+                model.getData({}, {}, function (err, docs) {
+                    if (!err) {
+                        callback(docs);
+                    } else {
+                        callback([]);
+                    }
                     release();
                 })
             } else {
-                console.error(err);
+                callback([]);
             }
         });
     }
