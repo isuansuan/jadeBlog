@@ -88,7 +88,7 @@ var MongodbUtil = function (host, port, db, userOption, runPath) {
         }
     });
 };
-
+Util.inherits(MongodbUtil,Emitter);
 MongodbUtil.prototype.loadSchema = function () {
     var schemaFileList = FileUtil.traverseSync(this.runPath);
 
