@@ -12,6 +12,7 @@ var EventEmitter = require("events").EventEmitter;
 var Util = require("util");
 var TimerUtils = require("../../utils/app").Timer;
 var Async = require("async");
+var _ = require("lodash");
 
 function JadeLoader() {
     EventEmitter.call(this);

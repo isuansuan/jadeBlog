@@ -10,6 +10,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
     Logger.info("jadeLoader", "jade Loader Finished");
 
     JadeLoader.set('logger', Logger);//将logger保存
+    JadeLoader.set('settings', require("./web/config/settings"));
 
     var Express = JadeLoader.Jader('plugin').getInstance('express', '127.0.0.1', 8085, Path.join(__dirname, "./web"));
 
@@ -35,8 +36,13 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
     Express.dispatch(function (req, res, next) {
         if (req.template && req.template.data && req.template.render) {
             if (req.session && req.session.user) {
-                req.template.data.user = req.session.user;
+                req.template.data.userName = req.session.user;
+            } else {
+                req.template.data.userName = '';
             }
+            req.template.data.projectName = '郑金玮的博客';
+            req.template.data.dateTime = new Date().getFullYear();
+
             res.render(req.template.render, req.template.data);
         } else {
             next("<h1>invalid request</h1>");
@@ -55,6 +61,10 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
             process.exit(1);
         }
     });
+
+    //启用mongoose
+    var settings = JadeLoader.get('settings');
+    JadeLoader.Jader('utils').getInstance('db-mongodb',settings.db.mongodb.host, settings.db.mongodb.port, settings.db.mongodb.db, settings.db.mongodb.auth, Path.join(__dirname, "./web/schemas"));
 });
 
 //监听热加载器的error事件

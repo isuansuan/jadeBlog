@@ -13,7 +13,7 @@ router.get('/', function (req, res, next) {
         }
     };
 
-    Logger.debug("blog","index page called");
+    //Logger.debug("blog","index page called");
     next();
 });
 
