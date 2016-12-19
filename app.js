@@ -50,6 +50,13 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
     //定义过滤器中间件，消息先在这里进行过滤，然后进用户
     Express.use(function (req, res, next) {
         var url = req.originalUrl;
+        req.dispatch = function (render, data,func) {
+            req.template = {
+                render: render,
+                data: data
+            };
+            func();
+        };
         if (!Express.routesList[url]) {
             res.redirect("/index");
         } else {

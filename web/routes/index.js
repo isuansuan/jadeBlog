@@ -6,15 +6,9 @@ var Logger = JadeLoader.get('logger');
 /* GET home page. */
 router.get('/', function (req, res, next) {
 
-    req.template = {
-        render: 'index',
-        data: {
-            title: 'Express'
-        }
-    };
-
-    //Logger.debug("blog","index page called");
-    next();
+    req.dispatch('index', {
+        title: 'index page'
+    }, next);
 });
 
 module.exports = router;
