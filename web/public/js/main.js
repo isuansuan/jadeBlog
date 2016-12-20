@@ -6,3 +6,13 @@ require.config({
     }
 });
 
+require(['jquery', 'lodash'], function ($, _) {
+
+    $(document).ready(function () {
+        $("#idLangSet").on("click", function () {
+            var lang = $("#idLang").val();
+            lang = (lang == 'ch') ? 'en' : 'ch';
+        })
+    });
+});
+

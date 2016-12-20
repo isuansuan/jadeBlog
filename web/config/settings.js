@@ -15,48 +15,48 @@ module.exports = {
     },
     sideBar: [
         {
-            enName: 'News',
-            chName: '最新发布',
+            en: 'News',
+            ch: '最新发布',
             desc: '最新发布的博客'
         },
         {
-            enName: 'Node.Js',
-            chName: 'Node.Js',
+            en: 'Node.Js',
+            ch: 'Node.Js',
             desc: 'Node.Js相关技术'
         },
         {
-            enName: 'Python',
-            chName: 'Python',
+            en: 'Python',
+            ch: 'Python',
             desc: 'Python相关技术'
         },
         {
-            enName: 'C++',
-            chName: 'C++',
+            en: 'C++',
+            ch: 'C++',
             desc: 'C++相关技术'
         },
         {
-            enName: 'PHP',
-            chName: 'PHP',
+            en: 'PHP',
+            ch: 'PHP',
             desc: 'PHP相关技术'
         },
         {
-            enName: 'CSS/Html',
-            chName: 'CSS/Html',
+            en: 'CSS/Html',
+            ch: 'CSS/Html',
             desc: 'CSS/Html相关技术'
         },
         {
-            enName: 'algorithm',
-            chName: '数据结构与算法',
+            en: 'algorithm',
+            ch: '数据结构与算法',
             desc: '算法技术'
         },
         {
-            enName: 'The poem and the distance',
-            chName: '诗和远方',
+            en: 'The poem and the distance',
+            ch: '诗和远方',
             desc: '生活相关'
         },
         {
-            enName: 'Server framework',
-            chName: '服务器框架',
+            en: 'Server framework',
+            ch: '服务器框架',
             desc: '服务器框架技术'
         }
     ]

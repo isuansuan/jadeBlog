@@ -86,8 +86,8 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
             }
             req.template.data.projectName = '郑金玮的博客';
             req.template.data.dateTime = new Date().getFullYear();
-            req.template.data.sideBar = JadeLoader.get('sidebar');
-
+            req.template.data.sidebar = JadeLoader.get('sidebar');
+            req.template.data.lang = req.session.lang || 'ch';
             res.render(req.template.render, req.template.data);
         } else {
             next("<h1>invalid request</h1>");
