@@ -15,6 +15,7 @@ var FileUtil = require("../../utils/app").File;
 var EventEmitter = require("events").EventEmitter;
 var Util = require("util");
 var Async = require("async");
+var Favicon = require('serve-favicon');
 
 
 var ExpressPlugin = function (host, port, path) {
@@ -67,7 +68,7 @@ var ExpressPlugin = function (host, port, path) {
     var staticPath = Path.join(path, '/static');
 
     var imagesPath = Path.join(path, "/public/images");
-    var jsPath = Path.join(path, "/public/javascripts");
+    var jsPath = Path.join(path, "/public/js");
     var stylePath = Path.join(path, "/public/stylesheets");
 
     FileUtil.createDirectory(viewPath);
@@ -147,6 +148,7 @@ ExpressPlugin.prototype.start = function (callback) {
         self.app.use(BodyParser.json());
         self.app.use(BodyParser.urlencoded({extended: false}));
         self.app.use(CookieParser());
+        self.app.use(Favicon(self.path + '/public/images/favicon.ico'));
 
         //self.use(Express.errorHandler({ dumpExceptions: true, showStack: true }));
 

@@ -21,7 +21,11 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
     MongooseManager.on("connect", function (options) {
         Logger.debug("blog", "success conncted to " + options.host + " on port " + options.port);
         getSideBarList(function (list) {
-            JadeLoader.set('sidebar', list);
+            var sideBarList = settings.sideBar;
+            list.forEach(function (l) {
+                sideBarList.push(l);
+            });
+            JadeLoader.set('sidebar', sideBarList);
         });
     });
 
@@ -50,7 +54,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
     //定义过滤器中间件，消息先在这里进行过滤，然后进用户
     Express.use(function (req, res, next) {
         var url = req.originalUrl;
-        req.dispatch = function (render, data,func) {
+        req.dispatch = function (render, data, func) {
             req.template = {
                 render: render,
                 data: data
@@ -82,6 +86,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
             }
             req.template.data.projectName = '郑金玮的博客';
             req.template.data.dateTime = new Date().getFullYear();
+            req.template.data.sideBar = JadeLoader.get('sidebar');
 
             res.render(req.template.render, req.template.data);
         } else {
