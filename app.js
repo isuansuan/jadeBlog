@@ -26,6 +26,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
                 sideBarList.push(l);
             });
             JadeLoader.set('sidebar', sideBarList);
+            JadeLoader.set('mainpage', settings.mainPage);
         });
     });
 
@@ -61,18 +62,24 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
             };
             func();
         };
-        if (!Express.routesList[url]) {
+        function getReqUrl(url) {
+            var t = url.split("?");
+            return t[0];
+        }
+
+        if (!Express.routesList[getReqUrl(url)]) {
             res.redirect("/index");
         } else {
-            if (url == '/user/login') {
-                if (req.session && req.session.user) {
-                    res.redirect("/index");
-                } else {
-                    next();
-                }
-            } else {
-                next();
-            }
+            //if (url == '/user/login') {
+            //    if (req.session && req.session.user) {
+            //        res.redirect("/index");
+            //    } else {
+            //        next();
+            //    }
+            //} else {
+            //    next();
+            //}
+            next();
         }
     });
 
@@ -84,10 +91,13 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
             } else {
                 req.template.data.userName = '';
             }
-            req.template.data.projectName = '郑金玮的博客';
+
+            req.template.data.lang = req.session.lang || 'ch';
+
+            req.template.data.projectName = (req.template.data.lang == 'ch') ? '郑金玮的博客' : "Jade's Blog";
             req.template.data.dateTime = new Date().getFullYear();
             req.template.data.sidebar = JadeLoader.get('sidebar');
-            req.template.data.lang = req.session.lang || 'ch';
+
             res.render(req.template.render, req.template.data);
         } else {
             next("<h1>invalid request</h1>");

@@ -17,7 +17,20 @@
             padding-bottom: 40px;
         }
         .sidebar-nav {
-            padding: 9px 0px;
+            padding: 9px;
+        }
+        .nav-header {
+            color:#1B1B1B;
+            font-size:20px;
+            font-family: "Source Code Pro", "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+        }
+        .navbar-text.pull-right {
+            float: right;
+            padding-right:10px;
+        }
+        .navbar-text.pull-right a{
+            color:#38D63B;
+            margin:0 10px;
         }
 
 
@@ -41,7 +54,7 @@
                 <span class="icon-bar"></span>
             </button>
             <input type="text" style="display: none;" id="idLang" value="<%= lang%>" />
-            <a class="brand" href="#"><%= projectName %></a>
+            <a class="brand" href="#" style="font-family: '华文行楷';color:#ff0000;font-size:28px;"><%= projectName %></a>
             <div class="nav-collapse collapse">
                 <p class="navbar-text pull-right">
                     <% if(userName){ %>
@@ -53,14 +66,28 @@
                                     Chinese
                                 <%}%></strong>
                         </a>
-                        <a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a>
-                        <a href="/user/login"><span class="glyphicon glyphicon-log-in"></span> 登录</a>
+                        <a href="#"><span class="glyphicon glyphicon-user"></span> <% if(lang == 'en'){%>
+                                register
+                           <% }else{%>
+                                注册
+                           <%}%></a>
+                        <a href="/user/login"><span class="glyphicon glyphicon-log-in"></span> <% if(lang == 'en'){%>
+                                login
+                           <% }else{%>
+                                登录
+                           <%}%></a>
                     <% }%>
                 </p>
                 <ul class="nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <% if(lang =='ch'){%>
+                        <li class="active"><a href="#">主页</a></li>
+                        <li><a href="#about">关于</a></li>
+                        <li><a href="#contact">联系</a></li>
+                    <%}else{ %>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    <%}%>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>

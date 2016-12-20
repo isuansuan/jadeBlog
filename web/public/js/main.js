@@ -12,6 +12,11 @@ require(['jquery', 'lodash'], function ($, _) {
         $("#idLangSet").on("click", function () {
             var lang = $("#idLang").val();
             lang = (lang == 'ch') ? 'en' : 'ch';
+            $.get("/user/lang", {lang: lang},
+                function (data) {
+                    window.location.reload();
+                }
+            );
         })
     });
 });
