@@ -729,3 +729,7 @@
 [2016-12-21 18:58:37.977] [ERROR] jadeLoader - JadeLoader::Jader,please call Jader(pKey).get(key)  
 [2016-12-21 18:58:37.977] [ERROR] jadeLoader - JadeLoader::Jader,please call Jader(pKey).get(key)  
 [2016-12-21 18:58:47.941] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-21 19:04:47.944] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-21 19:04:47.944] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-21 19:10:47.951] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-21 19:10:47.951] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
