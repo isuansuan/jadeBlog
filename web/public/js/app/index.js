@@ -5,6 +5,9 @@ define(function (require, exports, module) {
 
     $(document).ready(function () {
         //$('body').css({background: "#808080"});
+        $('#myCarousel').carousel({
+            interval: 2000
+        })
     });
 
     //require(["jquery", "lodash"], function ($, _) {

@@ -6,8 +6,8 @@ var Mongoose = require('mongoose');
 
 //Schema.Types.Mixed
 var schemeTable = {
-    enName: {type: String, required: true, index: true},//英文
-    chName: {type: String, required: true, index: true},//中文
+    en: {type: String, required: true},//英文
+    ch: {type: String, required: true},//中文
     index: {type: Number, unique: true, default: 1},//顺序
     desc: {type: String, default: ''},//描述
     create_tm: {type: Date, default: Date.now}
@@ -16,9 +16,9 @@ var schemeTable = {
 var schema = new Mongoose.Schema(schemeTable, {});
 
 schema.statics.getData = function (condition, view, callback) {
-    this.find(condition, view).lean().exec(function (err, docs) {
-        callback(err, docs);
-    })
+    this.find(condition, view).sort({index: 1}).lean().exec(function (err, docs) {
+            callback(err, docs);
+        })
 };
 
 schema.statics.insertData = function (data, callback) {

@@ -61,14 +61,6 @@ module.exports = {
         }
     ],
     mainPage: {
-        welcome: {
-            head: {
-                en: 'Welcome',
-                ch: '欢迎'
-            },
-            en: "Thank you for access my private blog,hope can help you,This blog is developed for Increase the knowledge surface,good luck!",
-            ch: "感谢您访问我的私人博客,希望能帮助到你，祝你好运!"
-        },
         childPage: [
             {en: "CSDN Blog Link", ch: "CSDN 博客链接", link: "http://my.csdn.net/dai_jing"},
             {en: "GitHub Project", ch: "GitHub 工程", link: "https://github.com/zhengjinwei123"}
