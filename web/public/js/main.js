@@ -21,10 +21,12 @@ require(['jquery', 'lodash'], function ($, _) {
 
         $("#idLogin").on('click',function(){
             $('#loginModal').attr('class','modal show');
+            $(".mask").show();
         });
 
         $("#idCloseLogin").on('click',function(){
             $('#loginModal').attr('class','modal hide');
+            $(".mask").hide();
         });
     });
 
