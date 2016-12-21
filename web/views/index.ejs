@@ -40,8 +40,8 @@
     </div>
 
     <!--<div class="hero-unit">-->
-    <!--<h1><%= mainpage.welcome.head[lang] %></h1>-->
-    <!--<p><%= mainpage.welcome[lang] %></p>-->
+    <!--<h1></h1>-->
+    <!--<p></p>-->
     <!--<p><a href="http://my.csdn.net/dai_jing" class="btn btn-primary btn-large">Learn more &raquo;</a></p>-->
     <!--</div>-->
     <div class="row-fluid">
@@ -56,20 +56,32 @@
         <!--/span-->
         <% } %>
     </div>
+
+    <% if(userName){ %>
+    <div class="row-fluid">
+        <div class="span4">
+            <h2>写博客</h2>
+
+            <p></p>
+
+            <p><a class="btn" href="/blog/new" target="_blank">前往编辑博客 &raquo;</a></p>
+        </div>
+    </div>
+    <% } %>
+
     <!--/row-->
 </div><!--/span-->
 
-<div class="span3" style="border: 0 solid black;float: right;text-align: center;">
+<div class="span3" style="border: 0 solid black;float: right;text-align: center;background-color: #524D40;">
     <div style="text-align: center;font-family:'Microsoft YaHei';color:orangered;background-color: #272822;">
         <h2>广告招商</h2>
     </div>
-    <div style="margin: 5px;">
-        <img src="/images/adverts/ad1.png" >
-    </div>
-    <div style="margin: 5px;">
-        <img src="/images/adverts/ad2.png" >
-    </div>
 
+    <% for(var i=1;i<= advertcnt;i++) { var path = "/images/adverts/ad"+i+".png";%>
+        <div style="margin: 5px;">
+            <a href="#" alt="#"><img src="<%= path%>"></a>
+        </div>
+    <%}%>
 </div>
 
 

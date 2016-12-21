@@ -11,6 +11,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
 
     JadeLoader.set('logger', Logger);//将logger保存
     JadeLoader.set('settings', require("./web/config/settings"));
+    JadeLoader.set("advertCnt", require("./web/utils/common").getAdvertsCnt());
 
     //启用mongoose
     var settings = JadeLoader.get('settings');
@@ -86,6 +87,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
     //定义消息派递中间件
     Express.dispatch(function (req, res, next) {
         if (req.template && req.template.data && req.template.render) {
+            req.session.user = "zjw";
             if (req.session && req.session.user) {
                 req.template.data.userName = req.session.user;
             } else {
@@ -97,6 +99,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
             req.template.data.projectName = (req.template.data.lang == 'ch') ? '郑金玮的博客' : "Jade's Blog";
             req.template.data.dateTime = new Date().getFullYear();
             req.template.data.sidebar = JadeLoader.get('sidebar');
+            req.template.data.advertcnt = JadeLoader.get('advertCnt');
 
             res.render(req.template.render, req.template.data);
         } else {

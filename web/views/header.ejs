@@ -58,7 +58,8 @@
             <div class="nav-collapse collapse">
                 <p class="navbar-text pull-right">
                     <% if(userName){ %>
-                        用户 <a href="#" class="navbar-link"><%= userName %></a>
+                        用户:<a href="#" class="navbar-link"><%= userName %></a>
+                        <a href="/user/logout" class="navbar-link">退出</a>
                     <%}else{ %>
                         <a href="javascript:void(0);" id="idLangSet" style="color: #ff0000"><span class="glyphicon "></span><strong><% if(lang == 'ch'){ %>
                                     英文
