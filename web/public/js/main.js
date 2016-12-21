@@ -17,7 +17,16 @@ require(['jquery', 'lodash'], function ($, _) {
                     window.location.reload();
                 }
             );
-        })
+        });
+
+        $("#idLogin").on('click',function(){
+            $('#loginModal').attr('class','modal show');
+        });
+
+        $("#idCloseLogin").on('click',function(){
+            $('#loginModal').attr('class','modal hide');
+        });
     });
+
 });
 

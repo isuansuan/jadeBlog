@@ -6,33 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--响应式布局--->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--响应式布局--->
     <!--<link rel='stylesheet' href='/stylesheets/style.css'/>-->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="lib/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"><!--响应式布局--->
-    <link rel='icon' href='favicon.ico ' type=‘image/x-ico’ />
+    <link href="lib/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <!--响应式布局--->
+    <link rel='icon' href='favicon.ico ' type=‘image/x-ico’/>
     <style type="text/css">
         body {
             padding-top: 60px;
             padding-bottom: 40px;
         }
+
         .sidebar-nav {
             padding: 9px;
         }
+
         .nav-header {
-            color:#1B1B1B;
-            font-size:20px;
+            color: #1B1B1B;
+            font-size: 20px;
             font-family: "Source Code Pro", "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
         }
+
         .navbar-text.pull-right {
             float: right;
-            padding-right:10px;
-        }
-        .navbar-text.pull-right a{
-            color:#38D63B;
-            margin:0 10px;
+            padding-right: 10px;
         }
 
+        .navbar-text.pull-right a {
+            color: #38D63B;
+            margin: 0 10px;
+        }
+
+        #log {
+            display: none;
+            width: 400px;
+            height: 400px;
+            padding: 30px 40px;
+            background-color: #F3F5F6;
+            position: fixed;
+            top: 70px;;
+            right: 30px;
+        }
+
+        .error {
+            float: right;
+            color: red;
+            font-size: 1.2em;
+            margin-right: 10px
+        }
 
         @media (max-width: 980px) {
             /* Enable use of floated navbar text */
@@ -53,63 +76,103 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <input type="text" style="display: none;" id="idLang" value="<%= lang%>" />
+            <input type="text" style="display: none;" id="idLang" value="<%= lang %>"/>
             <a class="brand" href="#" style="font-family: '华文行楷';color:#ff0000;font-size:28px;"><%= projectName %></a>
+
             <div class="nav-collapse collapse">
                 <p class="navbar-text pull-right">
                     <% if(userName){ %>
-                        用户:<a href="#" class="navbar-link"><%= userName %></a>
-                        <a href="/user/logout" class="navbar-link">退出</a>
-                    <%}else{ %>
-                        <a href="javascript:void(0);" id="idLangSet" style="color: #ff0000"><span class="glyphicon "></span><strong><% if(lang == 'ch'){ %>
-                                    英文
-                                <%}else{%>
-                                    Chinese
-                                <%}%></strong>
-                        </a>
-                        <a href="#"><span class="glyphicon glyphicon-user"></span> <% if(lang == 'en'){%>
-                                register
-                           <% }else{%>
-                                注册
-                           <%}%></a>
-                        <a href="/user/login"><span class="glyphicon glyphicon-log-in"></span> <% if(lang == 'en'){%>
-                                login
-                           <% }else{%>
-                                登录
-                           <%}%></a>
-                    <% }%>
+                    用户:<a href="#" class="navbar-link"><%= userName %></a>
+                    <a href="/user/logout" class="navbar-link">退出</a>
+                    <% }else{ %>
+                    <a href="javascript:void(0);" id="idLangSet" style="color: #ff0000"><span class="glyphicon "></span><strong>
+                            <% if(lang == 'ch'){ %>
+                            英文
+                            <% }else{ %>
+                            Chinese
+                            <% } %>
+                        </strong>
+                    </a>
+                    <a href="#"><span class="glyphicon glyphicon-user"></span>
+                        <% if(lang == 'en'){ %>
+                        register
+                        <% }else{ %>
+                        注册
+                        <% } %>
+                    </a>
+                    <a href="javascript:void(0);" id="idLogin"><span class="glyphicon glyphicon-log-in"></span>
+                        <% if(lang == 'en'){ %>
+                        login
+                        <% }else{ %>
+                        登录
+                        <% } %>
+                    </a>
+                    <% } %>
                 </p>
                 <ul class="nav">
-                    <% if(lang =='ch'){%>
-                        <li class="active"><a href="#">主页</a></li>
-                        <li><a href="#about">关于</a></li>
-                        <li><a href="#contact">联系</a></li>
-                    <%}else{ %>
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    <%}%>
+                    <% if(lang == 'ch'){ %>
+                    <li class="active"><a href="#">主页</a></li>
+                    <li><a href="#about">关于</a></li>
+                    <li><a href="#contact">联系</a></li>
+                    <% }else{ %>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <% } %>
                 </ul>
-            </div><!--/.nav-collapse -->
+            </div>
+            <!--/.nav-collapse -->
         </div>
     </div>
 </div>
+
+<div id="loginModal" class="modal hide">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" id="idCloseLogin">X</button>
+                <h1 class="text-center text-primary">登录</h1>
+            </div>
+            <div class="modal-body">
+                <form action="/user/login" class="form col-md-8 center-block">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" placeholder="电子邮件">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control input-lg" placeholder="登录密码">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-lg btn-block">立刻登录</button>
+                        <span><a href="#">找回密码</a></span>
+                        <span><a href="#" class="pull-right">注册</a></span>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span2">
             <div class="well sidebar-nav">
                 <ul class="nav nav-list">
-                    <% if(sidebar && sidebar.length){%>
-                        <% for(var i= 0,len = sidebar.length;i < len;++i){ var lan =lang; %>
-                                 <li class="nav-header"><%= sidebar[i][lan]%></li>
-                                    <li ><a href="#">Link</a></li>
-                                    <li><a href="#">Link</a></li>
-                                    <li><a href="#">Link</a></li>
-                                    <li><a href="#">Link</a></li>
-                        <%}%>
-                    <%}%>
+                    <% if(sidebar && sidebar.length){ %>
+                    <% for(var i = 0, len = sidebar.length;i < len;++i){ var lan = lang; %>
+                    <li class="nav-header"><%= sidebar[i][lan] %></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <% } %>
+                    <% } %>
                 </ul>
-            </div><!--/.well -->
-        </div><!--/span-->
+            </div>
+            <!--/.well -->
+        </div>
+        <!--/span-->
         <!--class="active"-->
