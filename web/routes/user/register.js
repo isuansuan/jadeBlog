@@ -16,10 +16,7 @@ router.post("/", function (req, res, next) {
 
     MongooseManager.schema('user').model(function (err, model, release) {
         if (!err) {
-            model.findData(email, Encrypt.md5(password), function (err, nickName) {
-                if(!err){
-                   req.session.user = nickName;
-                }
+            model.insertData(email, Encrypt.md5(password), function (err, resp) {
                 res.redirect("index");
                 release();
             });
