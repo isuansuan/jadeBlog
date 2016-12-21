@@ -87,7 +87,6 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
     //定义消息派递中间件
     Express.dispatch(function (req, res, next) {
         if (req.template && req.template.data && req.template.render) {
-            req.session.user = "zjw";
             if (req.session && req.session.user) {
                 req.template.data.userName = req.session.user;
             } else {
