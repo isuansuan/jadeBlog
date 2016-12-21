@@ -5,9 +5,6 @@ var router = express.Router();
 router.get('/', function (req, res, next) {
     req.session.user = null;
     res.redirect("index");
-    //req.dispatch('index', {
-    //    title: '郑金玮的博客'
-    //}, next);
 });
 
 router.post("/", function (req, res, next) {

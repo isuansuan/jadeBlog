@@ -7,7 +7,6 @@ var Logger = JadeLoader.get('logger');
 router.get('/', function (req, res, next) {
 
     req.dispatch('index', {
-        title: 'index page',
         mainpage: JadeLoader.get('mainpage')
     }, next);
 });
