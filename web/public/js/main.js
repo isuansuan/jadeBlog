@@ -81,7 +81,7 @@ require(['jquery', 'lodash', "md5"], function ($, _, md5) {
                     error = e.message;
                 } finally {
                     if (!error) {
-                        window.alert("登录成功!");
+                        //window.alert("登录成功!");
                         $('#loginModal').attr('class', 'modal hide');
                         window.location.reload();
                     } else {
