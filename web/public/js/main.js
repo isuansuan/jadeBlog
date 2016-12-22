@@ -3,11 +3,12 @@ require.config({
         "jquery": ["lib/jquery/jquery3.1.1"],
         "bootstrap": ["lib/bootstrap/js/bootstrap.min"],
         "lodash": ["lib/lodash-4.17.2/lodash"],
-        "md5": ["lib/md5"]
+        "md5": ["lib/md5"],
+        "common":["lib/common"]
     }
 });
 
-require(['jquery', 'lodash', "md5"], function ($, _, md5) {
+require(['jquery', 'lodash', "md5","common"], function ($, _, md5,common) {
 
     $(document).ready(function () {
         //启用弹出框
@@ -59,8 +60,8 @@ require(['jquery', 'lodash', "md5"], function ($, _, md5) {
             var email = $("#idLogEmail").val();
             var password = $("#idLogPassword").val().trim();
 
-            var emailReg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
-            if (!emailReg.test(email)) {
+            //var emailReg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+            if (!common.isEmail(email)) {
                 $("#idLogEmail").popover('show');
                 return false;
             }
@@ -101,8 +102,8 @@ require(['jquery', 'lodash', "md5"], function ($, _, md5) {
             }
             //邮箱
             var email = $("#idRegEmail").val();
-            var emailReg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
-            if (!emailReg.test(email)) {
+            //var emailReg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+            if (!common.isEmail(email)) {
                 $("#idRegEmail").popover('show');
                 return false;
             }
