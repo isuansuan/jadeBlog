@@ -6,9 +6,7 @@ define(function (require, exports, module) {
     $(document).ready(function () {
         //$('body').css({background: "#808080"});\
         $('#idCarousel').carousel({
-            interval: 1000,
-            wrap: true,
-            pause: "hover"
+            interval: 1000
         });
     });
 

@@ -31,6 +31,7 @@ require(['jquery', 'lodash', "md5"], function ($, _, md5) {
         //登录对话框
         $("#idLogin").on('click', function () {
             $('#loginModal').attr('class', 'modal show');
+
             $(".mask").show();
         });
         $("#idCloseLogin").on('click', function () {
@@ -41,11 +42,14 @@ require(['jquery', 'lodash', "md5"], function ($, _, md5) {
         //注册对话框
         $("#idRegister2").on('click', function () {
             $('#regModal').attr('class', 'modal show');
+
+
             $('#loginModal').attr('class', 'modal hide');
             $(".mask").show();
         });
         $("#idRegister").on('click', function () {
             $('#regModal').attr('class', 'modal show');
+
             $(".mask").show();
         });
         $("#idCloseReg").on('click', function () {
@@ -127,10 +131,18 @@ require(['jquery', 'lodash', "md5"], function ($, _, md5) {
                         window.alert("注册成功!");
                         $('#regModal').attr('class', 'modal hide');
                         $('#loginModal').attr('class', 'modal show');
+
                     } else {
                         window.alert(error);
                     }
                 }
+            })
+        });
+
+
+        $("#idContract").on("click", function () {
+            $('#idContractDialog').modal({
+                keyboard: true
             })
         });
     });

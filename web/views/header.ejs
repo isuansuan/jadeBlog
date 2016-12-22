@@ -95,12 +95,12 @@
                 <ul class="nav">
                     <% if(lang == 'ch'){ %>
                     <li class="active"><a href="#">主页</a></li>
-                    <li><a href="#about">关于</a></li>
-                    <li><a href="#contact">联系</a></li>
+                    <li><a href="javascript:void(0);">关于</a></li>
+                    <li><a href="javascript:void(0);" id="idContract">联系</a></li>
                     <% }else{ %>
                     <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="javascript:void(0);">About</a></li>
+                    <li><a href="javascript:void(0);" id="idContract">Contact</a></li>
                     <% } %>
                 </ul>
             </div>
@@ -108,9 +108,13 @@
         </div>
     </div>
 </div>
+
+<!--蒙版-->
 <div class="mask" style="display: none;">
 </div>
-<div id="loginModal" class="modal hide login">
+
+<!--登录-->
+<div id="loginModal" class="modal fade hide login" tabindex="-1" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -142,8 +146,8 @@
     </div>
 </div>
 
-
-<div id="regModal" class="modal hide login">
+<!--注册-->
+<div id="regModal" class="modal fade hide login" tabindex="-1" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -178,6 +182,33 @@
     </div>
 </div>
 
+
+<!-- 联系（Modal） -->
+<div class="modal fade" id="idContractDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    与我联系
+                </h4>
+            </div>
+            <div class="modal-body">
+                按下 ESC 按钮退出。
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">关闭
+                </button>
+                <!--<button type="button" class="btn btn-primary">-->
+                    <!--提交更改-->
+                <!--</button>-->
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <div class="container-fluid">
     <div class="row-fluid">
