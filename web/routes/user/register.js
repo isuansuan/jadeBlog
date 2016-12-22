@@ -13,11 +13,14 @@ router.get('/', function (req, res, next) {
 router.post("/", function (req, res, next) {
     var email = req.body.email;
     var password = req.body.password;
+    var username = req.body.username;
 
     MongooseManager.schema('user').model(function (err, model, release) {
         if (!err) {
-            model.insertData(email, Encrypt.md5(password), function (err, resp) {
-                res.redirect("index");
+            model.insertData(username, email, Encrypt.md5(password), function (err, resp) {
+                req.dispatch('index', {
+                    action: 'registerSuccess'
+                }, next);
                 release();
             });
         } else {

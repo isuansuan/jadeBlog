@@ -19,13 +19,28 @@ require(['jquery', 'lodash'], function ($, _) {
             );
         });
 
-        $("#idLogin").on('click',function(){
-            $('#loginModal').attr('class','modal show');
+        //登录对话框
+        $("#idLogin").on('click', function () {
+            $('#loginModal').attr('class', 'modal show');
             $(".mask").show();
         });
+        $("#idCloseLogin").on('click', function () {
+            $('#loginModal').attr('class', 'modal hide');
+            $(".mask").hide();
+        });
 
-        $("#idCloseLogin").on('click',function(){
-            $('#loginModal').attr('class','modal hide');
+        //注册对话框
+        $("#idRegister2").on('click', function () {
+            $('#regModal').attr('class', 'modal show');
+            $('#loginModal').attr('class', 'modal hide');
+            $(".mask").show();
+        });
+        $("#idRegister").on('click', function () {
+            $('#regModal').attr('class', 'modal show');
+            $(".mask").show();
+        });
+        $("#idCloseReg").on('click', function () {
+            $('#regModal').attr('class', 'modal hide');
             $(".mask").hide();
         });
     });

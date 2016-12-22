@@ -6,7 +6,7 @@ var Mongoose = require('mongoose');
 
 //Schema.Types.Mixed
 var schemeTable = {
-    nickname: {type: String, default: "用户", index: 1},//
+    username: {type: String, default: "用户", index: 1},//
     email: {type: String, required: true, index: {unique: true}},//
     password: {type: String, required: true},//
     create_tm: {type: Date, default: Date.now}
@@ -18,7 +18,7 @@ schema.statics.findData = function (email, password, callback) {
     this.find({email: email}, {_id: 0, create_tm: 0}).limit(1).lean().exec(function (err, doc) {
         if (!err && doc) {
             if (doc.password == password) {
-                callback(null, doc.nickname);
+                callback(null, doc.username);
             } else {
                 callback('密码错误', null);
             }
@@ -38,17 +38,15 @@ schema.statics.getUserCount = function (callback) {
     });
 };
 
-schema.statics.insertData = function (email, password, callback) {
+schema.statics.insertData = function (username, email, password, callback) {
     var newData = new this({
         email: email,
-        password: password
+        password: password,
+        username: username
     });
 
-    this.getUserCount(function (cnt) {
-        newData.nickname = '用户' + (cnt + 1);
-        newData.save(function (err, resp) {
-            callback(err, resp);
-        });
+    newData.save(function (err, resp) {
+        callback(err, resp);
     });
 };
 
