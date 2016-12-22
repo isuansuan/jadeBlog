@@ -12,15 +12,15 @@ router.get('/', function (req, res, next) {
 
 router.post("/", function (req, res, next) {
     var email = req.body.email;
-    var password = req.body.password;
+    var password = req.body.password.trim();
 
     MongooseManager.schema('user').model(function (err, model, release) {
         if (!err) {
             model.findData(email, Encrypt.md5(password), function (err, username) {
-                if(!err){
-                   req.session.user = username;
+                if (!err) {
+                    req.session.user = username;
                 }
-                res.redirect("index");
+                req.json({error: err}, next);
                 release();
             });
         } else {

@@ -5,7 +5,6 @@ var Logger = JadeLoader.get('logger');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-
     req.dispatch('index', {
     }, next);
 });

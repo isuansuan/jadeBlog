@@ -9,6 +9,9 @@ require.config({
 require(['jquery', 'lodash'], function ($, _) {
 
     $(document).ready(function () {
+        //启用弹出框
+        //$("[data-toggle='popover']").popover();
+
         //语言设置
         $("#idLangSet").on("click", function () {
             var lang = $("#idLang").val();
@@ -44,7 +47,87 @@ require(['jquery', 'lodash'], function ($, _) {
             $('#regModal').attr('class', 'modal hide');
             $(".mask").hide();
         });
-    });
 
+        //登录
+        $("#idLoginAction").on("click", function () {
+            var email = $("#idLogEmail").val();
+            var password = $("#idLogPassword").val().trim();
+
+            var emailReg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+            if (!emailReg.test(email)) {
+                $("#idLogEmail").popover('show');
+                return false;
+            }
+
+            if (!password.length) {
+                $("#idLogPassword").popover('show');
+                return false;
+            }
+
+            $.post("/user/login", {email: email, password: password}, function (data) {
+                var error = null;
+                try {
+                    data = JSON.parse(data);
+                    if (data.error) {
+                        error = data.error;
+                    }
+                } catch (e) {
+                    error = e.message;
+                } finally {
+                    if (!error) {
+                        window.alert("登录成功!");
+                        $('#loginModal').attr('class', 'modal hide');
+                        window.location.reload();
+                    } else {
+                        window.alert(error);
+                    }
+                }
+            });
+        });
+
+        //注册
+        $("#idRegAction").on("click", function () {
+            //用户名
+            var username = $("#idRegUserName").val();
+            if (!username || username.length < 3 || username.length > 20) {
+                $("#idRegUserName").popover('show');
+                return false;
+            }
+            //邮箱
+            var email = $("#idRegEmail").val();
+            var emailReg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+            if (!emailReg.test(email)) {
+                $("#idRegEmail").popover('show');
+                return false;
+            }
+
+            //密码
+            var password = $("#idRegPsw").val().trim();
+            if (!password || password.length < 6 || password.length > 20) {
+                $("#idRegPsw").popover('show');
+                return false;
+            }
+
+            $.post("/user/register", {username: username, email: email, password: password}, function (data) {
+                var error = null;
+                try {
+                    data = JSON.parse(data);
+                    if (data.error) {
+                        error = data.error;
+                    }
+                } catch (e) {
+                    error = e.message;
+                } finally {
+                    if (!error) {
+                        window.alert("注册成功!");
+                        $('#regModal').attr('class', 'modal hide');
+                        $('#loginModal').attr('class', 'modal show');
+                    } else {
+                        window.alert(error);
+                    }
+                }
+            })
+        });
+    });
 });
 

@@ -15,8 +15,9 @@ var schemeTable = {
 var schema = new Mongoose.Schema(schemeTable, {});
 
 schema.statics.findData = function (email, password, callback) {
-    this.find({email: email}, {_id: 0, create_tm: 0}).limit(1).lean().exec(function (err, doc) {
+    this.findOne({email: email}, {_id: 0, create_tm: 0}).lean().exec(function (err, doc) {
         if (!err && doc) {
+            console.log(doc);
             if (doc.password == password) {
                 callback(null, doc.username);
             } else {

@@ -64,6 +64,10 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
             };
             func();
         };
+        req.json = function (data, func) {
+            res.end(JSON.stringify(data));
+            func();
+        };
         function getReqUrl(url) {
             var t = url.split("?");
             return t[0];
@@ -120,8 +124,6 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
             process.exit(1);
         }
     });
-
-
 });
 
 //监听热加载器的error事件
