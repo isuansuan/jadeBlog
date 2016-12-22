@@ -983,3 +983,14 @@
 [2016-12-22 20:47:19.495] [DEBUG] jadeLoader - hotLoad module start.  
 [2016-12-22 20:47:19.496] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
 [2016-12-22 20:47:42.899] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-22 22:50:58.277] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-22 22:54:03.297] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-22 23:00:03.307] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-22 23:00:03.308] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-22 23:05:20.505] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-22 23:05:21.150] [ERROR] jadeLoader - JadeLoader::Jader,please call Jader(pKey).get(key)  
+[2016-12-22 23:05:21.150] [ERROR] jadeLoader - JadeLoader::Jader,please call Jader(pKey).get(key)  
+[2016-12-22 23:09:48.161] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-22 23:10:35.742] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-22 23:16:35.760] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-22 23:16:35.762] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
