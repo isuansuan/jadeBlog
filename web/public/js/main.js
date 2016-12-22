@@ -13,6 +13,10 @@ require(['jquery', 'lodash', "md5"], function ($, _, md5) {
         //启用弹出框
         //$("[data-toggle='popover']").popover();
 
+        //$('#myCarousel').carousel({
+        //    interval: 1
+        //});
+
         //语言设置
         $("#idLangSet").on("click", function () {
             var lang = $("#idLang").val();
