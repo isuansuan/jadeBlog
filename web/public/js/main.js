@@ -2,11 +2,12 @@ require.config({
     paths: {
         "jquery": ["lib/jquery/jquery3.1.1"],
         "bootstrap": ["lib/bootstrap/js/bootstrap.min"],
-        "lodash": ["lib/lodash-4.17.2/lodash"]
+        "lodash": ["lib/lodash-4.17.2/lodash"],
+        "md5": ["lib/md5"]
     }
 });
 
-require(['jquery', 'lodash'], function ($, _) {
+require(['jquery', 'lodash', "md5"], function ($, _, md5) {
 
     $(document).ready(function () {
         //启用弹出框
@@ -64,7 +65,7 @@ require(['jquery', 'lodash'], function ($, _) {
                 return false;
             }
 
-            $.post("/user/login", {email: email, password: password}, function (data) {
+            $.post("/user/login", {email: email, password: md5(password)}, function (data) {
                 var error = null;
                 try {
                     data = JSON.parse(data);
