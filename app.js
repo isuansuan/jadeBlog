@@ -16,7 +16,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
     //启用mongoose
     var settings = JadeLoader.get('settings');
     var MongooseManager = JadeLoader.Jader('utils').getInstance('db-mongodb', settings.db.mongodb.host, settings.db.mongodb.port, settings.db.mongodb.db, settings.db.mongodb.auth, Path.join(__dirname, "./web/schemas"));
-    JadeLoader.set("MongooseManager", MongooseManager);
+    JadeLoader.set("m", MongooseManager);
     MongooseManager.on("error", function (error) {
         Logger.error("blog", "mongoose error" + error);
     });

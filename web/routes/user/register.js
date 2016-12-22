@@ -3,7 +3,7 @@ var router = express.Router();
 var JadeLoader = require("../../../mnode/app").plugin.JadeLoader;
 var Logger = JadeLoader.get('logger');
 var Encrypt = JadeLoader.Jader("utils").get("encrypt-utils");
-var MongooseManager = JadeLoader.get('MongooseManager');
+var MongooseManager = JadeLoader.get('m');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {

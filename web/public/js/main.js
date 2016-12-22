@@ -9,6 +9,7 @@ require.config({
 require(['jquery', 'lodash'], function ($, _) {
 
     $(document).ready(function () {
+        //语言设置
         $("#idLangSet").on("click", function () {
             var lang = $("#idLang").val();
             lang = (lang == 'ch') ? 'en' : 'ch';
