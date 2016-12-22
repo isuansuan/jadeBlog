@@ -1,6 +1,6 @@
 /**
  * Created by 郑金玮 on 2016/12/19.
- * 页面 边栏数据模型
+ * 用户 模型表
  */
 var Mongoose = require('mongoose');
 
@@ -14,10 +14,15 @@ var schemeTable = {
 
 var schema = new Mongoose.Schema(schemeTable, {});
 
+/**
+ * 查询一个指定用户
+ * @param email
+ * @param password
+ * @param callback
+ */
 schema.statics.findData = function (email, password, callback) {
     this.findOne({email: email}, {_id: 0, create_tm: 0}).lean().exec(function (err, doc) {
         if (!err && doc) {
-            console.log(doc);
             if (doc.password == password) {
                 callback(null, doc.username);
             } else {
@@ -33,12 +38,23 @@ schema.statics.findData = function (email, password, callback) {
     })
 };
 
+/**
+ * 获取用户数量
+ * @param callback
+ */
 schema.statics.getUserCount = function (callback) {
     this.count({}, function (err, c) {
         callback(err ? 0 : c);
     });
 };
 
+/**
+ * 插入有个新用户
+ * @param username
+ * @param email
+ * @param password
+ * @param callback
+ */
 schema.statics.insertData = function (username, email, password, callback) {
     var newData = new this({
         email: email,
