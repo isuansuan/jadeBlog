@@ -994,3 +994,11 @@
 [2016-12-22 23:10:35.742] [INFO] jadeLoader - jade Loader Finished  
 [2016-12-22 23:16:35.760] [DEBUG] jadeLoader - hotLoad module start.  
 [2016-12-22 23:16:35.762] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-22 23:22:35.768] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-22 23:22:35.769] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-22 23:28:35.800] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-22 23:28:35.800] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-22 23:34:35.820] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-22 23:34:35.821] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-22 23:40:35.834] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-22 23:40:35.834] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  

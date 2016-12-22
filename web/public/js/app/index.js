@@ -11,8 +11,9 @@ define(function (require, exports, module) {
         });
 
         $('#summernote').summernote({ lang: 'zh-CN' });
-        $(".modal").hide();
-
+        // $(".modal-dialog").attr("aria-hidden","true");
+        // $(".modal-dialog").css({display:"none"});
+        // var html = $('#summernote').summernote('code');
     });
 
     //require(["jquery", "lodash"], function ($, _) {
