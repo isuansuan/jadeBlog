@@ -4,10 +4,10 @@ define(function (require, exports, module) {
     var BS = require("bootstrap");
 
     $(document).ready(function () {
-        //$('body').css({background: "#808080"});
-        $('#myCarousel').carousel({
-            interval: 2000
-        })
+        //$('body').css({background: "#808080"});\
+        $('#idCarousel').carousel({
+            interval: 1000
+        });
     });
 
     //require(["jquery", "lodash"], function ($, _) {

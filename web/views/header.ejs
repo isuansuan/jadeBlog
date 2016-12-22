@@ -76,7 +76,7 @@
                             <% } %>
                         </strong>
                     </a>
-                    <a href="#"><span class="glyphicon glyphicon-user"></span>
+                    <a href="javascript:void(0);" id="idRegister"><span class="glyphicon glyphicon-user"></span>
                         <% if(lang == 'en'){ %>
                         register
                         <% }else{ %>
@@ -95,12 +95,12 @@
                 <ul class="nav">
                     <% if(lang == 'ch'){ %>
                     <li class="active"><a href="#">主页</a></li>
-                    <li><a href="#about">关于</a></li>
-                    <li><a href="#contact">联系</a></li>
+                    <li><a href="javascript:void(0);">关于</a></li>
+                    <li><a href="javascript:void(0);" id="idContract">联系</a></li>
                     <% }else{ %>
                     <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="javascript:void(0);">About</a></li>
+                    <li><a href="javascript:void(0);" id="idContract">Contact</a></li>
                     <% } %>
                 </ul>
             </div>
@@ -108,8 +108,12 @@
         </div>
     </div>
 </div>
+
+<!--蒙版-->
 <div class="mask" style="display: none;">
 </div>
+
+<!--登录-->
 <div id="loginModal" class="modal hide login">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -118,26 +122,93 @@
                 <h1 class="text-center text-primary">登录</h1>
             </div>
             <div class="modal-body">
-                <form action="/user/login" method="post" class="form col-md-8 center-block text-center text-primary">
+                <form action="/user/login" method="post" onsubmit="return false" class="form col-md-8 center-block text-center text-primary">
                     <div class="form-group">
-                        <input type="email" class="form-control input-lg" name="email" placeholder="电子邮件">
+                        <input type="email" class="form-control input-lg" name="email" id="idLogEmail" placeholder="电子邮箱" required="true" title=""
+                               data-container="false" data-toggle="popover" data-placement="right"
+                               data-content="邮箱格式非法">
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control input-lg" name="password" placeholder="登录密码">
+                        <input type="password" class="form-control input-lg" name="password" id="idLogPassword" placeholder="登录密码" required="true" title=""
+                               data-container="false" data-toggle="popover" data-placement="right"
+                               data-content="密码必须填写">
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-primary btn-lg">立刻登录</button>
+                        <button class="btn btn-primary btn-lg" id="idLoginAction">立刻登录</button>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <span><a href="#" class="pull-right" style="margin-left:10px;">找回密码</a></span>
-                <span><a href="#" class="pull-right" style="margin-left:10px;">注册</a></span>
+                <span><a href="#" class="pull-right" style="margin-left:10px;" id="idRegister2">注册</a></span>
             </div>
         </div>
     </div>
 </div>
 
+<!--注册-->
+<div id="regModal" class="modal hide login">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" id="idCloseReg">X</button>
+                <h1 class="text-center text-primary">注册用户</h1>
+            </div>
+            <div class="modal-body">
+                <form action="/user/register" onsubmit="return false;" method="post" class="form col-md-8 center-block text-center text-primary">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" name="username" id="idRegUserName" placeholder="用户名" required="true" title=""
+                               data-container="false" data-toggle="popover" data-placement="right"
+                               data-content="用户名长度必须在3~20之间">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control input-lg" name="email" id="idRegEmail" placeholder="电子邮箱" required="true" title=""
+                               data-container="false" data-toggle="popover" data-placement="right"
+                               data-content="邮箱格式错误">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control input-lg" name="password" id="idRegPsw" placeholder="登录密码" required="true" title=""
+                               data-container="false" data-toggle="popover" data-placement="right"
+                               data-content="密码长度必须在6~20之间">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-lg" id="idRegAction">立刻注册</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 联系（Modal） -->
+<div class="modal fade" id="idContractDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    与我联系
+                </h4>
+            </div>
+            <div class="modal-body" style="text-align: center">
+                <img src="/images/weixin.jpg" width="300px" height="300px" alt="">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">关闭
+                </button>
+                <!--<button type="button" class="btn btn-primary">-->
+                    <!--提交更改-->
+                <!--</button>-->
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <div class="container-fluid">
     <div class="row-fluid">

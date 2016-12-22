@@ -16,7 +16,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
     //启用mongoose
     var settings = JadeLoader.get('settings');
     var MongooseManager = JadeLoader.Jader('utils').getInstance('db-mongodb', settings.db.mongodb.host, settings.db.mongodb.port, settings.db.mongodb.db, settings.db.mongodb.auth, Path.join(__dirname, "./web/schemas"));
-    JadeLoader.set("MongooseManager",MongooseManager);
+    JadeLoader.set("m", MongooseManager);
     MongooseManager.on("error", function (error) {
         Logger.error("blog", "mongoose error" + error);
     });
@@ -64,6 +64,10 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
             };
             func();
         };
+        req.json = function (data, func) {
+            res.end(JSON.stringify(data));
+            func();
+        };
         function getReqUrl(url) {
             var t = url.split("?");
             return t[0];
@@ -101,6 +105,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
             req.template.data.sidebar = JadeLoader.get('sidebar');
             req.template.data.advertcnt = JadeLoader.get('advertCnt');
             req.template.data.title = (req.template.data.lang == 'ch') ? '郑金玮的博客' : "Jade's Blog";
+            (req.template.render == 'index') && (req.template.data.mainpage = JadeLoader.get('mainpage'));
             res.render(req.template.render, req.template.data);
         } else {
             next("<h1>invalid request</h1>");
@@ -119,8 +124,6 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
             process.exit(1);
         }
     });
-
-
 });
 
 //监听热加载器的error事件

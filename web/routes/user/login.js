@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 var JadeLoader = require("../../../mnode/app").plugin.JadeLoader;
 var Logger = JadeLoader.get('logger');
-var Encrypt = JadeLoader.Jader("utils").get("encrypt-utils");
-var MongooseManager = JadeLoader.get('MongooseManager');
+//var Encrypt = JadeLoader.Jader("utils").get("encrypt-utils");
+var MongooseManager = JadeLoader.get('m');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -16,11 +16,11 @@ router.post("/", function (req, res, next) {
 
     MongooseManager.schema('user').model(function (err, model, release) {
         if (!err) {
-            model.findData(email, Encrypt.md5(password), function (err, nickName) {
-                if(!err){
-                   req.session.user = nickName;
+            model.findData(email,password, function (err, username) {
+                if (!err) {
+                    req.session.user = username;
                 }
-                res.redirect("index");
+                req.json({error: err}, next);
                 release();
             });
         } else {

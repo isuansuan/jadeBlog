@@ -1,12 +1,12 @@
 /**
  * Created by 郑金玮 on 2016/12/19.
- * 页面 边栏数据模型
+ * 用户 模型表
  */
 var Mongoose = require('mongoose');
 
 //Schema.Types.Mixed
 var schemeTable = {
-    nickname: {type: String, default: "用户", index: 1},//
+    username: {type: String, default: "用户", index: 1},//
     email: {type: String, required: true, index: {unique: true}},//
     password: {type: String, required: true},//
     create_tm: {type: Date, default: Date.now}
@@ -14,11 +14,17 @@ var schemeTable = {
 
 var schema = new Mongoose.Schema(schemeTable, {});
 
+/**
+ * 查询一个指定用户
+ * @param email
+ * @param password
+ * @param callback
+ */
 schema.statics.findData = function (email, password, callback) {
-    this.find({email: email}, {_id: 0, create_tm: 0}).limit(1).lean().exec(function (err, doc) {
+    this.findOne({email: email}, {_id: 0, create_tm: 0}).lean().exec(function (err, doc) {
         if (!err && doc) {
             if (doc.password == password) {
-                callback(null, doc.nickname);
+                callback(null, doc.username);
             } else {
                 callback('密码错误', null);
             }
@@ -32,23 +38,32 @@ schema.statics.findData = function (email, password, callback) {
     })
 };
 
+/**
+ * 获取用户数量
+ * @param callback
+ */
 schema.statics.getUserCount = function (callback) {
     this.count({}, function (err, c) {
         callback(err ? 0 : c);
     });
 };
 
-schema.statics.insertData = function (email, password, callback) {
+/**
+ * 插入有个新用户
+ * @param username
+ * @param email
+ * @param password
+ * @param callback
+ */
+schema.statics.insertData = function (username, email, password, callback) {
     var newData = new this({
         email: email,
-        password: password
+        password: password,
+        username: username
     });
 
-    this.getUserCount(function (cnt) {
-        newData.nickname = '用户' + (cnt + 1);
-        newData.save(function (err, resp) {
-            callback(err, resp);
-        });
+    newData.save(function (err, resp) {
+        callback(err, resp);
     });
 };
 
