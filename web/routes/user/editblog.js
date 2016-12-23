@@ -8,4 +8,13 @@ router.get('/', function (req, res, next) {
     req.dispatch('editblog', {}, next);
 });
 
+router.post('/', function (req, res, next) {
+    var html = req.body.html,
+        articleType = req.body.articleType,
+        articleName = req.body.articleName;
+
+    res.json({data: "上传成功"});
+});
+
+
 module.exports = router;

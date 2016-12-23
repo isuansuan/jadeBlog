@@ -107,5 +107,24 @@ define(function (require, exports, module) {
                 $summernote.summernote('enable');
             }
         });
+
+        //提交文章
+        $("#idArticleCommit").on("click", function () {
+            var code = $summernote.summernote('code');
+            var articleType = $("#idArticleTypes").val();
+            var articleName = $("#idArticleName").val();
+
+            if (articleName.length < 3) {
+                window.alert("文章名称必须大于3个字符");
+                return false;
+            }
+            $.post("/user/editblog", {
+                html: code,
+                articleType: articleType,
+                articleName: articleName
+            }, function (data) {
+                window.alert(data);
+            });
+        });
     });
 });

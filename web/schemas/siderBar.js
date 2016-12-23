@@ -23,7 +23,6 @@ schema.statics.getData = function (condition, view, callback) {
 
 schema.statics.insertData = function (data, callback) {
     var newData = new this(data);
-
     newData.save(function (err, resp) {
         callback(err, resp);
     })
