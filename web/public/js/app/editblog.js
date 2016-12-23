@@ -126,5 +126,15 @@ define(function (require, exports, module) {
                 window.alert(data);
             });
         });
+
+        $("#idArticleTypes").select2({
+            placeholder: '<i class="fa fa-map-marker"></i>Select a Country',
+            allowClear: true,
+            formatResult: format,
+            formatSelection: format,
+            escapeMarkup: function (m) {
+                return m;
+            }
+        });
     });
 });

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="703c2d8e-07c2-442c-9762-a114f4ec201b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/editblog.ejs" afterPath="$PROJECT_DIR$/web/views/editblog.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/js/app/editblog.js" afterPath="$PROJECT_DIR$/web/public/js/app/editblog.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/index.ejs" afterPath="$PROJECT_DIR$/web/views/index.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/js/app/index.js" afterPath="$PROJECT_DIR$/web/public/js/app/index.js" />
     </list>
     <ignored path="blogPro1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,8 +51,8 @@
       <file leaf-file-name="editblog.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.862069" vertical-offset="2279" max-vertical-offset="2835">
-              <caret line="118" column="29" selection-start-line="118" selection-start-column="29" selection-end-line="118" selection-end-column="29" />
+            <state vertical-scroll-proportion="-15.551724" vertical-offset="2426" max-vertical-offset="3045">
+              <caret line="137" column="11" selection-start-line="137" selection-start-column="11" selection-end-line="137" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -97,21 +98,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64324325" vertical-offset="756" max-vertical-offset="2100">
-              <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
-              <folding />
+            <state vertical-scroll-proportion="20.0" vertical-offset="1440" max-vertical-offset="1995">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editblog.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="editblog.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/views/editblog.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.9" vertical-offset="0" max-vertical-offset="945">
-              <caret line="17" column="100" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="100" />
+            <state vertical-scroll-proportion="0.3027027" vertical-offset="0" max-vertical-offset="1008">
+              <caret line="8" column="110" selection-start-line="8" selection-start-column="96" selection-end-line="8" selection-end-column="110" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
@@ -172,12 +176,12 @@
         <option value="$PROJECT_DIR$/web/views/header.ejs" />
         <option value="$PROJECT_DIR$/mnode/node_modules/newbeely-nodejs/lib/utils/timeUtils.js" />
         <option value="$PROJECT_DIR$/web/routes/summernote/fileUpload.js" />
-        <option value="$PROJECT_DIR$/web/views/editblog.ejs" />
         <option value="$PROJECT_DIR$/web/routes/user/editblog.js" />
-        <option value="$PROJECT_DIR$/web/public/js/app/editblog.js" />
         <option value="$PROJECT_DIR$/web/schemas/siderBar.js" />
         <option value="$PROJECT_DIR$/web/public/js/app/index.js" />
         <option value="$PROJECT_DIR$/web/views/index.ejs" />
+        <option value="$PROJECT_DIR$/web/views/editblog.ejs" />
+        <option value="$PROJECT_DIR$/web/public/js/app/editblog.js" />
       </list>
     </option>
   </component>
@@ -840,18 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/editblog.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.9" vertical-offset="0" max-vertical-offset="945">
-          <caret line="17" column="100" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="100" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/routes/user/editblog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="546">
@@ -892,14 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.862069" vertical-offset="2279" max-vertical-offset="2835">
-          <caret line="118" column="29" selection-start-line="118" selection-start-column="29" selection-end-line="118" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/schemas/siderBar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="840">
@@ -910,9 +894,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64324325" vertical-offset="756" max-vertical-offset="2100">
-          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+        <state vertical-scroll-proportion="20.0" vertical-offset="1440" max-vertical-offset="1995">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.551724" vertical-offset="2426" max-vertical-offset="3045">
+          <caret line="137" column="11" selection-start-line="137" selection-start-column="11" selection-end-line="137" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/editblog.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3027027" vertical-offset="0" max-vertical-offset="1008">
+          <caret line="8" column="110" selection-start-line="8" selection-start-column="96" selection-end-line="8" selection-end-column="110" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
