@@ -4,7 +4,8 @@ require.config({
         "bootstrap": ["lib/bootstrap/js/bootstrap.min"],
         "lodash": ["lib/lodash-4.17.2/lodash"],
         "md5": ["lib/md5"],
-        "common":["lib/common"]
+        "common":["lib/common"],
+        "summernote":["lib/summernote/dist/summernote.min"]
     }
 });
 
