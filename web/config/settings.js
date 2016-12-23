@@ -30,18 +30,18 @@ module.exports = {
             desc: 'Python相关技术'
         },
         {
-            en: 'C++',
+            en: 'Cpp',
             ch: 'C++',
             desc: 'C++相关技术'
         },
         {
-            en: 'PHP',
-            ch: 'PHP',
+            en: 'php',
+            ch: 'php',
             desc: 'PHP相关技术'
         },
         {
-            en: 'CSS/Html',
-            ch: 'CSS/Html',
+            en: 'Css/Html',
+            ch: 'Css/Html',
             desc: 'CSS/Html相关技术'
         },
         {
@@ -50,12 +50,12 @@ module.exports = {
             desc: '算法技术'
         },
         {
-            en: 'The poem and the distance',
+            en: 'lives',
             ch: '诗和远方',
             desc: '生活相关'
         },
         {
-            en: 'Server framework',
+            en: 'serverFramework',
             ch: '服务器框架',
             desc: '服务器框架技术'
         }

@@ -2,319 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="703c2d8e-07c2-442c-9762-a114f4ec201b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/views/editblog.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/js/app/editblog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/routes/user/editblog.js" />
-      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\summernote\lang\summernote-mn-MN" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\views\user\login.ejs" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/.agignore" afterPath="$PROJECT_DIR$/web/public/lib/summernote/.agignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/.editorconfig" afterPath="$PROJECT_DIR$/web/public/lib/summernote/.editorconfig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/.gitignore" afterPath="$PROJECT_DIR$/web/public/lib/summernote/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/.jscsrc" afterPath="$PROJECT_DIR$/web/public/lib/summernote/.jscsrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/.jshintignore" afterPath="$PROJECT_DIR$/web/public/lib/summernote/.jshintignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/.jshintrc" afterPath="$PROJECT_DIR$/web/public/lib/summernote/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/.jshintrc" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/.npmignore" afterPath="$PROJECT_DIR$/web/public/lib/summernote/.npmignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/.travis.yml" afterPath="$PROJECT_DIR$/web/public/lib/summernote/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/AirPopover.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/AirPopover.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/AirPopover.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/AirPopover.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/AutoLink.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/AutoLink.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/AutoLink.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/AutoLink.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/AutoSync.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/AutoSync.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/AutoSync.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/AutoSync.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/editing/Bullet.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/editing/Bullet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/editing/Bullet.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/editing/Bullet.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/Buttons.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/Buttons.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/Buttons.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/Buttons.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/Clipboard.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/Clipboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/Clipboard.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/Clipboard.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/Codeview.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/Codeview.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/Codeview.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/Codeview.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/Context.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/Context.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/Context.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/Context.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/Dropzone.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/Dropzone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/Dropzone.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/Dropzone.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/Editor.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/Editor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/Editor.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/Editor.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/Fullscreen.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/Fullscreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/Fullscreen.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/Fullscreen.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/Gruntfile.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/Handle.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/Handle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/Handle.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/Handle.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/HelpDialog.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/HelpDialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/HelpDialog.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/HelpDialog.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/HintPopover.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/HintPopover.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/HintPopover.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/HintPopover.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/editing/History.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/editing/History.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/editing/History.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/editing/History.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/ImageDialog.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/ImageDialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/ImageDialog.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/ImageDialog.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/ImagePopover.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/ImagePopover.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/ImagePopover.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/ImagePopover.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/LICENSE" afterPath="$PROJECT_DIR$/web/public/lib/summernote/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/LinkDialog.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/LinkDialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/LinkDialog.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/LinkDialog.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/LinkPopover.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/LinkPopover.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/LinkPopover.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/LinkPopover.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/MAINTAIN.md" afterPath="$PROJECT_DIR$/web/public/lib/summernote/MAINTAIN.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/tools/NuGet.Config" afterPath="$PROJECT_DIR$/web/public/lib/summernote/tools/NuGet.Config" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/Placeholder.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/Placeholder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/Placeholder.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/Placeholder.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/README.md" afterPath="$PROJECT_DIR$/web/public/lib/summernote/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/meteor/README.md" afterPath="$PROJECT_DIR$/web/public/lib/summernote/meteor/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/Statusbar.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/module/Statusbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/Statusbar.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/module/Statusbar.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/editing/Style.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/editing/Style.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/editing/Table.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/editing/Table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/editing/Table.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/editing/Table.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/Toolbar.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/Toolbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/lite/module/Toolbar.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/lite/module/Toolbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/Toolbar.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/Toolbar.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/lite/module/Toolbar.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/lite/module/Toolbar.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/editing/Typing.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/editing/Typing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/editing/Typing.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/editing/Typing.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/VideoDialog.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/module/VideoDialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/VideoDialog.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/module/VideoDialog.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/core/agent.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/core/agent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/core/agent.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/core/agent.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/examples/airmode.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/examples/airmode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/align-center.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/align-center.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/align-indent.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/align-indent.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/align-justify.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/align-justify.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/align-outdent.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/align-outdent.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/align-right.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/align-right.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/app.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/arrows-alt.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/arrows-alt.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/core/async.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/core/async.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/core/async.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/core/async.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/routes/summernote/fileUpload.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/blog.log" afterPath="$PROJECT_DIR$/logs/blog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/bold.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/bold.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/libs/bootstrap.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/libs/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/bower.json" afterPath="$PROJECT_DIR$/web/public/lib/summernote/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/examples/bs3fa4.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/examples/bs3fa4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/chaidom.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/chaidom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/circle.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/circle.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/code.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/code.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/examples/codemirror.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/examples/codemirror.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/libs/codemirror.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/libs/codemirror.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/composer.json" afterPath="$PROJECT_DIR$/web/public/lib/summernote/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/core/dom.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/core/dom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/core/dom.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/core/dom.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/less/elements.less" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/less/elements.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/less/elements.scss" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/less/elements.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/libs/es5-shim.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/libs/es5-shim.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/examples/external-api.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/examples/external-api.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/font.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/font.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/footer.ejs" afterPath="$PROJECT_DIR$/web/views/footer.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/frame.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/frame.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/core/func.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/core/func.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/core/func.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/core/func.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/examples/get-button.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/examples/get-button.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/grunts/grunt-build.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/grunts/grunt-build.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/editblog.ejs" afterPath="$PROJECT_DIR$/web/views/editblog.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/js/app/editblog.js" afterPath="$PROJECT_DIR$/web/public/js/app/editblog.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/header.ejs" afterPath="$PROJECT_DIR$/web/views/header.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/examples/hint-emoji.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/examples/hint-emoji.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/examples/hint-userdefine.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/examples/hint-userdefine.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/ie8.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/ie8.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/index.ejs" afterPath="$PROJECT_DIR$/web/views/index.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/index.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/js/app/index.js" afterPath="$PROJECT_DIR$/web/public/js/app/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/intro.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/intro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/issue_template.md" afterPath="$PROJECT_DIR$/web/public/lib/summernote/issue_template.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/italic.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/italic.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/jadeLoader.log" afterPath="$PROJECT_DIR$/logs/jadeLoader.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/libs/jquery-1.9.1.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/libs/jquery-1.9.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/examples/jquery-custom-event.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/examples/jquery-custom-event.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/examples/jquery18lt.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/examples/jquery18lt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/karma.conf.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/karma.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/core/key.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/core/key.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/core/key.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/core/key.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/examples/lang.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/examples/lang.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/core/list.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/core/list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/core/list.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/core/list.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lite.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/routes/user/login.js" afterPath="$PROJECT_DIR$/web/routes/user/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/magic.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/magic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/js/main.js" afterPath="$PROJECT_DIR$/web/public/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/examples/nativestyle.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/examples/nativestyle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/nuget-build.cmd" afterPath="$PROJECT_DIR$/web/public/lib/summernote/nuget-build.cmd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/examples/ondialog-multitab.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/examples/ondialog-multitab.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/examples/ondialog.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/examples/ondialog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/outro.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/outro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/meteor/package-standalone.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/meteor/package-standalone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/meteor/package.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/meteor/package.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/package.json" afterPath="$PROJECT_DIR$/web/public/lib/summernote/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/picture.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/picture.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/examples/plugin-hello.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/examples/plugin-hello.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/meteor/publish.sh" afterPath="$PROJECT_DIR$/web/public/lib/summernote/meteor/publish.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/pull_request_template.md" afterPath="$PROJECT_DIR$/web/public/lib/summernote/pull_request_template.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/question.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/question.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/core/range.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/core/range.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/core/range.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/core/range.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/redo.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/redo.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/routes/user/register.js" afterPath="$PROJECT_DIR$/web/routes/user/register.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/renderer.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/renderer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/renderer.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/renderer.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/examples/rtl.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/examples/rtl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/meteor/runtests.sh" afterPath="$PROJECT_DIR$/web/public/lib/summernote/meteor/runtests.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/settings.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/settings.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/lite/settings.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/lite/settings.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/special-character.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/special-character.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/square.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/square.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/strikethrough.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/strikethrough.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/editing/style.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/base/editing/style.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/subscript.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/subscript.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ar-AR.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ar-AR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-ar-AR.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-ar-AR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ar-AR.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ar-AR.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-bg-BG.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-bg-BG.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-bg-BG.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-bg-BG.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-bg-BG.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-bg-BG.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ca-ES.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ca-ES.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-ca-ES.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-ca-ES.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ca-ES.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ca-ES.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-cs-CZ.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-cs-CZ.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-cs-CZ.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-cs-CZ.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-cs-CZ.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-cs-CZ.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-da-DK.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-da-DK.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-da-DK.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-da-DK.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-da-DK.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-da-DK.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-de-DE.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-de-DE.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-de-DE.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-de-DE.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-de-DE.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-de-DE.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/summernote-en-US.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/base/summernote-en-US.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-es-ES.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-es-ES.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-es-ES.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-es-ES.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-es-ES.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-es-ES.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-es-EU.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-es-EU.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-es-EU.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-es-EU.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-es-EU.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-es-EU.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/plugin/databasic/summernote-ext-databasic.css" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/plugin/databasic/summernote-ext-databasic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/plugin/databasic/summernote-ext-databasic.css" afterPath="$PROJECT_DIR$/web/public/lib/summernote/plugin/databasic/summernote-ext-databasic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/plugin/databasic/summernote-ext-databasic.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/plugin/databasic/summernote-ext-databasic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/plugin/databasic/summernote-ext-databasic.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/plugin/databasic/summernote-ext-databasic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/plugin/databasic/summernote-ext-databasic.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/plugin/databasic/summernote-ext-databasic.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/plugin/hello/summernote-ext-hello.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/plugin/hello/summernote-ext-hello.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/plugin/hello/summernote-ext-hello.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/plugin/hello/summernote-ext-hello.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/plugin/hello/summernote-ext-hello.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/plugin/hello/summernote-ext-hello.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/plugin/specialchars/summernote-ext-specialchars.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/plugin/specialchars/summernote-ext-specialchars.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/plugin/specialchars/summernote-ext-specialchars.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/plugin/specialchars/summernote-ext-specialchars.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/plugin/specialchars/summernote-ext-specialchars.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/plugin/specialchars/summernote-ext-specialchars.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-fa-IR.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-fa-IR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-fa-IR.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-fa-IR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-fa-IR.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-fa-IR.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-fi-FI.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-fi-FI.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-fi-FI.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-fi-FI.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-fi-FI.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-fi-FI.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-fr-FR.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-fr-FR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-fr-FR.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-fr-FR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-fr-FR.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-fr-FR.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-gl-ES.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-gl-ES.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-gl-ES.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-gl-ES.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-gl-ES.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-gl-ES.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-he-IL.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-he-IL.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-he-IL.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-he-IL.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-he-IL.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-he-IL.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-hr-HR.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-hr-HR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-hr-HR.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-hr-HR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-hr-HR.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-hr-HR.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-hu-HU.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-hu-HU.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-hu-HU.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-hu-HU.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-hu-HU.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-hu-HU.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-id-ID.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-id-ID.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-id-ID.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-id-ID.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-id-ID.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-id-ID.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-it-IT.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-it-IT.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-it-IT.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-it-IT.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-it-IT.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-it-IT.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ja-JP.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ja-JP.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-ja-JP.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-ja-JP.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ja-JP.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ja-JP.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ko-KR.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ko-KR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-ko-KR.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-ko-KR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ko-KR.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ko-KR.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/less/summernote-lite.less" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/less/summernote-lite.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-lt-LT.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-lt-LT.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-lt-LT.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-lt-LT.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-lt-LT.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-lt-LT.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-lt-LV.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-lt-LV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-lt-LV.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-lt-LV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-lt-LV.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-lt-LV.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-nb-NO.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-nb-NO.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-nb-NO.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-nb-NO.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-nb-NO.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-nb-NO.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-nl-NL.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-nl-NL.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-nl-NL.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-nl-NL.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-nl-NL.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-nl-NL.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-pl-PL.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-pl-PL.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-pl-PL.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-pl-PL.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-pl-PL.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-pl-PL.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-pt-BR.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-pt-BR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-pt-BR.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-pt-BR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-pt-BR.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-pt-BR.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-pt-PT.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-pt-PT.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-pt-PT.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-pt-PT.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-pt-PT.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-pt-PT.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ro-RO.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ro-RO.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-ro-RO.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-ro-RO.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ro-RO.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ro-RO.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ru-RU.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ru-RU.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-ru-RU.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-ru-RU.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ru-RU.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-ru-RU.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sk-SK.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sk-SK.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-sk-SK.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-sk-SK.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sk-SK.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sk-SK.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sl-SI.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sl-SI.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-sl-SI.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-sl-SI.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sl-SI.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sl-SI.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sr-RS-Latin.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sr-RS-Latin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-sr-RS-Latin.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-sr-RS-Latin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sr-RS-Latin.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sr-RS-Latin.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sr-RS.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sr-RS.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-sr-RS.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-sr-RS.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sr-RS.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sr-RS.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sv-SE.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sv-SE.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-sv-SE.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-sv-SE.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sv-SE.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-sv-SE.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-th-TH.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-th-TH.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-th-TH.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-th-TH.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-th-TH.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-th-TH.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-tr-TR.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-tr-TR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-tr-TR.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-tr-TR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-tr-TR.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-tr-TR.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-uk-UA.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-uk-UA.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-uk-UA.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-uk-UA.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-uk-UA.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-uk-UA.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-vi-VN.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-vi-VN.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-vi-VN.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-vi-VN.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-vi-VN.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-vi-VN.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-zh-CN.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-zh-CN.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-zh-CN.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-zh-CN.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-zh-CN.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-zh-CN.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-zh-TW.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-zh-TW.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-zh-TW.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/lang/summernote-zh-TW.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-zh-TW.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/lang/summernote-zh-TW.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/templates/summernote.css" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/templates/summernote.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/summernote.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/summernote.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/summernote.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/summernote.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/templates/summernote.json" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/templates/summernote.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/less/summernote.less" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/less/summernote.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/dist/summernote.min.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/dist/summernote.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/summernote.nuspec" afterPath="$PROJECT_DIR$/web/public/lib/summernote/summernote.nuspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/less/summernote.scss" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/less/summernote.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/summernote.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/summernote.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/superscript.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/superscript.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/table.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/table.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/test-main.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/test-main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/meteor/test.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/meteor/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/text-height.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/text-height.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/examples/textarea.html" afterPath="$PROJECT_DIR$/web/public/lib/summernote/examples/textarea.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/ui.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/bs3/ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/js/lite/ui.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/js/lite/ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/ui.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/bs3/ui.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/lite/ui.spec.js" afterPath="$PROJECT_DIR$/web/public/lib/summernote/test/unit/lite/ui.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/underline.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/underline.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/undo.svg" afterPath="$PROJECT_DIR$/web/public/lib/summernote/src/icons/undo.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config/settings.js" afterPath="$PROJECT_DIR$/web/config/settings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mnode/node_modules/newbeely-nodejs/lib/utils/timeUtils.js" afterPath="$PROJECT_DIR$/mnode/node_modules/newbeely-nodejs/lib/utils/timeUtils.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blogPro1.iws" />
@@ -342,38 +38,18 @@
       <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/header.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="137.33333" vertical-offset="4456" max-vertical-offset="4998">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            <state vertical-scroll-proportion="-12.466666" vertical-offset="46" max-vertical-offset="5019">
+              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+        <entry file="file://$PROJECT_DIR$/mnode/plugin/express/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1066" max-vertical-offset="2961">
-              <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2625" max-vertical-offset="3297">
-              <caret line="142" column="56" selection-start-line="142" selection-start-column="56" selection-end-line="142" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public/js/app/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2136" max-vertical-offset="4305">
+              <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -382,28 +58,38 @@
       <file leaf-file-name="editblog.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-              <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+            <state vertical-scroll-proportion="-13.75862" vertical-offset="126" max-vertical-offset="2436">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/routes/index.js">
+      <file leaf-file-name="fileUpload.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/routes/summernote/fileUpload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.5692308" vertical-offset="297" max-vertical-offset="966">
+              <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/views/footer.ejs">
+      <file leaf-file-name="timeUtils.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mnode/node_modules/newbeely-nodejs/lib/utils/timeUtils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.7" vertical-offset="0" max-vertical-offset="399">
-              <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="982" max-vertical-offset="4221">
+              <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mnode/utils/file-utils/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="3087">
+              <caret line="90" column="35" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -412,8 +98,8 @@
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.7" vertical-offset="0" max-vertical-offset="2100">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="40" />
+            <state vertical-scroll-proportion="-11.2" vertical-offset="0" max-vertical-offset="2100">
+              <caret line="16" column="82" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="82" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
@@ -424,13 +110,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editblog.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="editblog.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/editblog.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6054054" vertical-offset="0" max-vertical-offset="714">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            <state vertical-scroll-proportion="-6.3" vertical-offset="0" max-vertical-offset="945">
+              <caret line="9" column="111" selection-start-line="9" selection-start-column="111" selection-end-line="9" selection-end-column="111" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -469,7 +157,6 @@
         <option value="$PROJECT_DIR$/mnode/utils/db-mongodb/app.js" />
         <option value="$PROJECT_DIR$/mnode/plugin/express/app.js" />
         <option value="$PROJECT_DIR$/web/routes/user/lang.js" />
-        <option value="$PROJECT_DIR$/web/config/settings.js" />
         <option value="$PROJECT_DIR$/web/schemas/siderBar.js" />
         <option value="$PROJECT_DIR$/web/utils/common.js" />
         <option value="$PROJECT_DIR$/web/routes/user/logout.js" />
@@ -485,12 +172,15 @@
         <option value="$PROJECT_DIR$/web/routes/user/editblog.js" />
         <option value="$PROJECT_DIR$/web/public/js/app/index.js" />
         <option value="$PROJECT_DIR$/web/views/index.ejs" />
-        <option value="$PROJECT_DIR$/web/views/header.ejs" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/web/views/footer.ejs" />
         <option value="$PROJECT_DIR$/web/public/js/main.js" />
-        <option value="$PROJECT_DIR$/web/public/js/app/editblog.js" />
+        <option value="$PROJECT_DIR$/web/config/settings.js" />
         <option value="$PROJECT_DIR$/web/views/editblog.ejs" />
+        <option value="$PROJECT_DIR$/web/views/header.ejs" />
+        <option value="$PROJECT_DIR$/web/public/js/app/editblog.js" />
+        <option value="$PROJECT_DIR$/mnode/node_modules/newbeely-nodejs/lib/utils/timeUtils.js" />
+        <option value="$PROJECT_DIR$/web/routes/summernote/fileUpload.js" />
       </list>
     </option>
   </component>
@@ -561,24 +251,6 @@
               <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -616,7 +288,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
+              <option name="myItemId" value="summernote" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -635,54 +307,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -706,11 +330,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ff\Desktop\blogPro1\web\routes\summernote" />
       <recent name="C:\Users\ff\Desktop\blogPro1\web\views" />
       <recent name="C:\Users\ff\Desktop\blogPro1\web\views\user" />
       <recent name="C:\Users\ff\Desktop\blogPro1\web\routes\user" />
       <recent name="C:\Users\ff\Desktop\blogPro1\web\public\images" />
-      <recent name="C:\Users\ff\Desktop\blogPro1\web\public\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ff\Desktop\blogPro1\web\public\images\slides" />
@@ -849,41 +473,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/logs/jadeLoader.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/config/logger.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mnode/utils/singleton-utils/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mnode/plugin/jadeContext.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mnode/plugin/jadeLoader/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -943,13 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mnode/plugin/express/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="74" column="45" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mnode/plugin/process/parser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -996,13 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/config/settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -1061,6 +636,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="367" column="49" selection-start-line="367" selection-start-column="49" selection-end-line="367" selection-end-column="49" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1132,6 +710,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/footer.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.7" vertical-offset="0" max-vertical-offset="399">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/js/app/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
@@ -1142,53 +736,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1066" max-vertical-offset="2961">
-          <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/routes/user/editblog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="137.33333" vertical-offset="4456" max-vertical-offset="4998">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/footer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7" vertical-offset="0" max-vertical-offset="399">
-          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7" vertical-offset="0" max-vertical-offset="2100">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/js/app/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1822" max-vertical-offset="2961">
+          <caret line="103" column="37" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1201,21 +750,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
+    <entry file="file://$PROJECT_DIR$/web/config/settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="1575">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/editblog.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6054054" vertical-offset="0" max-vertical-offset="714">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        <state vertical-scroll-proportion="-6.3" vertical-offset="0" max-vertical-offset="945">
+          <caret line="9" column="111" selection-start-line="9" selection-start-column="111" selection-end-line="9" selection-end-column="111" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/routes/user/editblog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.2" vertical-offset="0" max-vertical-offset="2100">
+          <caret line="16" column="82" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.466666" vertical-offset="46" max-vertical-offset="5019">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnode/plugin/express/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2136" max-vertical-offset="4305">
+          <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/formidable/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="189">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/formidable/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="126">
+          <caret line="0" column="29" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnode/utils/file-utils/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="3087">
+          <caret line="90" column="35" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75862" vertical-offset="126" max-vertical-offset="2436">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="4677" max-vertical-offset="19698">
+          <caret line="232" column="15" selection-start-line="232" selection-start-column="15" selection-end-line="232" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnode/node_modules/newbeely-nodejs/lib/utils/timeUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="982" max-vertical-offset="4221">
+          <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/routes/summernote/fileUpload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5692308" vertical-offset="297" max-vertical-offset="966">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
