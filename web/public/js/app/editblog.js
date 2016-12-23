@@ -55,6 +55,13 @@ define(function (require, exports, module) {
 
     $(document).ready(function () {
 
+
+        $("#idBtnAddArticleType").on("click",function(){
+            $('#idAddArticleTypeDialog').modal({
+                keyboard: true
+            })
+        });
+
         var $summernote = $('#summernote');
         $summernote.summernote({
             height: "500px",
@@ -118,23 +125,13 @@ define(function (require, exports, module) {
                 window.alert("文章名称必须大于3个字符");
                 return false;
             }
-            $.post("/user/editblog", {
+            $.post("/blog/editblog", {
                 html: code,
                 articleType: articleType,
                 articleName: articleName
             }, function (data) {
                 window.alert(data);
             });
-        });
-
-        $("#idArticleTypes").select2({
-            placeholder: '<i class="fa fa-map-marker"></i>Select a Country',
-            allowClear: true,
-            formatResult: format,
-            formatSelection: format,
-            escapeMarkup: function (m) {
-                return m;
-            }
         });
     });
 });
