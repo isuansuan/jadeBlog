@@ -61,16 +61,13 @@
     <div class="row-fluid">
         <div class="span4">
             <h2>写博客</h2>
-
             <p></p>
-
-            <p><a class="btn" href="/blog/new" target="_blank">前往编辑博客 &raquo;</a></p>
+            <p><a class="btn" href="/user/editblog">前往编辑博客 &raquo;</a></p>
         </div>
     </div>
     <% } %>
 
-    <!--https://github.com/summernote/summernote-->
-    <div id="summernote">Hello Summernote</div>
+
 
     <!--/row-->
 </div><!--/span-->
@@ -88,4 +85,11 @@
 </div>
 
 
+
 <% include footer.ejs %>
+
+<script type="text/javascript">
+    require(["js/main.js"], function () {
+        require(['js/app/index.js']);
+    });
+</script>

@@ -1,15 +1,15 @@
 require.config({
     paths: {
-        "jquery": ["lib/jquery/jquery3.1.1"],
-        "bootstrap": ["lib/bootstrap/js/bootstrap.min"],
-        "lodash": ["lib/lodash-4.17.2/lodash"],
-        "md5": ["lib/md5"],
-        "common":["lib/common"],
-        "summernote":["lib/summernote/dist/summernote.min"]
+        "jquery": ["/lib/jquery/jquery3.1.1"],
+        "bootstrap": ["/lib/bootstrap/js/bootstrap.min"],
+        "lodash": ["/lib/lodash-4.17.2/lodash"],
+        "md5": ["/lib/md5"],
+        "common": ["/lib/common"],
+        "summernote": ["/lib/summernote/dist/summernote.min"]
     }
 });
 
-require(['jquery', 'lodash', "md5","common"], function ($, _, md5,common) {
+require(['jquery', 'lodash', "md5", "common"], function ($, _, md5, common) {
 
     $(document).ready(function () {
         //启用弹出框
@@ -73,6 +73,7 @@ require(['jquery', 'lodash', "md5","common"], function ($, _, md5,common) {
             }
 
             $.post("/user/login", {email: email, password: md5(password)}, function (data) {
+
                 var error = null;
                 try {
                     data = JSON.parse(data);
@@ -83,7 +84,6 @@ require(['jquery', 'lodash', "md5","common"], function ($, _, md5,common) {
                     error = e.message;
                 } finally {
                     if (!error) {
-                        //window.alert("登录成功!");
                         $('#loginModal').attr('class', 'modal hide');
                         window.location.reload();
                     } else {
@@ -140,6 +140,8 @@ require(['jquery', 'lodash', "md5","common"], function ($, _, md5,common) {
 
 
         $("#idContract").on("click", function () {
+            //$(".modal-dialog").css({display:"block"});
+
             $('#idContractDialog').modal({
                 keyboard: true
             })

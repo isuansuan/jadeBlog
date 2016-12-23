@@ -19,7 +19,7 @@ router.post("/", function (req, res, next) {
         if (!err) {
             model.insertData(username, email, Encrypt.md5(password), function (err, resp) {
                 var error = err ? "注册失败,邮箱已经被注册,请更换邮箱试试" : null;
-                req.json({error:error}, next);
+                req.json({error:error});
                 release();
             });
         } else {

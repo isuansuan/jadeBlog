@@ -64,9 +64,8 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
             };
             func();
         };
-        req.json = function (data, func) {
+        req.json = function (data) {
             res.end(JSON.stringify(data));
-            func();
         };
         function getReqUrl(url) {
             var t = url.split("?");
@@ -76,16 +75,16 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
         if (!Express.routesList[getReqUrl(url)]) {
             res.redirect("/index");
         } else {
-            //if (url == '/user/login') {
-            //    if (req.session && req.session.user) {
-            //        res.redirect("/index");
-            //    } else {
-            //        next();
-            //    }
-            //} else {
-            //    next();
-            //}
-            next();
+            var warnUrls = ["/user/editblog"];
+            if (warnUrls.indexOf(url) != -1) {
+                if (req.session && req.session.user) {
+                    next();
+                } else {
+                    res.redirect("/index");
+                }
+            } else {
+                next();
+            }
         }
     });
 

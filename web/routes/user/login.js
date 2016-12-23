@@ -16,11 +16,11 @@ router.post("/", function (req, res, next) {
 
     MongooseManager.schema('user').model(function (err, model, release) {
         if (!err) {
-            model.findData(email,password, function (err, username) {
+            model.findData(email, password, function (err, username) {
                 if (!err) {
                     req.session.user = username;
                 }
-                req.json({error: err}, next);
+                req.json({error: err});
                 release();
             });
         } else {
