@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="703c2d8e-07c2-442c-9762-a114f4ec201b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/blog.log" afterPath="$PROJECT_DIR$/logs/blog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/editblog.ejs" afterPath="$PROJECT_DIR$/web/views/editblog.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/js/app/editblog.js" afterPath="$PROJECT_DIR$/web/public/js/app/editblog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/routes/user/editblog.js" afterPath="$PROJECT_DIR$/web/routes/user/editblog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/jadeLoader.log" afterPath="$PROJECT_DIR$/logs/jadeLoader.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/schemas/siderBar.js" afterPath="$PROJECT_DIR$/web/schemas/siderBar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/index.ejs" afterPath="$PROJECT_DIR$/web/views/index.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/js/app/index.js" afterPath="$PROJECT_DIR$/web/public/js/app/index.js" />
     </list>
     <ignored path="blogPro1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +30,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mnode/plugin/express/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2136" max-vertical-offset="4305">
-              <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1506" max-vertical-offset="4305">
+              <caret line="114" column="36" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -51,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editblog.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="editblog.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.9460433" vertical-offset="389" max-vertical-offset="2835">
-              <caret line="123" column="39" selection-start-line="123" selection-start-column="39" selection-end-line="123" selection-end-column="39" />
+            <state vertical-scroll-proportion="-6.862069" vertical-offset="2279" max-vertical-offset="2835">
+              <caret line="118" column="29" selection-start-line="118" selection-start-column="29" selection-end-line="118" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -71,10 +67,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/public/js/app/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/public/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2373" max-vertical-offset="3297">
+            <state vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="3297">
               <caret line="118" column="107" selection-start-line="118" selection-start-column="103" selection-end-line="118" selection-end-column="107" />
               <folding />
             </state>
@@ -91,21 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="timeUtils.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mnode/node_modules/newbeely-nodejs/lib/utils/timeUtils.js">
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="982" max-vertical-offset="4221">
-              <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mnode/utils/file-utils/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="3087">
-              <caret line="90" column="35" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.64324325" vertical-offset="756" max-vertical-offset="2100">
+              <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -169,8 +165,6 @@
         <option value="$PROJECT_DIR$/web/routes/user/register.js" />
         <option value="$PROJECT_DIR$/web/routes/user/login.js" />
         <option value="$PROJECT_DIR$/web/views/user/editblog.ejs" />
-        <option value="$PROJECT_DIR$/web/public/js/app/index.js" />
-        <option value="$PROJECT_DIR$/web/views/index.ejs" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/web/views/footer.ejs" />
         <option value="$PROJECT_DIR$/web/public/js/main.js" />
@@ -182,6 +176,8 @@
         <option value="$PROJECT_DIR$/web/routes/user/editblog.js" />
         <option value="$PROJECT_DIR$/web/public/js/app/editblog.js" />
         <option value="$PROJECT_DIR$/web/schemas/siderBar.js" />
+        <option value="$PROJECT_DIR$/web/public/js/app/index.js" />
+        <option value="$PROJECT_DIR$/web/views/index.ejs" />
       </list>
     </option>
   </component>
@@ -304,28 +300,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -781,14 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/js/app/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
@@ -813,31 +779,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.2" vertical-offset="0" max-vertical-offset="2100">
-          <caret line="16" column="82" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="82" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/views/header.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.466666" vertical-offset="46" max-vertical-offset="5019">
           <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mnode/plugin/express/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2136" max-vertical-offset="4305">
-          <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -895,14 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2373" max-vertical-offset="3297">
-          <caret line="118" column="107" selection-start-line="118" selection-start-column="103" selection-end-line="118" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/views/editblog.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.9" vertical-offset="0" max-vertical-offset="945">
@@ -931,6 +868,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mnode/plugin/express/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1506" max-vertical-offset="4305">
+          <caret line="114" column="36" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2373" max-vertical-offset="3297">
+          <caret line="118" column="107" selection-start-line="118" selection-start-column="103" selection-end-line="118" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/js/app/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.862069" vertical-offset="2279" max-vertical-offset="2835">
+          <caret line="118" column="29" selection-start-line="118" selection-start-column="29" selection-end-line="118" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/schemas/siderBar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="840">
@@ -939,10 +908,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
+    <entry file="file://$PROJECT_DIR$/web/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.9460433" vertical-offset="389" max-vertical-offset="2835">
-          <caret line="123" column="39" selection-start-line="123" selection-start-column="39" selection-end-line="123" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.64324325" vertical-offset="756" max-vertical-offset="2100">
+          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
           <folding />
         </state>
       </provider>

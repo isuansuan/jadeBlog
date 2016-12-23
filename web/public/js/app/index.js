@@ -7,7 +7,7 @@ define(function (require, exports, module) {
         //window.alert(0);
         //$('body').css({background: "#808080"});\
         $('#idCarousel').carousel({
-            interval: 1000
+            interval: 2000
         });
 
 
