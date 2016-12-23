@@ -56,7 +56,7 @@ define(function (require, exports, module) {
     $(document).ready(function () {
 
 
-        $("#idBtnAddArticleType").on("click",function(){
+        $("#idBtnAddArticleType").on("click", function () {
             $('#idAddArticleTypeDialog').modal({
                 keyboard: true
             })
@@ -64,8 +64,8 @@ define(function (require, exports, module) {
 
         var $summernote = $('#summernote');
         $summernote.summernote({
-            height: "500px",
-            width: "1200px",
+            height: "400px",
+            width: "1000px",
             lang: 'zh-CN',
             dialogsInBody: true,
             dialogsFade: true,
@@ -123,6 +123,10 @@ define(function (require, exports, module) {
 
             if (articleName.length < 3) {
                 window.alert("文章名称必须大于3个字符");
+                return false;
+            }
+            if (code.length == 0) {
+                window.alert("文章内容不能为空");
                 return false;
             }
             $.post("/blog/editblog", {
