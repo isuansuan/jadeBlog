@@ -134,7 +134,7 @@ define(function (require, exports, module) {
                 articleType: articleType,
                 articleName: articleName
             }, function (data) {
-                window.alert(data);
+                window.alert(data.data);
             });
         });
 
@@ -144,7 +144,7 @@ define(function (require, exports, module) {
                 window.alert("内容不能为空");
                 return false;
             }
-            $.post("/blog/editblog/addNew", {
+            $.post("/blog/editblog/addNewType", {
                 type: type
             }, function (data) {
                 window.alert(data.data);

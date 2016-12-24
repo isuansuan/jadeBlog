@@ -18,7 +18,7 @@ router.post('/', function (req, res, next) {
     res.json({data: "上传成功"});
 });
 
-router.post("/addNew", function (req, res, next) {
+router.post("/addNewType", function (req, res, next) {
     var type = req.body.type;
     if (type.length == 0) {
         res.json({data: "内容不能为空"});
@@ -57,6 +57,6 @@ router.post("/addNew", function (req, res, next) {
 module.exports = {
     R: router,
     L: [
-        "addNew"
+        "addNewType"
     ]
 };

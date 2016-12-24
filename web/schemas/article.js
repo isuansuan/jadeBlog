@@ -116,7 +116,6 @@ schema.statics.insertType = function (author, type, callback) {
     var self = this;
     this.findOne({author: author, type: "articleList"}).lean().exec(function (err, doc) {
         if (!err && doc) {
-            console.log(doc);
             var articleList = JSON.parse(doc.extra);
             var index = articleList.indexOf(type);
             if (index == -1) {
