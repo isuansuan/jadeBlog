@@ -8,11 +8,11 @@ var Mongoose = require('mongoose');
 var schemeTable = {
     id: {type: Number, index: {unique: true}},
     type: {type: String, required: true, index: 1},
-    name: {type: String, required: true},
+    name: {type: String, required: true, index: 1},
     content: {type: String, required: true},
     author: {type: String, required: true, index: 1},
     update_tm: {type: Date, default: Date.now},
-    create_tm: {type: Date, default: Date.now},
+    create_tm: {type: Date, default: Date.now, index: 1},
     extra: {type: Schema.Types.Mixed, default: {}}
 };
 
@@ -105,21 +105,29 @@ schema.statics.getOneArticle = function (author, type, name, callback) {
 //});
 
 schema.statics.getTypes = function (author, callback) {
-    var condition = {
-        author: author
-    };
+    //var condition = {
+    //    author: author
+    //};
+    //
+    //this.aggregate.({"$match": condition},{
+    //    $group: {
+    //        _id: {"type": "$type"}
+    //    }
+    //},function (err, docs) {
+    //    callback(err, docs)
+    //});
 
-    this.aggregate.({"$match": condition},{
-        $group: {
-            _id: {"type": "$type"}
+    this.findOne({author: author, type: "articleList"}).lean().exec(function (err, doc) {
+        if (!err && doc) {
+            callback(err, doc.extra);
+        } else {
+            callback(err, []);
         }
-    },function (err, docs) {
-        callback(err, docs)
     });
 };
 
 schema.statics.insertType = function (author, type, callback) {
-    this.findOne({author: author, id: 1}).exec(function (err, doc) {
+    this.findOne({author: author, type: "articleList"}).exec(function (err, doc) {
         if (!err && doc) {
             doc.extra.push(type);
             doc.save(function (err, resp) {
@@ -155,7 +163,7 @@ schema.statics.insertArticle = function (author, type, name, content, callback) 
 schema.statics.onRegister = function (author, callback) {
     var d = new this({
         id: 1,
-        type: "",
+        type: "articleList",
         name: "",
         content: "",
         author: author,
