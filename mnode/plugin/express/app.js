@@ -112,7 +112,17 @@ ExpressPlugin.prototype.loadRoutes = function (routePath) {
         var route = require(f.path);
         var routeName = extraPath.replace('.js', "");
         self.routesList[routeName] = self.routesList[routeName] || 1;
-        self.app.use(routeName, route);
+
+        if (route['L'] && _.isArray(route.L) && route['R']) {
+            self.app.use(routeName, route.R);
+            route.L.forEach(function (r) {
+                var _name = routeName + "/" + r;
+                self.routesList[_name] = self.routesList[_name] || 1;
+                self.app.use(_name, route.R);
+            });
+        } else {
+            self.app.use(routeName, route);
+        }
     });
 };
 

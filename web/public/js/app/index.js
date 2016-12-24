@@ -9,11 +9,5 @@ define(function (require, exports, module) {
         $('#idCarousel').carousel({
             interval: 2000
         });
-
-
     });
-
-    //require(["jquery", "lodash"], function ($, _) {
-    //
-    //});
 });
