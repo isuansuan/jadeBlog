@@ -4,34 +4,20 @@
  */
 var Mongoose = require('mongoose');
 
+
 //Schema.Types.Mixed
 var schemeTable = {
     id: {type: Number, index: {unique: true}},
-    type: {type: String, required: true, index: 1},
-    name: {type: String, required: true, index: 1},
+    type: {type: String, required: true, index: true},
+    name: {type: String, required: true, index: true},
     content: {type: String, required: true},
-    author: {type: String, required: true, index: 1},
+    author: {type: String, required: true, index: true},
     update_tm: {type: Date, default: Date.now},
-    create_tm: {type: Date, default: Date.now, index: 1},
-    extra: {type: Schema.Types.Mixed, default: {}}
+    create_tm: {type: Date, default: Date.now, index: true},
+    extra: {type: Mongoose.Schema.Types.Mixed}
 };
 
 var schema = new Mongoose.Schema(schemeTable, {});
-
-
-schema.statics.getTypes = function (author, callback) {
-    var condition = {
-        author: author
-    };
-
-    var view = {
-        _id: 0,
-        type: 1
-    };
-    this.find(condition, view).lean().exec(function (err, docs) {
-        callback(err, docs);
-    })
-};
 /**
  * 获取指定作者的指定类型的文章
  * @param author
@@ -119,7 +105,7 @@ schema.statics.getTypes = function (author, callback) {
 
     this.findOne({author: author, type: "articleList"}).lean().exec(function (err, doc) {
         if (!err && doc) {
-            callback(err, doc.extra);
+            callback(err, JSON.parse(doc.extra));
         } else {
             callback(err, []);
         }
@@ -127,12 +113,20 @@ schema.statics.getTypes = function (author, callback) {
 };
 
 schema.statics.insertType = function (author, type, callback) {
-    this.findOne({author: author, type: "articleList"}).exec(function (err, doc) {
+    var self = this;
+    this.findOne({author: author, type: "articleList"}).lean().exec(function (err, doc) {
         if (!err && doc) {
-            doc.extra.push(type);
-            doc.save(function (err, resp) {
-                callback(err, resp);
-            })
+            console.log(doc);
+            var articleList = JSON.parse(doc.extra);
+            var index = articleList.indexOf(type);
+            if (index == -1) {
+                articleList.push(type);
+                self.findByIdAndUpdate({_id: doc._id}, {$set: {extra: JSON.stringify(articleList)}}, function (err, resp) {
+                    callback(err, resp);
+                });
+            } else {
+                callback("文章类型已存在");
+            }
         } else {
             callback(err);
         }
@@ -146,8 +140,9 @@ schema.statics.getCount = function (callback) {
 };
 
 schema.statics.insertArticle = function (author, type, name, content, callback) {
+    var self = this;
     this.getCount(function (cnt) {
-        var newData = new this({
+        var newData = new self({
             id: cnt + 1,
             author: author,
             type: type,
@@ -161,18 +156,21 @@ schema.statics.insertArticle = function (author, type, name, content, callback) 
 };
 
 schema.statics.onRegister = function (author, callback) {
-    var d = new this({
-        id: 1,
-        type: "articleList",
-        name: "",
-        content: "",
-        author: author,
-        extra: []
-    });
+    var self = this;
+    this.getCount(function (cnt) {
+        var d = new self({
+            id: cnt + 1,
+            type: "articleList",
+            name: "articleList",
+            content: "articleList",
+            author: author,
+            extra: JSON.stringify([])
+        });
 
-    d.save(function (err, resp) {
-        callback(err, resp);
-    })
+        d.save(function (err, resp) {
+            callback(err, resp);
+        })
+    });
 };
 
 

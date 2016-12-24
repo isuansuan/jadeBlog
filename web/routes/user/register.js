@@ -15,25 +15,35 @@ router.post("/", function (req, res, next) {
     var password = req.body.password;
     var username = req.body.username;
 
-    MongooseManager.schema('user').model(function (err, model, release) {
+    MongooseManager.schema('user').model(function (err, model1, release1) {
         if (!err) {
-            model.insertData(username, email, Encrypt.md5(password), function (err, resp) {
+            model1.insertData(username, email, Encrypt.md5(password), function (err, resp) {
                 var error = err ? "注册失败,邮箱已经被注册,请更换邮箱试试" : null;
-                req.json({error: error});
-                release();
-            });
-        } else {
-            MongooseManager.schema("article").model(function (err, model, release) {
-                if (!err) {
-                    model.onRegister(username, function (err, resp) {
-                        release();
-                        res.redirect("index");
-                    });
+                if (error) {
+                    req.json({error: error});
                 } else {
-                    res.redirect("index");
+                    MongooseManager.schema("article").model(function (err, model, release) {
+                        if (!err) {
+                            model.onRegister(username, function (err, resp) {
+                                if (!err) {
+                                    req.json({error: err});
+                                } else {
+                                    model1.remove({email: email}, function (err, resp) {
+                                        req.json({error: "文章数据初始化失败"});
+                                    });
+                                }
+                                release();
+                                release1();
+                            });
+                        } else {
+                            req.json({error: err});
+                            release1();
+                        }
+                    });
                 }
             });
-
+        } else {
+            req.json({error: err});
         }
     });
 });

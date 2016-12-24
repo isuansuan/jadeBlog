@@ -22,34 +22,8 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
     });
     MongooseManager.on("connect", function (options) {
         Logger.debug("blog", "success conncted to " + options.host + " on port " + options.port);
-        getSideBarList(function (list) {
-            var sideBarList = settings.sideBar;
-            list.forEach(function (l) {
-                sideBarList.push(l);
-            });
-            JadeLoader.set('sidebar', sideBarList);
-            JadeLoader.set('mainpage', settings.mainPage);
-        });
+        JadeLoader.set('mainpage', settings.mainPage);
     });
-
-
-    //获取侧边栏列表数据
-    function getSideBarList(callback) {
-        MongooseManager.schema('article').model(function (err, model, release) {
-            if (!err) {
-                model.getType({}, {_id: 0}, function (err, docs) {
-                    if (!err) {
-                        callback(docs);
-                    } else {
-                        callback([]);
-                    }
-                    release();
-                })
-            } else {
-                callback([]);
-            }
-        });
-    }
 
 
     var Express = JadeLoader.Jader('plugin').getInstance('express', '127.0.0.1', 8085, Path.join(__dirname, "./web"));
@@ -75,7 +49,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
         if (!Express.routesList[getReqUrl(url)]) {
             res.redirect("/index");
         } else {
-            var warnUrls = ["/blog/editblog","/blog/addNew"];
+            var warnUrls = ["/blog/editblog", "/blog/addNew"];
             if (warnUrls.indexOf(url) != -1) {
                 if (req.session && req.session.user) {
                     next();
@@ -88,10 +62,14 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
         }
     });
 
+    function isLogin(req) {
+        return req.session && req.session.user;
+    }
+
     //定义消息派递中间件
     Express.dispatch(function (req, res, next) {
         if (req.template && req.template.data && req.template.render) {
-            if (req.session && req.session.user) {
+            if (isLogin(req)) {
                 req.template.data.userName = req.session.user;
             } else {
                 req.template.data.userName = '';
@@ -101,13 +79,13 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
 
             req.template.data.projectName = (req.template.data.lang == 'ch') ? '郑金玮的博客' : "Jade's Blog";
             req.template.data.dateTime = new Date().getFullYear();
-            req.template.data.sidebar = JadeLoader.get('sidebar');
+            req.template.data.sidebar = isLogin(req) ? JadeLoader.get('sidebar') : [];
             req.template.data.advertcnt = JadeLoader.get('advertCnt');
             req.template.data.title = (req.template.data.lang == 'ch') ? '郑金玮的博客' : "Jade's Blog";
             (req.template.render == 'index') && (req.template.data.mainpage = JadeLoader.get('mainpage'));
             res.render(req.template.render, req.template.data);
         } else {
-            next("<h1>invalid request</h1>");
+            next("<h6>invalid request</h6>");
         }
     });
 

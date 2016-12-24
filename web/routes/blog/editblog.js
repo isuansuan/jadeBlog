@@ -23,15 +23,33 @@ router.post("/addNew", function (req, res, next) {
     if (type.length == 0) {
         res.json({data: "内容不能为空"});
     } else {
-        for (var i = 0, len = Settings.length; i < len; ++i) {
-            if (type == Settings[i].ch || type == Settings[i].en) {
-                res.json({data: "此文章类型已存在"});
-                return false;
+        MongooseManager.schema("article").model(function (err, model, release) {
+            if (!err) {
+                model.getTypes(req.session.user, function (err, docs) {
+                    if (!err && docs) {
+                        for (var i = 0, len = docs.length; i < len; ++i) {
+                            if (type == docs[i].type) {
+                                res.json({data: "此文章类型已存在"});
+                                release();
+                                return false;
+                            }
+                        }
+                    }
+                    model.insertType(req.session.user, type, function (err, resp) {
+                        if (!err) {
+                            JadeLoader.get("func_setbar")(req.session.user, function () {
+                                res.json({data: "添加成功"});
+                            });
+                        } else {
+                            res.json({data: err});
+                        }
+                        release();
+                    });
+                })
+            } else {
+                res.json({data: err});
             }
-        }
-
-
-        res.json({data: "添加成功"});
+        });
     }
 });
 

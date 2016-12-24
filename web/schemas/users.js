@@ -12,7 +12,7 @@ var schemeTable = {
     password: {type: String, required: true},//
     last_update_tm: {type: Date, default: Date.now},
     create_tm: {type: Date, default: Date.now},
-    extra: {type: Schema.Types.Mixed, default: {}}
+    extra: {type: Mongoose.Schema.Types.Mixed, default: {}}
 };
 
 var schema = new Mongoose.Schema(schemeTable, {});
@@ -60,8 +60,10 @@ schema.statics.getUserCount = function (callback) {
  * @param callback
  */
 schema.statics.insertData = function (username, email, password, callback) {
+    var self = this;
     this.getUserCount(function (cnt) {
-        var newData = new this({
+        console.log("cnt:",cnt)
+        var newData = new self({
             userid: cnt + 1,
             email: email,
             password: password,
