@@ -119,7 +119,16 @@ schema.statics.getTypes = function (author, callback) {
 };
 
 schema.statics.insertType = function (author, type, callback) {
-    var d = new this({});
+    this.findOne({author: author, id: 1}).exec(function (err, doc) {
+        if (!err && doc) {
+            doc.extra.push(type);
+            doc.save(function (err, resp) {
+                callback(err, resp);
+            })
+        } else {
+            callback(err);
+        }
+    });
 };
 
 schema.statics.getCount = function (callback) {
