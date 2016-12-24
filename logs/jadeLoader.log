@@ -1420,3 +1420,7 @@
 [2016-12-24 17:23:50.988] [DEBUG] jadeLoader - hotLoad module start.  
 [2016-12-24 17:23:50.988] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
 [2016-12-24 17:29:41.714] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-24 17:35:41.716] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 17:35:41.717] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-24 17:41:41.721] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 17:41:41.721] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
