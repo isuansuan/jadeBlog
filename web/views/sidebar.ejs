@@ -1,6 +1,6 @@
 <div class="span2">
     <div class="well sidebar-nav">
-        <ul class="nav nav-list">
+        <ul class="nav nav-list" data-toggle="collapse">
             <% if(sidebar && sidebar.length){ %>
             <% for(var i = 0, len = sidebar.length;i < len;++i){ var lan = lang; %>
             <li class="nav-header"><%= sidebar[i][lan] %></li>
@@ -14,3 +14,5 @@
     </div>
     <!--/.well -->
 </div>
+
+<!-- jQuery1.11.3 (necessary for Bo otstrap's JavaScript plugins) -->

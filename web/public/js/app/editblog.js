@@ -54,8 +54,6 @@ define(function (require, exports, module) {
     }
 
     $(document).ready(function () {
-
-
         $("#idBtnAddArticleType").on("click", function () {
             $('#idAddArticleTypeDialog').modal({
                 keyboard: true
@@ -166,6 +164,5 @@ define(function (require, exports, module) {
                 }
             });
         });
-
     });
 });
