@@ -137,5 +137,19 @@ define(function (require, exports, module) {
                 window.alert(data);
             });
         });
+
+        $("#BtnArticleTypeAdd").on("click", function () {
+            var type = $("#idTextArticleType").val();
+            if (type.length == 0) {
+                window.alert("内容不能为空");
+                return false;
+            }
+            $.post("/blog/editblog/addNew", {
+                type: type
+            }, function (data) {
+                window.alert(data.data);
+            });
+        });
+
     });
 });

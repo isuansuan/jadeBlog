@@ -12,11 +12,26 @@ var schemeTable = {
     content: {type: String, required: true},
     author: {type: String, required: true, index: 1},
     update_tm: {type: Date, default: Date.now},
-    create_tm: {type: Date, default: Date.now}
+    create_tm: {type: Date, default: Date.now},
+    extra: {type: Schema.Types.Mixed, default: {}}
 };
 
 var schema = new Mongoose.Schema(schemeTable, {});
 
+
+schema.statics.getTypes = function (author, callback) {
+    var condition = {
+        author: author
+    };
+
+    var view = {
+        _id: 0,
+        type: 1
+    };
+    this.find(condition, view).lean().exec(function (err, docs) {
+        callback(err, docs);
+    })
+};
 /**
  * 获取指定作者的指定类型的文章
  * @param author
@@ -78,25 +93,67 @@ schema.statics.getOneArticle = function (author, type, name, callback) {
     })
 };
 
-schema.statics.pre('save', function (next) {
-    var doc = this;
-    counter.findByIdAndUpdate({_id: 'entityId'}, {$inc: {seq: 1}}, function (error, counter) {
-        if (error){
-            return next(error);
+//schema.pre('save', function (next) {
+//    var self = this;
+//    this.findByIdAndUpdate({_id: 'entityId'}, {$inc: {seq: 1}}, function (error, doc) {
+//        if (error) {
+//            return next(error);
+//        }
+//        self.id = doc.seq;
+//        next();
+//    });
+//});
+
+schema.statics.getTypes = function (author, callback) {
+    var condition = {
+        author: author
+    };
+
+    this.aggregate.({"$match": condition},{
+        $group: {
+            _id: {"type": "$type"}
         }
-        doc.id = counter.seq;
-        next();
+    },function (err, docs) {
+        callback(err, docs)
     });
-});
+};
+
+schema.statics.insertType = function (author, type, callback) {
+    var d = new this({});
+};
+
+schema.statics.getCount = function (callback) {
+    this.count({}, function (err, c) {
+        callback(err ? 0 : c);
+    });
+};
 
 schema.statics.insertArticle = function (author, type, name, content, callback) {
-    var newData = new this({
-        author: author,
-        type: type,
-        name: name,
-        content: content
+    this.getCount(function (cnt) {
+        var newData = new this({
+            id: cnt + 1,
+            author: author,
+            type: type,
+            name: name,
+            content: content
+        });
+        newData.save(function (err, resp) {
+            callback(err, resp);
+        });
     });
-    newData.save(function (err, resp) {
+};
+
+schema.statics.onRegister = function (author, callback) {
+    var d = new this({
+        id: 1,
+        type: "",
+        name: "",
+        content: "",
+        author: author,
+        extra: []
+    });
+
+    d.save(function (err, resp) {
         callback(err, resp);
     })
 };

@@ -35,9 +35,9 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
 
     //获取侧边栏列表数据
     function getSideBarList(callback) {
-        MongooseManager.schema('sidebar').model(function (err, model, release) {
+        MongooseManager.schema('article').model(function (err, model, release) {
             if (!err) {
-                model.getData({}, {_id: 0}, function (err, docs) {
+                model.getType({}, {_id: 0}, function (err, docs) {
                     if (!err) {
                         callback(docs);
                     } else {
@@ -75,7 +75,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
         if (!Express.routesList[getReqUrl(url)]) {
             res.redirect("/index");
         } else {
-            var warnUrls = ["/user/editblog"];
+            var warnUrls = ["/blog/editblog","/blog/addNew"];
             if (warnUrls.indexOf(url) != -1) {
                 if (req.session && req.session.user) {
                     next();

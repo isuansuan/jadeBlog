@@ -6,10 +6,13 @@ var Mongoose = require('mongoose');
 
 //Schema.Types.Mixed
 var schemeTable = {
-    username: {type: String, default: "用户", index: 1},//
+    userid: {type: Number, required: true, index: {unique: true}},
+    username: {type: String, required: true, index: 1},//
     email: {type: String, required: true, index: {unique: true}},//
     password: {type: String, required: true},//
-    create_tm: {type: Date, default: Date.now}
+    last_update_tm: {type: Date, default: Date.now},
+    create_tm: {type: Date, default: Date.now},
+    extra: {type: Schema.Types.Mixed, default: {}}
 };
 
 var schema = new Mongoose.Schema(schemeTable, {});
@@ -48,6 +51,7 @@ schema.statics.getUserCount = function (callback) {
     });
 };
 
+
 /**
  * 插入有个新用户
  * @param username
@@ -56,17 +60,18 @@ schema.statics.getUserCount = function (callback) {
  * @param callback
  */
 schema.statics.insertData = function (username, email, password, callback) {
-    var newData = new this({
-        email: email,
-        password: password,
-        username: username
-    });
-
-    newData.save(function (err, resp) {
-        callback(err, resp);
+    this.getUserCount(function (cnt) {
+        var newData = new this({
+            userid: cnt + 1,
+            email: email,
+            password: password,
+            username: username
+        });
+        newData.save(function (err, resp) {
+            callback(err, resp);
+        });
     });
 };
-
 
 module.exports = {
     "table": 'user',
