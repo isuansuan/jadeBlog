@@ -134,10 +134,15 @@ define(function (require, exports, module) {
                 articleType: articleType,
                 articleName: articleName
             }, function (data) {
-                window.alert(data.data);
+                if (data.error) {
+                    window.alert(data.error);
+                } else {
+                    window.alert(data.info);
+                }
             });
         });
 
+        //添加文章类型
         $("#BtnArticleTypeAdd").on("click", function () {
             var type = $("#idTextArticleType").val();
             if (type.length == 0) {
@@ -147,7 +152,18 @@ define(function (require, exports, module) {
             $.post("/blog/editblog/addNewType", {
                 type: type
             }, function (data) {
-                window.alert(data.data);
+                if (data.error) {
+                    window.alert(data.error);
+                } else {
+                    var $sel = $("#idArticleTypes");
+                    $sel.empty();
+                    data.info.forEach(function (t) {
+                        var o = "<option value='Value'>" + t + "</option>";
+                        $sel.append(o);
+                    });
+
+                    window.alert("添加成功");
+                }
             });
         });
 

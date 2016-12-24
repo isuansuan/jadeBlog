@@ -29,8 +29,8 @@ function getSideBarList(user, callback) {
 }
 
 
-function setBar(user,callback){
-    getSideBarList(user,function(list){
+function setBar(user, callback) {
+    getSideBarList(user, function (list) {
         var _bar = [];
         list.forEach(function (l) {
             _bar.push({
@@ -39,11 +39,12 @@ function setBar(user,callback){
             })
         });
         JadeLoader.set('sidebar', _bar);
+        JadeLoader.set('articleTypes', list);
         callback();
     })
 }
 
-JadeLoader.set("func_setbar",setBar);
+JadeLoader.set("func_setbar", setBar);
 
 router.post("/", function (req, res, next) {
     var email = req.body.email;
@@ -55,7 +56,7 @@ router.post("/", function (req, res, next) {
                 if (!err) {
                     req.session.user = username;
 
-                    setBar(username,function(){
+                    setBar(username, function () {
                         req.json({error: err});
                     });
                 } else {
