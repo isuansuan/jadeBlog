@@ -1424,3 +1424,35 @@
 [2016-12-24 17:35:41.717] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
 [2016-12-24 17:41:41.721] [DEBUG] jadeLoader - hotLoad module start.  
 [2016-12-24 17:41:41.721] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-24 20:25:14.529] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-24 20:31:14.542] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 20:31:14.544] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-24 20:33:14.211] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-24 20:39:14.219] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 20:39:14.222] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-24 20:45:14.234] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 20:45:14.235] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-24 20:51:14.248] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 20:51:14.249] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-24 20:57:14.257] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 20:57:14.258] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-24 21:03:14.273] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 21:03:14.276] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-24 21:09:14.284] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 21:09:14.285] [DEBUG] jadeLoader - hotLoad module finish,cost 1 milliSecond  
+[2016-12-24 21:15:14.301] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 21:15:14.302] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-24 21:21:14.317] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 21:21:14.319] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-24 21:27:14.332] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 21:27:14.332] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-24 21:33:14.346] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 21:33:14.347] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-24 21:39:14.360] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 21:39:14.360] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-24 21:45:14.374] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 21:45:14.375] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-24 21:51:14.391] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 21:51:14.391] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-24 21:57:14.392] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-24 21:57:14.393] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
