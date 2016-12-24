@@ -9,7 +9,7 @@ require.config({
     }
 });
 
-require(['jquery', 'lodash', "md5", "common"], function ($, _, md5, common) {
+require(['jquery', 'lodash', "md5", "common","bootstrap"], function ($, _, md5, common,BT) {
 
     $(document).ready(function () {
         //启用弹出框
