@@ -6,7 +6,6 @@ var Path = require("path");
 var Singleton = require("./mnode/app").utils.Singleton;
 var Logger = Singleton.getInstance(require("./mnode/app").utils.Logger, Path.join(__dirname, "./web/config/logger.json"), Path.join(__dirname, "./logs"));
 
-
 JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
     Logger.info("jadeLoader", "jade Loader Finished");
 
@@ -14,7 +13,6 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
     JadeLoader.set('settings', require("./web/config/settings"));
     JadeLoader.set("advertCnt", require("./web/utils/common").getAdvertsCnt());
     JadeLoader.set("func_setbar", require("./web/utils/common").setBar);
-
 
     //启用mongoose
     var settings = JadeLoader.get('settings');
@@ -24,10 +22,9 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
         Logger.error("blog", "mongoose error" + error);
     });
     MongooseManager.on("connect", function (options) {
-
         if (settings.user.use) {
             JadeLoader.get("func_setbar")(settings.user.username, function () {
-                Logger.debug("加载 sidebar 完成");
+                Logger.debug("blog","加载 sidebar 完成");
             });
         }
         Logger.debug("blog", "success conncted to " + options.host + " on port " + options.port);
@@ -71,15 +68,16 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
         }
     });
 
+    //判断是否已经登录
     function isLogin(req) {
         return req.session && req.session.user;
     }
 
+    //判断是否加载侧边栏数据
     function isLoadSideBar(req) {
         if (isLogin(req)) {
             return true;
-        }
-        else if (JadeLoader.get("settings").user.use) {
+        } else if (JadeLoader.get("settings").user.use) {
             return true;
         } else {
             return false;
