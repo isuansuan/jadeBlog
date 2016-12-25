@@ -30,7 +30,7 @@ router.post("/", function (req, res, next) {
                         req.session.user = username;
 
                         JadeLoader.get("func_setbar")(username, function () {
-                            req.json({error: err});
+                            req.dispatch("index",{},next);
                         });
                     } else {
                         req.json({error: err});

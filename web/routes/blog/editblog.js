@@ -14,9 +14,7 @@ router.post('/', function (req, res, next) {
     var html = req.body.html,
         articleType = req.body.articleType,
         articleName = req.body.articleName;
-
-    articleType = articleType.replace(/"+"/g, "p");
-
+    
     var index = JadeLoader.get("articleTypes").indexOf(articleType);
     if (index == -1) {
         res.json({error: "文章类型不存在"});
