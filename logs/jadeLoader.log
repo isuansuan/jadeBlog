@@ -1580,3 +1580,33 @@
 [2016-12-25 15:40:29.110] [DEBUG] jadeLoader - hotLoad module finish,cost 1 milliSecond  
 [2016-12-25 15:46:29.116] [DEBUG] jadeLoader - hotLoad module start.  
 [2016-12-25 15:46:29.117] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-25 15:52:29.123] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-25 15:52:29.123] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-25 15:56:38.064] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 15:59:21.434] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 16:05:21.436] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-25 16:05:21.437] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-25 16:11:21.446] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-25 16:11:21.446] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-25 16:17:18.804] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 16:17:35.770] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 16:23:35.771] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-25 16:23:35.772] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-25 16:29:35.773] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-25 16:29:35.774] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-25 16:30:12.232] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 16:30:50.247] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 16:36:50.252] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-25 16:36:50.253] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-25 16:37:54.107] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 16:40:18.348] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 16:43:23.694] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 16:46:58.216] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 16:48:30.358] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 16:49:33.957] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 16:50:05.454] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 16:56:04.345] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 16:56:23.557] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 17:00:57.168] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 17:02:02.528] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-25 17:02:48.167] [INFO] jadeLoader - jade Loader Finished  

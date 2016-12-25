@@ -138,29 +138,11 @@ require(['jquery', 'lodash', "md5", "common", "bootstrap"], function ($, _, md5,
             })
         });
 
-
         $("#idContract").on("click", function () {
             //$(".modal-dialog").css({display:"block"});
-
             $('#idContractDialog').modal({
                 keyboard: true
             })
-        });
-
-
-        var sidebarLastId = null;
-        $(".bs-docs-sidenav li").click(function () {
-            var id = $(this).attr("id");
-
-            if (sidebarLastId && sidebarLastId != id) {
-                $("#" + sidebarLastId).css({"background-color": "#ffffff"});
-            }
-
-            if (id != undefined) {
-                sidebarLastId = id;
-            }
-
-            $(this).css({"background-color": "yellow"});
         });
     });
 });

@@ -1,9 +1,11 @@
 <div class="col-md-2">
     <ul class="bs-docs-sidenav">
-        <% for(var i = 0, len = sidebar.length;i < len;i++){ %>
-        <li id="barLink<%= i %>"><a  href="javascript:void(0);"><i
-                        class="glyphicon glyphicon-chevron-right pull-right"></i><%= sidebar[i][lang] %></a></li>
-        <% } %>
+        <% if(sidebar && sidebar.length){%>
+            <% for(var i = 0, len = sidebar.length;i < len;i++){ %>
+            <li id="barLink<%= i %>"><a  href="/blog/index?type=<%= sidebar[i][lang]%>"><i
+                            class="glyphicon glyphicon-chevron-right pull-right"></i><%= sidebar[i][lang] %></a></li>
+            <% } %>
+        <%}%>
 
         <li style="margin-top: 20px;">
             <div class="col-md-20" style="border: 0 solid black;float: right;text-align: center;">

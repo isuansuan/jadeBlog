@@ -1,28 +1,34 @@
 <% include header.ejs %>
 <% include sidebar.ejs %>
-<div class="col-md-6">
+<div class="col-md-8">
     <ul>
-        <li>
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title">面板标题</h3>
+        <% if(info && info.length){%>
+            <% for(var i= 0,len=info.length;i<len;++i){ var doc=info[i];var clsIndex = i % 4;var panelClsList = ["panel-warning","panel-success","panel-info","primary"];%>
+                <li>
+                    <div class="panel <%= panelClsList[clsIndex]%>">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" style="font-size: 20px;"><%= doc.title%></h3>
+                            <span style="font-family:'微软雅黑';font-size: 14px;color:orangered"><h4 class="">作者:<%= doc.author%></h4>发布时间:<%= doc.create_tm%>&nbsp;&nbsp;更新时间:<%= doc.update_tm%></span>
+                        </div>
+                        <div class="panel-body">
+                            <%= doc.brief%>
+                        </div>
+                    </div>
+                </li>
+            <%}%>
+        <%}else{%>
+            <li>
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">文章</h3>
+                    </div>
+                    <div class="panel-body">
+                        还没有发布文章哦
+                    </div>
                 </div>
-                <div class="panel-body">
-                    这是一个基本的面板
-                </div>
-            </div>
-        </li>
+            </li>
+        <%}%>
 
-        <li>
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title">面板标题</h3>
-                </div>
-                <div class="panel-body">
-                    这是一个基本的面板
-                </div>
-            </div>
-        </li>
     </ul>
 </div>
 <% include footer.ejs %>
