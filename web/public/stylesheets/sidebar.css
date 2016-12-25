@@ -16,7 +16,7 @@
     margin: 0 0 -1px;
     padding: 8px 14px;
     border: 1px solid #e5e5e5;
-    color:#ff0000;
+    color:#0000FF;
     font-size:20px;
     text-decoration: none;
 }
@@ -49,24 +49,25 @@
 }
 .bs-docs-sidenav > li > a:hover {
     background-color: #808080;
-
 }
+
 .bs-docs-sidenav a:hover .icon-chevron-right {
     opacity: .5;
+    background-color:blueviolet;
 }
 .bs-docs-sidenav .active .icon-chevron-right,
 .bs-docs-sidenav .active a:hover .icon-chevron-right {
-    background-image: url(../img/glyphicons-halflings-white.png);
+    background-color:blueviolet;
     opacity: 1;
 }
-.bs-docs-sidenav.affix {
-    top: 20px;
-}
-.bs-docs-sidenav.affix-bottom {
-    position: absolute;
-    top: auto;
-    bottom: 270px;
-}
+/*.bs-docs-sidenav.affix {*/
+    /*top: 20px;*/
+/*}*/
+/*.bs-docs-sidenav.affix-bottom {*/
+    /*position: absolute;*/
+    /*top: auto;*/
+    /*bottom: 270px;*/
+/*}*/
 
 
 

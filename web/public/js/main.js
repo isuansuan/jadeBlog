@@ -9,7 +9,7 @@ require.config({
     }
 });
 
-require(['jquery', 'lodash', "md5", "common","bootstrap"], function ($, _, md5, common,BT) {
+require(['jquery', 'lodash', "md5", "common", "bootstrap"], function ($, _, md5, common, BT) {
 
     $(document).ready(function () {
         //启用弹出框
@@ -145,6 +145,11 @@ require(['jquery', 'lodash', "md5", "common","bootstrap"], function ($, _, md5, 
             $('#idContractDialog').modal({
                 keyboard: true
             })
+        });
+
+
+        $(".bs-docs-sidenav li a").click(function () {
+            $(this).css({"background-color":"pink"});
         });
     });
 });

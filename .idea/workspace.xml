@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="703c2d8e-07c2-442c-9762-a114f4ec201b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/editblog.ejs" afterPath="$PROJECT_DIR$/web/views/editblog.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/blog.ejs" afterPath="$PROJECT_DIR$/web/views/blog.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/header.ejs" afterPath="$PROJECT_DIR$/web/views/header.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/jadeLoader.log" afterPath="$PROJECT_DIR$/logs/jadeLoader.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/js/main.js" afterPath="$PROJECT_DIR$/web/public/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/stylesheets/sidebar.css" afterPath="$PROJECT_DIR$/web/public/stylesheets/sidebar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/sidebar.ejs" afterPath="$PROJECT_DIR$/web/views/sidebar.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/web/public/stylesheets/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blogPro1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,8 +34,8 @@
       <file leaf-file-name="sidebar.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/views/sidebar.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4256757" vertical-offset="0" max-vertical-offset="592">
-              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.6030405" vertical-offset="0" max-vertical-offset="592">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
@@ -57,8 +58,8 @@
       <file leaf-file-name="sidebar.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/public/stylesheets/sidebar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.37931" vertical-offset="546" max-vertical-offset="6195">
-              <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+            <state vertical-scroll-proportion="-10.862069" vertical-offset="357" max-vertical-offset="6216">
+              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -67,8 +68,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/public/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="3297">
-              <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2767" max-vertical-offset="3402">
+              <caret line="151" column="49" selection-start-line="151" selection-start-column="49" selection-end-line="151" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -77,8 +78,8 @@
       <file leaf-file-name="blog.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/blog.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.5" vertical-offset="0" max-vertical-offset="525">
-              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+            <state vertical-scroll-proportion="-4.9" vertical-offset="0" max-vertical-offset="546">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -107,8 +108,8 @@
       <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/header.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.966102" vertical-offset="3150" max-vertical-offset="4788">
-              <caret line="178" column="26" selection-start-line="178" selection-start-column="26" selection-end-line="178" selection-end-column="26" />
+            <state vertical-scroll-proportion="31.38983" vertical-offset="3343" max-vertical-offset="4788">
+              <caret line="71" column="89" selection-start-line="71" selection-start-column="89" selection-end-line="71" selection-end-column="89" />
               <folding>
                 <element signature="n#style#0;n#a#2;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -190,13 +191,13 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/web/routes/blog/index.js" />
         <option value="$PROJECT_DIR$/web/views/footer.ejs" />
-        <option value="$PROJECT_DIR$/web/views/blog.ejs" />
         <option value="$PROJECT_DIR$/web/public/js/app/blog.js" />
         <option value="$PROJECT_DIR$/web/views/index.ejs" />
-        <option value="$PROJECT_DIR$/web/public/js/main.js" />
-        <option value="$PROJECT_DIR$/web/views/header.ejs" />
         <option value="$PROJECT_DIR$/web/views/editblog.ejs" />
         <option value="$PROJECT_DIR$/web/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/web/views/header.ejs" />
+        <option value="$PROJECT_DIR$/web/views/blog.ejs" />
+        <option value="$PROJECT_DIR$/web/public/js/main.js" />
         <option value="$PROJECT_DIR$/web/public/stylesheets/sidebar.css" />
         <option value="$PROJECT_DIR$/web/views/sidebar.ejs" />
       </list>
@@ -253,100 +254,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogPro1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -465,15 +372,15 @@
     <option name="totallyTimeSpent" value="17160000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17860906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17860906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28216216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -820,37 +727,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/blog.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.5" vertical-offset="0" max-vertical-offset="525">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/public/js/app/blog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="3297">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.20339" vertical-offset="0" max-vertical-offset="2100">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -865,17 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.966102" vertical-offset="3150" max-vertical-offset="4788">
-          <caret line="178" column="26" selection-start-line="178" selection-start-column="26" selection-end-line="178" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#a#2;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="184" max-vertical-offset="819">
@@ -884,18 +754,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.20339" vertical-offset="0" max-vertical-offset="2100">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/blog.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.9" vertical-offset="0" max-vertical-offset="546">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="31.38983" vertical-offset="3343" max-vertical-offset="4788">
+          <caret line="71" column="89" selection-start-line="71" selection-start-column="89" selection-end-line="71" selection-end-column="89" />
+          <folding>
+            <element signature="n#style#0;n#a#2;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2767" max-vertical-offset="3402">
+          <caret line="151" column="49" selection-start-line="151" selection-start-column="49" selection-end-line="151" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/public/stylesheets/sidebar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.37931" vertical-offset="546" max-vertical-offset="6195">
-          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+        <state vertical-scroll-proportion="-10.862069" vertical-offset="357" max-vertical-offset="6216">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/sidebar.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4256757" vertical-offset="0" max-vertical-offset="592">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.6030405" vertical-offset="0" max-vertical-offset="592">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
