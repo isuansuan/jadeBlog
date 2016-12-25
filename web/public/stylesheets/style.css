@@ -32,3 +32,7 @@ a {
     border-top-color: #0000FF;
     border-radius: 4px 4px 4px 4px;
 }
+
+ul li{
+    list-style: none;
+}

@@ -1,7 +1,7 @@
 <div class="col-md-2">
     <ul class="bs-docs-sidenav">
         <% for(var i = 0, len = sidebar.length;i < len;i++){ %>
-        <li><a href="/blog/index?key=<%= sidebar[i][lang] %>"><i
+        <li id="barLink<%= i %>"><a  href="javascript:void(0);"><i
                         class="glyphicon glyphicon-chevron-right pull-right"></i><%= sidebar[i][lang] %></a></li>
         <% } %>
 
