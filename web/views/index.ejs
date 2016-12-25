@@ -81,22 +81,23 @@
     <!--/row-->
 </div><!--/span-->
 
-<div class="span3" style="border: 0 solid black;float: right;text-align: center;">
+<div class="span2" style="border: 0 solid black;float: right;text-align: center;">
     <div class="col-sm-6 col-md-3">
         <a href="#" class="thumbnail">
-            <img src="/images/zjw.png" alt="郑金玮"/>
+            <img src="/images/zjw.png" width="300px" height="300px" alt="郑金玮"/>
             <h6>作者简介:Jader,郑金玮 编程爱好者</h6>
         </a>
     </div>
-
-    <div class="well sidebar-nav">
-        <% for(var i = 1;i <= advertcnt;i++) { var path = "/images/adverts/ad" + i + ".png"; %>
-        <div class="col-sm-6 col-md-3" style="margin: 5px;">
-            <a href="#" alt="#"><img src="<%= path %>"></a>
-        </div>
-        <% } %>
-    </div>
 </div>
+<!--<div class="span3" style="border: 0 solid black;float: right;text-align: center;margin-top: 20px;">-->
+    <!--<div class="well sidebar-nav">-->
+        <!--<% for(var i = 1;i <= advertcnt;i++) { var path = "/images/adverts/ad" + i + ".png"; %>-->
+        <!--<div class="col-sm-6 col-md-3" style="margin: 5px;">-->
+            <!--<a href="#" alt="#"><img src="<%= path %>"></a>-->
+        <!--</div>-->
+        <!--<% } %>-->
+    <!--</div>-->
+<!--</div>-->
 
 <% include footer.ejs %>
 
