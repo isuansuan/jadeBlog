@@ -14,7 +14,7 @@ router.post('/', function (req, res, next) {
     var html = req.body.html,
         articleType = req.body.articleType,
         articleName = req.body.articleName;
-    
+
     var index = JadeLoader.get("articleTypes").indexOf(articleType);
     if (index == -1) {
         res.json({error: "文章类型不存在"});
@@ -50,7 +50,6 @@ router.post('/', function (req, res, next) {
 
 router.post("/addNewType", function (req, res, next) {
     var type = req.body.type;
-    type = type.replace("+", "p");
     if (type.length == 0) {
         res.json({error: "内容不能为空"});
     } else {
