@@ -579,3 +579,6 @@
 [2016-12-25 17:02:48.303] [DEBUG] blog - express already listen on port 8085  
 [2016-12-25 17:02:48.566] [DEBUG] blog - success conncted to 127.0.0.1 on port 27017  
 [2016-12-25 17:02:48.575] [DEBUG] blog - 加载 sidebar 完成  
+[2016-12-25 17:16:04.673] [DEBUG] blog - express already listen on port 8085  
+[2016-12-25 17:16:04.970] [DEBUG] blog - success conncted to 127.0.0.1 on port 27017  
+[2016-12-25 17:16:04.983] [DEBUG] blog - 加载 sidebar 完成  
