@@ -1,7 +1,7 @@
 require.config({
     paths: {
         "jquery": ["/lib/jquery/jquery3.1.1"],
-        "bootstrap": ["/lib/bootstrap-3.3.7/js/bootstrap.min"],
+        "bootstrap": ["/lib/bootstrap3/js/bootstrap.min"],
         "lodash": ["/lib/lodash-4.17.2/lodash"],
         "md5": ["/lib/md5"],
         "common": ["/lib/common"],

@@ -1,5 +1,5 @@
 .bs-docs-sidenav {
-    width:100px;
+    width:80px;
     margin: 0px 0 0;
     padding: 0;
     background-color: #fff;
@@ -12,7 +12,7 @@
 }
 .bs-docs-sidenav > li > a {
     display: block;
-    width: 100px \9;
+    width: 80px \9;
     margin: 0 0 -1px;
     padding: 8px 14px;
     border: 1px solid #e5e5e5;

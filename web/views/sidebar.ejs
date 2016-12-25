@@ -1,9 +1,21 @@
-<div class="span2">
-        <ul class="nav nav-list bs-docs-sidenav">
-            <% for(var i=0,len=sidebar.length;i<len;i++){%>
-            <li><a href="/blog/index?key=<%= sidebar[i][lang]%>"><i class="icon-chevron-right"></i><%= sidebar[i][lang]%></a></li>
-            <%}%>
-        </ul>
+<div class="col-md-2">
+    <ul class="bs-docs-sidenav">
+        <% for(var i = 0, len = sidebar.length;i < len;i++){ %>
+        <li><a href="/blog/index?key=<%= sidebar[i][lang] %>"><i
+                        class="glyphicon glyphicon-chevron-right pull-right"></i><%= sidebar[i][lang] %></a></li>
+        <% } %>
+
+        <li style="margin-top: 20px;">
+            <div class="col-md-20" style="border: 0 solid black;float: right;text-align: center;">
+                <a href="#" class="thumbnail">
+                    <img src="/images/zjw.png" width="300px" height="300px" alt="郑金玮"/>
+                    <h6>作者简介:Jader,郑金玮 编程爱好者</h6>
+                </a>
+            </div>
+        </li>
+    </ul>
 </div>
+
+
 
 
