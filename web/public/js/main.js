@@ -85,7 +85,7 @@ require(['jquery', 'lodash', "md5", "common", "bootstrap"], function ($, _, md5,
                 } finally {
                     if (!error) {
                         $('#loginModal').attr('class', 'modal hide');
-                        window.location.reload();
+                        window.location.href='/index';
                     } else {
                         window.alert(error);
                     }
