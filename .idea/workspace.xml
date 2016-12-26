@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="703c2d8e-07c2-442c-9762-a114f4ec201b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/public/uploads/1482641889137_QQ截图20160607102010.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/public/uploads/1482654893669_QQ截图20160812163351.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/public/uploads/1482656325800_QQ截图20160607104003.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/public/uploads/1482656608942_wifi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/public/uploads/1482656712838_wifi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/public/uploads/1482657899931_QQ截图20160607102010.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/public/uploads/1482727201436_QQ截图20160607102010.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/public/uploads/1482727256739_QQ截图20160812163351.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/public/uploads/1482730445506_wifi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/public/uploads/1482736664015_QQ截图20160607102010.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/blog.log" afterPath="$PROJECT_DIR$/logs/blog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/jadeLoader.log" afterPath="$PROJECT_DIR$/logs/jadeLoader.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/js/app/editblog.js" afterPath="$PROJECT_DIR$/web/public/js/app/editblog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/header.ejs" afterPath="$PROJECT_DIR$/web/views/header.ejs" />
     </list>
     <ignored path="blogPro1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,6 +29,7 @@
             <state relative-caret-position="0">
               <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
               <folding>
+                <marker date="1482761895734" expanded="true" signature="15:114" placeholder="{...}" />
                 <marker date="1482761895734" expanded="true" signature="28:114" placeholder="{...}" />
                 <marker date="1482761895734" expanded="true" signature="5960:6067" placeholder="{...}" />
                 <marker date="1482761895734" expanded="true" signature="5960:6071" placeholder="{...}" />
@@ -66,8 +52,8 @@
       <file leaf-file-name="editblog.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            <state relative-caret-position="239">
+              <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -418,18 +404,18 @@
       <workItem from="1482416072794" duration="5151000" />
       <workItem from="1482503541690" duration="3656000" />
       <workItem from="1482582277026" duration="6105000" />
-      <workItem from="1482762332981" duration="2542000" />
+      <workItem from="1482762332981" duration="2896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19702000" />
+    <option name="totallyTimeSpent" value="20056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22098215" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22098215" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -470,14 +456,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/bs3fa4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/formidable/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -783,6 +761,7 @@
         <state relative-caret-position="0">
           <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
           <folding>
+            <marker date="1482761895734" expanded="true" signature="15:114" placeholder="{...}" />
             <marker date="1482761895734" expanded="true" signature="28:114" placeholder="{...}" />
             <marker date="1482761895734" expanded="true" signature="5960:6067" placeholder="{...}" />
             <marker date="1482761895734" expanded="true" signature="5960:6071" placeholder="{...}" />
@@ -836,10 +815,15 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/uploads/1482765246720_QQ截图20151209172444.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        <state relative-caret-position="239">
+          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
           <folding />
         </state>
       </provider>

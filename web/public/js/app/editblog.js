@@ -14,11 +14,14 @@ define(function (require, exports, module) {
         var filename = false;
         try {
             filename = file['name'];
-            //alert(filename);        } catch (e) {
+            //alert(filename);
+        } catch (e) {
             filename = false;
         }
         if (!filename) {
             $(".note-alarm").remove();
+            alert("failed");
+            return;
         }
         //以上防止在图片在编辑器内拖拽引发第二次上传导致的提示错误
         var ext = filename.substr(filename.lastIndexOf("."));
@@ -70,9 +73,8 @@ define(function (require, exports, module) {
                 theme: 'monokai',
                 htmlMode: true,
                 lineNumbers: true,
-                mode: 'text/html',
-                lineWrapping:true,
-                extraKeys: {"Ctrl-Space": "autocomplete"}
+                mode: 'text/html'                // lineWrapping:true,
+                // extraKeys: {"Ctrl-Space": "autocomplete"}
             },
             height: "400px",
             width: "1200px",
