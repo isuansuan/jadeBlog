@@ -1,8 +1,13 @@
 <% include header.ejs %>
 
+
+
+
 <% include sidebar.ejs %>
 
-<div class="span7" style="float: left;">
+
+
+<div class="col-md-6" style="float: left;">
 
     <div id="idCarousel" class="carousel slide">
         <!-- 轮播（Carousel）指标 -->
@@ -44,7 +49,7 @@
 
     <div class="row-fluid">
         <% for(var i = 0, len = mainpage.childPage.length;i < len;++i){ %>
-        <div class="span4">
+        <div class="col-md-4">
             <h2><%= mainpage.childPage[i][lang] %></h2>
 
             <p></p>
@@ -58,7 +63,7 @@
 
     <% if(userName){ %>
     <div class="row-fluid">
-        <div class="span4">
+        <div class="col-md-4">
             <h2>写博客</h2>
 
             <p>会员专享</p>
@@ -66,7 +71,7 @@
             <p><a class="btn btn-info" href="/blog/editblog">前往编辑博客 &raquo;</a></p>
         </div>
 
-        <div class="span4">
+        <div class="col-md-4">
             <h2>管理</h2>
 
             <p>管理员专享</p>
@@ -80,24 +85,6 @@
 
     <!--/row-->
 </div><!--/span-->
-
-<div class="span3" style="border: 0 solid black;float: right;text-align: center;">
-    <div class="col-sm-6 col-md-3">
-        <a href="#" class="thumbnail">
-            <img src="/images/zjw.png" alt="郑金玮"/>
-            <h6>作者简介:Jader,郑金玮 编程爱好者</h6>
-        </a>
-    </div>
-
-    <div class="well sidebar-nav">
-        <% for(var i = 1;i <= advertcnt;i++) { var path = "/images/adverts/ad" + i + ".png"; %>
-        <div class="col-sm-6 col-md-3" style="margin: 5px;">
-            <a href="#" alt="#"><img src="<%= path %>"></a>
-        </div>
-        <% } %>
-    </div>
-</div>
-
 <% include footer.ejs %>
 
 <script type="text/javascript">

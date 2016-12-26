@@ -12,6 +12,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
     JadeLoader.set('logger', Logger);//将logger保存
     JadeLoader.set('settings', require("./web/config/settings"));
     JadeLoader.set("advertCnt", require("./web/utils/common").getAdvertsCnt());
+    JadeLoader.set("func_setbar", require("./web/utils/common").setBar);
 
     //启用mongoose
     var settings = JadeLoader.get('settings');
@@ -21,6 +22,11 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
         Logger.error("blog", "mongoose error" + error);
     });
     MongooseManager.on("connect", function (options) {
+        if (settings.user.use) {
+            JadeLoader.get("func_setbar")(settings.user.username, function () {
+                Logger.debug("blog","加载 sidebar 完成");
+            });
+        }
         Logger.debug("blog", "success conncted to " + options.host + " on port " + options.port);
         JadeLoader.set('mainpage', settings.mainPage);
     });
@@ -46,7 +52,8 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
             return t[0];
         }
 
-        if (!Express.routesList[getReqUrl(url)]) {
+        url = getReqUrl(url);
+        if (!Express.routesList[url]) {
             res.redirect("/index");
         } else {
             var warnUrls = ["/blog/editblog", "/blog/addNew"];
@@ -62,8 +69,20 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
         }
     });
 
+    //判断是否已经登录
     function isLogin(req) {
         return req.session && req.session.user;
+    }
+
+    //判断是否加载侧边栏数据
+    function isLoadSideBar(req) {
+        if (isLogin(req)) {
+            return true;
+        } else if (JadeLoader.get("settings").user.use) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     //定义消息派递中间件
@@ -79,7 +98,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
 
             req.template.data.projectName = (req.template.data.lang == 'ch') ? '郑金玮的博客' : "Jade's Blog";
             req.template.data.dateTime = new Date().getFullYear();
-            req.template.data.sidebar = isLogin(req) ? JadeLoader.get('sidebar') : [];
+            req.template.data.sidebar = isLoadSideBar(req) ? JadeLoader.get('sidebar') : [];
             req.template.data.advertcnt = JadeLoader.get('advertCnt');
             req.template.data.title = (req.template.data.lang == 'ch') ? '郑金玮的博客' : "Jade's Blog";
             (req.template.render == 'index') && (req.template.data.mainpage = JadeLoader.get('mainpage'));

@@ -1,15 +1,46 @@
 require.config({
     paths: {
         "jquery": ["/lib/jquery/jquery3.1.1"],
-        "bootstrap": ["/lib/bootstrap-3.3.7/js/bootstrap.min"],
+        "bootstrap": ["/lib/bootstrap3/js/bootstrap.min"],
         "lodash": ["/lib/lodash-4.17.2/lodash"],
         "md5": ["/lib/md5"],
         "common": ["/lib/common"],
-        "summernote": ["/lib/summernote/dist/summernote.min"]
+        "summernote": ["/lib/summernote/dist/summernote.min"],
+        "codemirror": ["/lib/codemirror5/lib/codemirror"],
+        "codemirrorxml": ["codemirror","/lib/codemirror5/mode/xml/xml"],
+        "summernotezhcn": ["/lib/summernote/lang/summernote-zh-CN"],
+        "showLoading": ['/lib/jquery/jquery.showLoading.min'],
+        "jgrowl": [
+            '/lib/jquery/jquery.jgrowl.min'
+        ],
+        "jform": [
+            '/lib/jquery/jquery.form'
+        ],
+        "datePicker": [
+            '/lib/jquery/My97DatePicker/WdatePicker'
+        ],
+        "highcharts": [
+            '/lib/jquery/highcharts'
+        ],
+        "bootstrapSelect": [
+            '/lib/bootstrap3/bootstrap-select/js/bootstrap-select'
+        ]
+    },
+    shim: {
+        'bootstrap': {deps: ['jquery']},
+        'codemirror': {deps: ["jquery", "bootstrap"]},
+        'codemirrorxml': {deps: ["codemirror"]},
+        'summernote': {deps: ['codemirror']},
+        'showLoading': {deps: ['jquery']},
+        'summernotezhcn':{deps:['summernote']},
+        'jgrowl': {deps: ['jquery']},
+        'jform': {deps: ['jquery']},
+        'highcharts': {deps: ['jquery']},
+        'bootstrapSelect': {deps: ['jquery','bootstrap']}
     }
 });
 
-require(['jquery', 'lodash', "md5", "common","bootstrap"], function ($, _, md5, common,BT) {
+require(['jquery', 'lodash', "md5", "common", "bootstrap"], function ($, _, md5, common, BT) {
 
     $(document).ready(function () {
         //启用弹出框
@@ -85,7 +116,7 @@ require(['jquery', 'lodash', "md5", "common","bootstrap"], function ($, _, md5, 
                 } finally {
                     if (!error) {
                         $('#loginModal').attr('class', 'modal hide');
-                        window.location.reload();
+                        window.location.href = '/index';
                     } else {
                         window.alert(error);
                     }
@@ -138,10 +169,8 @@ require(['jquery', 'lodash', "md5", "common","bootstrap"], function ($, _, md5, 
             })
         });
 
-
         $("#idContract").on("click", function () {
             //$(".modal-dialog").css({display:"block"});
-
             $('#idContractDialog').modal({
                 keyboard: true
             })

@@ -13,6 +13,12 @@ module.exports = {
             auth: null
         }
     },
+    user: {
+        use: true,
+        username: "zhengjinwei",
+        password: "BL123456",
+        email: "2538698032@qq.com"
+    },
     sideBar: [
         {
             en: 'News',

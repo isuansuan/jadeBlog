@@ -2,7 +2,11 @@ define(function (require, exports, module) {
     var $ = require("jquery");
     var _ = require("lodash");
     var BS = require("bootstrap");
+    var codemirror = require("codemirror");
     var summernote = require("summernote");
+    var summernoteZHCN = require("summernotezhcn");
+    var codemirrorXml = require("codemirrorxml");
+
 
 
     function sendFile(file, editor, $editable) {
@@ -60,30 +64,23 @@ define(function (require, exports, module) {
             })
         });
 
-        var $summernote = $('#summernote');
+        var $summernote = $('.summernote');
         $summernote.summernote({
+            tabSize: 4,
+            codemirror: {
+                mode: 'text/javascript',
+                htmlMode: true,
+                lineNumbers: true,
+                theme: 'monokai'
+            },
             height: "400px",
-            width: "1000px",
+            width: "1200px",
             lang: 'zh-CN',
+            minHeight: null,
+            maxHeight: null,
+            focus: true,
             dialogsInBody: true,
             dialogsFade: true,
-            popover: {
-                image: [
-                    ['imagesize', ['imageSize100', 'imageSize50', 'imageSize25']],
-                    ['float', ['floatLeft', 'floatRight', 'floatNone']],
-                    ['remove', ['removeMedia']]
-                ],
-                link: [
-                    ['link', ['linkDialogShow', 'unlink']]
-                ],
-                air: [
-                    ['color', ['color']],
-                    ['font', ['bold', 'underline', 'clear']],
-                    ['para', ['ul', 'paragraph']],
-                    ['table', ['table']],
-                    ['insert', ['link', 'picture']]
-                ]
-            },
             callbacks: {
                 onImageUpload: function (files, editor, $editable) {
                     sendFile(files[0], editor, $editable);
@@ -136,6 +133,8 @@ define(function (require, exports, module) {
                     window.alert(data.error);
                 } else {
                     window.alert(data.info);
+                    $summernote.summernote('destroy');
+                    window.location.href = '/blog/index?type=' + articleType;
                 }
             });
         });

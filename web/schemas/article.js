@@ -3,7 +3,7 @@
  * 博客
  */
 var Mongoose = require('mongoose');
-
+var _ = require("lodash");
 
 //Schema.Types.Mixed
 var schemeTable = {
@@ -11,29 +11,62 @@ var schemeTable = {
     type: {type: String, required: true, index: true},
     name: {type: String, required: true, index: true},
     content: {type: String, required: true},
+    brief: {type: String},
     author: {type: String, required: true, index: true},
-    update_tm: {type: Date, default: Date.now},
+    update_tm: {type: Date, default: Date.now, index: true},
     create_tm: {type: Date, default: Date.now, index: true},
     extra: {type: Mongoose.Schema.Types.Mixed}
 };
 
 var schema = new Mongoose.Schema(schemeTable, {});
-/**
- * 获取指定作者的指定类型的文章
- * @param author
- * @param type
- * @param callback
- */
-schema.statics.getArticlesByType = function (author, type, callback) {
+
+
+schema.statics.getArticlesById = function (id, callback) {
+    var condition = {
+        id: id
+    };
+    var view = {
+        _id: 0
+    };
+    this.findOne(condition, view).lean().exec(function (err, doc) {
+        callback(err, doc);
+    })
+};
+
+
+schema.statics.getArticlesCountByType = function (author, type, callback) {
     var condition = {
         author: author,
         type: type
     };
 
     var view = {
-        _id: 0
+        _id: 0,
+        content: 0
     };
-    this.find(condition, view).lean().exec(function (err, docs) {
+
+    this.find(condition, view).count().lean().exec(function (err, cnt) {
+        callback(err, cnt);
+    })
+};
+
+/**
+ * 获取指定作者的指定类型的文章
+ * @param author
+ * @param type
+ * @param callback
+ */
+schema.statics.getArticlesByType = function (author, type,skip, limit,callback) {
+    var condition = {
+        author: author,
+        type: type
+    };
+
+    var view = {
+        _id: 0,
+        content: 0
+    };
+    this.find(condition, view).sort({update_tm: -1}).skip(skip).limit(limit).lean().exec(function (err, docs) {
         callback(err, docs);
     })
 };
@@ -141,12 +174,24 @@ schema.statics.getCount = function (callback) {
 schema.statics.insertArticle = function (author, type, name, content, callback) {
     var self = this;
     this.getCount(function (cnt) {
+        var briefs = content.match(/<p>(.*?)<\/p>.*?<pre>(.*?)<\/pre>/g);
+        var _brief = "";
+        if (_.isArray(briefs) && briefs.length) {
+            var _len = (briefs.length > 5) ? 5 : briefs.length;
+            for (var j = 0; j < _len; ++j) {
+                _brief += briefs[j];
+            }
+        } else {
+            _brief = name;
+        }
+
         var newData = new self({
             id: cnt + 1,
             author: author,
             type: type,
             name: name,
-            content: content
+            content: content,
+            brief: _brief
         });
         newData.save(function (err, resp) {
             callback(err, resp);

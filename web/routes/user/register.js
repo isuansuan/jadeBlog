@@ -4,6 +4,7 @@ var JadeLoader = require("../../../mnode/app").plugin.JadeLoader;
 var Logger = JadeLoader.get('logger');
 var Encrypt = JadeLoader.Jader("utils").get("encrypt-utils");
 var MongooseManager = JadeLoader.get('m');
+var Settings = JadeLoader.get("settings");
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -11,6 +12,11 @@ router.get('/', function (req, res, next) {
 });
 
 router.post("/", function (req, res, next) {
+
+    if (Settings.user.use) {
+        req.json({error: "暂时不开放"});
+        return false;
+    }
     var email = req.body.email;
     var password = req.body.password;
     var username = req.body.username;

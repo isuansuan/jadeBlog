@@ -37,6 +37,7 @@ router.post('/', function (req, res, next) {
                 if (!err) {
                     res.json({error: null, info: "发布成功"});
                 } else {
+                    console.log(err);
                     res.json({error: "发布失败"});
                 }
                 release();

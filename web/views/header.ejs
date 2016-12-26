@@ -12,14 +12,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!--响应式布局--->
-    <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="/lib/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/lib/bootstrap3/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/lib/codemirror5/lib/codemirror.css" rel="stylesheet">
+    <link href="/lib/codemirror5/theme/blackboard.css" rel="stylesheet">
+    <link href="/lib/codemirror5/theme/monokai.css" rel="stylesheet">
+    <link href="/lib/summernote/dist/summernote.css" rel="stylesheet">
+
+    <!--<link href="/lib/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">-->
     <link href="/stylesheets/style.css" rel="stylesheet">
+    <link href="/stylesheets/sidebar.css" rel="stylesheet">
+
     <!-- Optional theme -->
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
     <!--响应式布局--->
     <link rel='icon' href='favicon.ico ' type=‘image/x-ico’/>
-    <link href="/lib/summernote/dist/summernote.css" rel="stylesheet">
 
     <style type="text/css">
         body {
@@ -62,21 +68,21 @@
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="navbar-inner">
         <div class="container-fluid">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+            <!--<button type="button" class="navbar-btn" data-toggle="collapse" data-target="navbar-collapse">-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
             <input type="text" style="display: none;" id="idLang" value="<%= lang %>"/>
-            <a class="brand" href="#" style="font-family: '华文行楷';color:#ff0000;font-size:28px;"><%= projectName %></a>
+            <a class="navbar-brand" href="#" style="font-family: '华文行楷';color:greenyellow;font-size:28px;"><%= projectName %></a>
 
-            <div class="nav-collapse collapse">
+            <div class="navbar-collapse collapse">
                 <p class="navbar-text pull-right">
                     <% if(userName){ %>
                     用户:<a href="#" class="navbar-link"><%= userName %></a>
                     <a href="/user/logout" class="navbar-link">退出</a>
                     <% }else{ %>
-                    <a href="javascript:void(0);" id="idLangSet" style="color: #ff0000"><span class="glyphicon "></span><strong>
+                    <a href="javascript:void(0);" id="idLangSet" style="color: #ff0000"><span class="glyphicon glyphicon-repeat "></span><strong>
                             <% if(lang == 'ch'){ %>
                             英文
                             <% }else{ %>
@@ -100,17 +106,19 @@
                     </a>
                     <% } %>
                 </p>
-                <ul class="nav">
+                <div class="navbar-collapse collapse">
+                    <p class="navbar-text pull-left">
                     <% if(lang == 'ch'){ %>
-                    <li class="active"><a href="index">主页</a></li>
-                    <li><a href="javascript:void(0);">关于</a></li>
-                    <li><a href="javascript:void(0);" id="idContract">联系</a></li>
+                    <a href="/index"><span class="glyphicon  glyphicon-home"></span><strong>主页</strong></a>
+                    <a href="javascript:void(0);"><span class="glyphicon glyphicon-leaf"></span><strong>关于</strong></a>
+                    <a href="javascript:void(0);" id="idContract"><span class="glyphicon glyphicon-phone-alt"></span><strong>联系</strong></a>
                     <% }else{ %>
-                    <li class="active"><a href="index">Home</a></li>
-                    <li><a href="javascript:void(0);">About</a></li>
-                    <li><a href="javascript:void(0);" id="idContract">Contact</a></li>
+                    <a href="/index" ><span class="glyphicon  glyphicon-home "></span><strong>Index</strong></a>
+                    <a href="javascript:void(0);"><span class="glyphicon glyphicon-leaf"></span><strong>About</strong></a>
+                    <a href="javascript:void(0);" id="idContract" ><span class="glyphicon glyphicon-phone-alt"></span><strong>Contract</strong></a>
                     <% } %>
-                </ul>
+                    </p>
+               </div>
             </div>
             <!--/.nav-collapse -->
         </div>
@@ -122,15 +130,15 @@
 </div>
 
 <!--登录-->
-<div id="loginModal" class="modal hide login">
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" id="idCloseLogin">X</button>
-                <h1 class="text-center text-primary">登录</h1>
+                <h3 class="text-center text-primary">登录</h3>
             </div>
             <div class="modal-body">
-                <form action="/user/login" method="post" onsubmit="return false" class="form col-md-8 center-block text-center text-primary">
+                <form action="/user/login" method="post" onsubmit="return false" class="form text-center text-primary">
                     <div class="form-group">
                         <input type="email" class="form-control input-lg" name="email" id="idLogEmail" placeholder="电子邮箱" required="true" title=""
                                data-container="false" data-toggle="popover" data-placement="right"
@@ -142,7 +150,7 @@
                                data-content="密码必须填写">
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-primary btn-lg" id="idLoginAction">立刻登录</button>
+                        <button class="btn btn-primary" id="idLoginAction">立刻登录</button>
                     </div>
                 </form>
             </div>
@@ -163,7 +171,7 @@
                 <h1 class="text-center text-primary">注册用户</h1>
             </div>
             <div class="modal-body">
-                <form action="/user/register" onsubmit="return false;" method="post" class="form col-md-8 center-block text-center text-primary">
+                <form action="/user/register" onsubmit="return false;" method="post" class="form center-block text-center text-sucess">
                     <div class="form-group">
                         <input type="text" class="form-control input-lg" name="username" id="idRegUserName" placeholder="用户名" required="true" title=""
                                data-container="false" data-toggle="popover" data-placement="right"
@@ -216,4 +224,4 @@
 </div><!-- /.modal -->
 
 <div class="container-fluid">
-    <div class="row-fluid">
+    <div class="row">
