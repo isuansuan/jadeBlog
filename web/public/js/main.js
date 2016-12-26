@@ -5,7 +5,21 @@ require.config({
         "lodash": ["/lib/lodash-4.17.2/lodash"],
         "md5": ["/lib/md5"],
         "common": ["/lib/common"],
-        "summernote": ["/lib/summernote/dist/summernote.min"]
+        "summernote": ["/lib/summernote/dist/summernote.min"],
+        "codemirror": ["/lib/codemirror5/lib/codemirror"],
+        "codemirrorxml": ["codemirror", "/lib/codemirror5/mode/xml/xml"],
+        "summernotezhcn": ["/lib/summernote/lang/summernote-zh-CN"],
+        "showLoading": [
+            '/lib/jquery/jquery.showLoading.min'
+        ]
+    },
+    shim: {
+        'bootstrap': {deps: ['jquery']},
+        'codemirror': {deps: ["jquery", "bootstrap"]},
+        'codemirrorxml': {deps: ["codemirror"]},
+        'summernote': {deps: ["jquery", "bootstrap",'codemirror']},
+        'showLoading': {deps: ['jquery']},
+        'summernotezhcn':{deps:['summernote']}
     }
 });
 
@@ -85,7 +99,7 @@ require(['jquery', 'lodash', "md5", "common", "bootstrap"], function ($, _, md5,
                 } finally {
                     if (!error) {
                         $('#loginModal').attr('class', 'modal hide');
-                        window.location.href='/index';
+                        window.location.href = '/index';
                     } else {
                         window.alert(error);
                     }

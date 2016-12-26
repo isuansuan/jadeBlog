@@ -2,7 +2,11 @@ define(function (require, exports, module) {
     var $ = require("jquery");
     var _ = require("lodash");
     var BS = require("bootstrap");
+    var codemirror = require("codemirror");
     var summernote = require("summernote");
+    var summernoteZHCN = require("summernotezhcn");
+    var codemirrorXml = require("codemirrorxml");
+
 
 
     function sendFile(file, editor, $editable) {
@@ -62,7 +66,11 @@ define(function (require, exports, module) {
 
         var $summernote = $('#summernote');
         $summernote.summernote({
-            codemirror: { // codemirror options
+            tabSize: 4,
+            codemirror: {
+                mode: 'text/html',
+                htmlMode: true,
+                lineNumbers: true,
                 theme: 'monokai'
             },
             height: "400px",

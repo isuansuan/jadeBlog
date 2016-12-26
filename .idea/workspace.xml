@@ -2,7 +2,566 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="703c2d8e-07c2-442c-9762-a114f4ec201b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/jquery.showLoading.min.js" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\comment\comment.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\comment\continuecomment.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\dialog\dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\dialog\dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\display\autorefresh.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\display\fullscreen.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\display\fullscreen.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\display\panel.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\display\placeholder.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\display\rulers.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\edit\closebrackets.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\edit\closetag.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\edit\continuelist.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\edit\matchbrackets.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\edit\matchtags.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\edit\trailingspace.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\fold\brace-fold.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\fold\comment-fold.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\fold\foldcode.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\fold\foldgutter.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\fold\foldgutter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\fold\indent-fold.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\fold\markdown-fold.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\fold\xml-fold.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\hint\anyword-hint.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\hint\css-hint.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\hint\html-hint.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\hint\javascript-hint.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\hint\show-hint.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\hint\show-hint.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\hint\sql-hint.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\hint\xml-hint.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\lint\coffeescript-lint.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\lint\css-lint.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\lint\html-lint.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\lint\javascript-lint.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\lint\json-lint.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\lint\lint.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\lint\lint.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\lint\yaml-lint.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\merge\merge.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\merge\merge.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\mode\loadmode.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\mode\multiplex.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\mode\multiplex_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\mode\overlay.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\mode\simple.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\runmode\colorize.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\runmode\runmode-standalone.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\runmode\runmode.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\runmode\runmode.node.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\scroll\annotatescrollbar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\scroll\scrollpastend.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\scroll\simplescrollbars.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\scroll\simplescrollbars.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\search\jump-to-line.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\search\match-highlighter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\search\matchesonscrollbar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\search\matchesonscrollbar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\search\search.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\search\searchcursor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\selection\active-line.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\selection\mark-selection.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\selection\selection-pointer.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\tern\tern.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\tern\tern.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\tern\worker.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\addon\wrap\hardwrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\bin\authors.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\bin\compress" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\bin\lint" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\bin\release" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\bin\source-highlight" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\bin\upload-release.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\activeline.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\anywordhint.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\bidi.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\btree.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\buffers.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\changemode.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\closebrackets.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\closetag.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\complete.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\emacs.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\folding.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\fullscreen.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\hardwrap.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\html5complete.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\indentwrap.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\lint.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\loadmode.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\marker.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\markselection.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\matchhighlighter.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\matchtags.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\merge.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\multiplex.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\panel.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\placeholder.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\preview.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\requirejs.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\resize.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\rulers.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\runmode.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\search.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\simplemode.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\simplescrollbars.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\spanaffectswrapping_shim.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\sublime.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\tern.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\theme.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\trailingspace.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\variableheight.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\vim.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\visibletabs.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\widget.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\demo\xmlcomplete.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\doc\activebookmark.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\doc\docs.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\doc\internals.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\doc\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\doc\logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\doc\manual.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\doc\realworld.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\doc\releases.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\doc\reporting.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\doc\upgrade_v2.2.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\doc\upgrade_v3.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\doc\upgrade_v4.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\doc\yinyang.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\keymap\emacs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\keymap\sublime.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\keymap\vim.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\lib\codemirror.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\lib\codemirror.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\apl\apl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\apl\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\asciiarmor\asciiarmor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\asciiarmor\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\asn.1\asn.1.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\asn.1\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\asterisk\asterisk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\asterisk\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\brainfuck\brainfuck.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\brainfuck\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\clike\clike.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\clike\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\clike\scala.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\clike\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\clojure\clojure.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\clojure\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\cmake\cmake.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\cmake\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\cobol\cobol.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\cobol\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\coffeescript\coffeescript.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\coffeescript\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\commonlisp\commonlisp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\commonlisp\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\crystal\crystal.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\crystal\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\css\css.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\css\gss.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\css\gss_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\css\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\css\less.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\css\less_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\css\scss.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\css\scss_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\css\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\cypher\cypher.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\cypher\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\cypher\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\d\d.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\d\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\dart\dart.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\dart\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\diff\diff.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\diff\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\django\django.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\django\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\dockerfile\dockerfile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\dockerfile\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\dtd\dtd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\dtd\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\dylan\dylan.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\dylan\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\dylan\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\ebnf\ebnf.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\ebnf\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\ecl\ecl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\ecl\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\eiffel\eiffel.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\eiffel\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\elm\elm.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\elm\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\erlang\erlang.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\erlang\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\factor\factor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\factor\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\fcl\fcl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\fcl\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\forth\forth.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\forth\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\fortran\fortran.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\fortran\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\gas\gas.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\gas\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\gfm\gfm.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\gfm\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\gfm\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\gherkin\gherkin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\gherkin\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\go\go.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\go\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\groovy\groovy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\groovy\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\haml\haml.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\haml\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\haml\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\handlebars\handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\handlebars\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\haskell-literate\haskell-literate.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\haskell-literate\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\haskell\haskell.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\haskell\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\haxe\haxe.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\haxe\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\htmlembedded\htmlembedded.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\htmlembedded\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\htmlmixed\htmlmixed.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\htmlmixed\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\http\http.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\http\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\idl\idl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\idl\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\javascript\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\javascript\javascript.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\javascript\json-ld.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\javascript\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\javascript\typescript.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\jinja2\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\jinja2\jinja2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\jsx\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\jsx\jsx.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\jsx\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\julia\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\julia\julia.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\livescript\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\livescript\livescript.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\lua\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\lua\lua.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\markdown\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\markdown\markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\markdown\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\mathematica\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\mathematica\mathematica.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\mbox\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\mbox\mbox.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\meta.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\mirc\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\mirc\mirc.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\mllike\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\mllike\mllike.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\modelica\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\modelica\modelica.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\mscgen\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\mscgen\mscgen.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\mscgen\mscgen_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\mscgen\msgenny_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\mscgen\xu_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\mumps\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\mumps\mumps.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\nginx\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\nginx\nginx.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\nsis\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\nsis\nsis.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\ntriples\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\ntriples\ntriples.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\octave\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\octave\octave.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\oz\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\oz\oz.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\pascal\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\pascal\pascal.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\pegjs\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\pegjs\pegjs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\perl\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\perl\perl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\php\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\php\php.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\php\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\pig\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\pig\pig.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\powershell\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\powershell\powershell.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\powershell\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\properties\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\properties\properties.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\protobuf\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\protobuf\protobuf.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\pug\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\pug\pug.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\puppet\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\puppet\puppet.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\python\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\python\python.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\python\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\q\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\q\q.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\r\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\r\r.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\rpm\changes\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\rpm\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\rpm\rpm.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\rst\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\rst\rst.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\ruby\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\ruby\ruby.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\ruby\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\rust\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\rust\rust.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\rust\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\sas\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\sas\sas.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\sass\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\sass\sass.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\scheme\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\scheme\scheme.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\shell\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\shell\shell.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\shell\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\sieve\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\sieve\sieve.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\slim\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\slim\slim.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\slim\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\smalltalk\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\smalltalk\smalltalk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\smarty\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\smarty\smarty.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\solr\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\solr\solr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\soy\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\soy\soy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\soy\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\sparql\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\sparql\sparql.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\spreadsheet\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\spreadsheet\spreadsheet.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\sql\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\sql\sql.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\stex\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\stex\stex.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\stex\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\stylus\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\stylus\stylus.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\swift\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\swift\swift.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\swift\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\tcl\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\tcl\tcl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\textile\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\textile\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\textile\textile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\tiddlywiki\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\tiddlywiki\tiddlywiki.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\tiddlywiki\tiddlywiki.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\tiki\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\tiki\tiki.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\tiki\tiki.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\toml\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\toml\toml.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\tornado\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\tornado\tornado.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\troff\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\troff\troff.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\ttcn-cfg\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\ttcn-cfg\ttcn-cfg.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\ttcn\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\ttcn\ttcn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\turtle\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\turtle\turtle.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\twig\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\twig\twig.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\vb\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\vb\vb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\vbscript\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\vbscript\vbscript.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\velocity\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\velocity\velocity.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\verilog\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\verilog\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\verilog\verilog.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\vhdl\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\vhdl\vhdl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\vue\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\vue\vue.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\webidl\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\webidl\webidl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\xml\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\xml\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\xml\xml.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\xquery\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\xquery\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\xquery\xquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\yacas\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\yacas\yacas.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\yaml-frontmatter\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\yaml-frontmatter\yaml-frontmatter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\yaml\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\yaml\yaml.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\z80\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\mode\z80\z80.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\rollup.config.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\codemirror.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\display\Display.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\display\focus.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\display\gutters.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\display\highlight_worker.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\display\line_numbers.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\display\mode_state.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\display\operations.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\display\scroll_events.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\display\scrollbars.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\display\scrolling.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\display\selection.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\display\update_display.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\display\update_line.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\display\update_lines.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\display\view_tracking.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\edit\CodeMirror.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\edit\commands.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\edit\deleteNearSelection.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\edit\drop_events.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\edit\fromTextArea.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\edit\global_events.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\edit\key_events.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\edit\legacy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\edit\main.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\edit\methods.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\edit\mouse_events.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\edit\options.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\edit\utils.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\input\ContentEditableInput.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\input\TextareaInput.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\input\indent.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\input\input.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\input\keymap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\input\keynames.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\line\highlight.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\line\line_data.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\line\pos.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\line\saw_special_spans.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\line\spans.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\line\utils_line.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\measurement\position_measurement.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\measurement\widgets.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\model\Doc.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\model\change_measurement.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\model\changes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\model\chunk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\model\document_data.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\model\history.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\model\line_widget.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\model\mark_text.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\model\selection.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\model\selection_updates.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\modes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\util\StringStream.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\util\bidi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\util\browser.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\util\dom.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\util\event.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\util\feature_detection.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\util\misc.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\src\util\operation_group.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\comment_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\doc_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\driver.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\emacs_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\lint.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\mode_test.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\mode_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\multi_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\phantom_driver.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\run.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\scroll_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\search_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\sql-hint-test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\sublime_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\test\vim_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\3024-day.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\3024-night.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\abcdef.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\ambiance-mobile.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\ambiance.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\base16-dark.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\base16-light.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\bespin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\blackboard.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\cobalt.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\colorforth.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\dracula.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\duotone-dark.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\duotone-light.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\eclipse.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\elegant.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\erlang-dark.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\hopscotch.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\icecoder.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\isotope.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\lesser-dark.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\liquibyte.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\material.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\mbo.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\mdn-like.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\midnight.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\monokai.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\neat.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\neo.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\night.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\panda-syntax.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\paraiso-dark.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\paraiso-light.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\pastel-on-dark.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\railscasts.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\rubyblue.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\seti.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\solarized.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\the-matrix.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\tomorrow-night-bright.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\tomorrow-night-eighties.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\ttcn.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\twilight.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\vibrant-ink.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\xq-dark.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\xq-light.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\yeti.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\codemirror-5.22.0\theme\zenburn.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/js/app/editblog.js" afterPath="$PROJECT_DIR$/web/public/js/app/editblog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/header.ejs" afterPath="$PROJECT_DIR$/web/views/header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/jadeLoader.log" afterPath="$PROJECT_DIR$/logs/jadeLoader.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/js/main.js" afterPath="$PROJECT_DIR$/web/public/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blogPro1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,21 +585,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public/stylesheets/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1386">
-              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/public/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1449" max-vertical-offset="3255">
-              <caret line="87" column="54" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3549">
+              <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -49,38 +598,28 @@
       <file leaf-file-name="editblog.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1386" max-vertical-offset="3444">
-              <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.52913386" vertical-offset="1134" max-vertical-offset="3612">
+              <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lang.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/lang.html">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/public/js/app/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.3" vertical-offset="189" max-vertical-offset="798">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery-custom-event.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/jquery-custom-event.html">
+      <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/views/header.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="14.7" vertical-offset="441" max-vertical-offset="2604">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hint-userdefine.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/hint-userdefine.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="10.5" vertical-offset="315" max-vertical-offset="1113">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-11.2" vertical-offset="252" max-vertical-offset="4893">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,8 +628,18 @@
       <file leaf-file-name="hint-emoji.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/hint-emoji.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="21.0" vertical-offset="630" max-vertical-offset="1407">
+            <state vertical-scroll-proportion="26.733334" vertical-offset="802" max-vertical-offset="1407">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lang.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/lang.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.066667" vertical-offset="163" max-vertical-offset="798">
+              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -99,7 +648,7 @@
       <file leaf-file-name="get-button.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/get-button.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="23.1" vertical-offset="693" max-vertical-offset="1659">
+            <state vertical-scroll-proportion="25.2" vertical-offset="756" max-vertical-offset="1659">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -109,7 +658,7 @@
       <file leaf-file-name="external-api.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/external-api.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="31.5" vertical-offset="945" max-vertical-offset="1701">
+            <state vertical-scroll-proportion="22.266666" vertical-offset="668" max-vertical-offset="1701">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -119,8 +668,18 @@
       <file leaf-file-name="codemirror.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/codemirror.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.266666" vertical-offset="445" max-vertical-offset="1050">
-              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+            <state vertical-scroll-proportion="-6.3" vertical-offset="315" max-vertical-offset="1050">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bs3fa4.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/bs3fa4.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="882">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -134,7 +693,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mnode/plugin/jadeContext.json" />
         <option value="$PROJECT_DIR$/mnode/plugin/express/example/app.js" />
         <option value="$PROJECT_DIR$/web/static/test" />
         <option value="$PROJECT_DIR$/web/public/javascripts/jquery/jquery3.1.1.js" />
@@ -170,12 +728,10 @@
         <option value="$PROJECT_DIR$/web/public/js/app/blog.js" />
         <option value="$PROJECT_DIR$/web/views/index.ejs" />
         <option value="$PROJECT_DIR$/web/views/editblog.ejs" />
-        <option value="$PROJECT_DIR$/web/views/header.ejs" />
         <option value="$PROJECT_DIR$/web/public/stylesheets/sidebar.css" />
         <option value="$PROJECT_DIR$/web/config/settings.js" />
         <option value="$PROJECT_DIR$/web/routes/blog/editblog.js" />
         <option value="$PROJECT_DIR$/web/routes/user/login.js" />
-        <option value="$PROJECT_DIR$/web/public/js/main.js" />
         <option value="$PROJECT_DIR$/web/routes/blog/blogdetail.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/web/views/blogdetail.ejs" />
@@ -184,6 +740,9 @@
         <option value="$PROJECT_DIR$/web/schemas/article.js" />
         <option value="$PROJECT_DIR$/web/routes/blog/index.js" />
         <option value="$PROJECT_DIR$/web/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/../a.html" />
+        <option value="$PROJECT_DIR$/web/views/header.ejs" />
+        <option value="$PROJECT_DIR$/web/public/js/main.js" />
         <option value="$PROJECT_DIR$/web/public/js/app/editblog.js" />
       </list>
     </option>
@@ -255,6 +814,24 @@
               <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogPro1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogPro1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -271,6 +848,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogPro1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogPro1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -341,11 +940,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ff\Desktop\blogPro1\web\public\lib\jquery" />
       <recent name="C:\Users\ff\Desktop\blogPro1\web\routes\blog" />
       <recent name="C:\Users\ff\Desktop\blogPro1\web\views" />
       <recent name="C:\Users\ff\Desktop\blogPro1\web\public\js\app" />
       <recent name="C:\Users\ff\Desktop\blogPro1\web\public\stylesheets" />
-      <recent name="C:\Users\ff\Desktop\blogPro1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ff\Desktop\blogPro1\web\routes\blog" />
@@ -437,7 +1036,7 @@
     <option name="totallyTimeSpent" value="17160000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -486,25 +1085,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mnode/utils/encrypt-utils/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/images/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/lib/lodash-4.17.2/lodash.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="367" column="49" selection-start-line="367" selection-start-column="49" selection-end-line="367" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/public/lib/underscore/underscore.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -695,14 +1275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/js/app/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/public/stylesheets/sidebar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.496063" vertical-offset="357" max-vertical-offset="6216">
@@ -772,10 +1344,9 @@
         <state vertical-scroll-proportion="-17.5" vertical-offset="567" max-vertical-offset="1554">
           <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -796,36 +1367,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.333333" vertical-offset="1934" max-vertical-offset="4788">
-          <caret line="104" column="51" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="51" />
-          <folding>
-            <element signature="n#style#0;n#a#2;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1386">
           <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1449" max-vertical-offset="3255">
-          <caret line="87" column="54" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/lang.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.3" vertical-offset="189" max-vertical-offset="798">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -840,15 +1385,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/hint-userdefine.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.5" vertical-offset="315" max-vertical-offset="1113">
+        <state vertical-scroll-proportion="14.7" vertical-offset="441" max-vertical-offset="1113">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/hint-emoji.html">
+    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/airmode.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="21.0" vertical-offset="630" max-vertical-offset="1407">
+        <state vertical-scroll-proportion="-14.7" vertical-offset="0" max-vertical-offset="840">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/external-api.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="22.266666" vertical-offset="668" max-vertical-offset="1701">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -856,15 +1409,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/get-button.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="23.1" vertical-offset="693" max-vertical-offset="1659">
+        <state vertical-scroll-proportion="25.2" vertical-offset="756" max-vertical-offset="1659">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/external-api.html">
+    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/hint-emoji.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="31.5" vertical-offset="945" max-vertical-offset="1701">
+        <state vertical-scroll-proportion="26.733334" vertical-offset="802" max-vertical-offset="1407">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/lang.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.066667" vertical-offset="163" max-vertical-offset="798">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.2" vertical-offset="252" max-vertical-offset="4893">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/lib/jquery/jquery.showLoading.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="622">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3549">
+          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/js/app/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/bs3fa4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -872,16 +1473,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/codemirror.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.266666" vertical-offset="445" max-vertical-offset="1050">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        <state vertical-scroll-proportion="-6.3" vertical-offset="315" max-vertical-offset="1050">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1386" max-vertical-offset="3444">
-          <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.52913386" vertical-offset="1134" max-vertical-offset="3612">
+          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
           <folding />
         </state>
       </provider>
