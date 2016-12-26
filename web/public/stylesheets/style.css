@@ -1,7 +1,10 @@
 a {
-    color: greenyellow;
+    color: blueviolet;
     margin: 0 5px;
     text-decoration: none;
+}
+.navbar-text.pull-left a{
+    color: greenyellow;
 }
 
 .myPanel{

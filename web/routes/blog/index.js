@@ -36,7 +36,7 @@ router.get('/', function (req, res, next) {
                 });
             },
             "getArticles": ["getCnt", function (resp, cb) {
-                model.getArticlesByType(author, articleType, skip,perPageCnt, function (err, docs) {
+                model.getArticlesByType(author, articleType, skip, perPageCnt, function (err, docs) {
                     if (!err && docs.length) {
                         for (var i = 0, len = docs.length; i < len; ++i) {
                             var doc = docs[i];
