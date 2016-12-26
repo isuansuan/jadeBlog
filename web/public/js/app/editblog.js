@@ -66,30 +66,13 @@ define(function (require, exports, module) {
                 theme: 'monokai'
             },
             height: "400px",
-            width: "1000px",
+            width: "1200px",
             lang: 'zh-CN',
             minHeight: null,
             maxHeight: null,
             focus: true,
             dialogsInBody: true,
             dialogsFade: true,
-            popover: {
-                image: [
-                    ['imagesize', ['imageSize100', 'imageSize50', 'imageSize25']],
-                    ['float', ['floatLeft', 'floatRight', 'floatNone']],
-                    ['remove', ['removeMedia']]
-                ],
-                link: [
-                    ['link', ['linkDialogShow', 'unlink']]
-                ],
-                air: [
-                    ['color', ['color']],
-                    ['font', ['bold', 'underline', 'clear']],
-                    ['para', ['ul', 'paragraph']],
-                    ['table', ['table']],
-                    ['insert', ['link', 'picture']]
-                ]
-            },
             callbacks: {
                 onImageUpload: function (files, editor, $editable) {
                     sendFile(files[0], editor, $editable);
