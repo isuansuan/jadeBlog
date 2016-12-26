@@ -9,7 +9,22 @@ require.config({
         "codemirror": ["/lib/codemirror5/lib/codemirror"],
         "codemirrorxml": ["codemirror","/lib/codemirror5/mode/xml/xml"],
         "summernotezhcn": ["/lib/summernote/lang/summernote-zh-CN"],
-        "showLoading": ['/lib/jquery/jquery.showLoading.min']
+        "showLoading": ['/lib/jquery/jquery.showLoading.min'],
+        "jgrowl": [
+            '/lib/jquery/jquery.jgrowl.min'
+        ],
+        "jform": [
+            '/lib/jquery/jquery.form'
+        ],
+        "datePicker": [
+            '/lib/jquery/My97DatePicker/WdatePicker'
+        ],
+        "highcharts": [
+            '/lib/jquery/highcharts'
+        ],
+        "bootstrapSelect": [
+            '/lib/bootstrap3/bootstrap-select/js/bootstrap-select'
+        ]
     },
     shim: {
         'bootstrap': {deps: ['jquery']},
@@ -17,7 +32,11 @@ require.config({
         'codemirrorxml': {deps: ["codemirror"]},
         'summernote': {deps: ['codemirror']},
         'showLoading': {deps: ['jquery']},
-        'summernotezhcn':{deps:['summernote']}
+        'summernotezhcn':{deps:['summernote']},
+        'jgrowl': {deps: ['jquery']},
+        'jform': {deps: ['jquery']},
+        'highcharts': {deps: ['jquery']},
+        'bootstrapSelect': {deps: ['jquery','bootstrap']}
     }
 });
 
