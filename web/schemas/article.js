@@ -12,7 +12,7 @@ var schemeTable = {
     name: {type: String, required: true, index: true},
     content: {type: String, required: true},
     author: {type: String, required: true, index: true},
-    update_tm: {type: Date, default: Date.now},
+    update_tm: {type: Date, default: Date.now,index: true},
     create_tm: {type: Date, default: Date.now, index: true},
     extra: {type: Mongoose.Schema.Types.Mixed}
 };
@@ -33,7 +33,7 @@ schema.statics.getArticlesByType = function (author, type, callback) {
     var view = {
         _id: 0
     };
-    this.find(condition, view).lean().exec(function (err, docs) {
+    this.find(condition, view).sort({update_tm: -1}).lean().exec(function (err, docs) {
         callback(err, docs);
     })
 };

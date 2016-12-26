@@ -4,6 +4,7 @@ var JadeLoader = require("../../../mnode/app").plugin.JadeLoader;
 var Logger = JadeLoader.get('logger');
 var MongooseManager = JadeLoader.get("m");
 var Settings = JadeLoader.get("settings");
+var _ = require("lodash");
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -24,14 +25,23 @@ router.get('/', function (req, res, next) {
         model.getArticlesByType(author, articleType, function (err, docs) {
             if (!err && docs.length) {
                 var list = [];
-                console.log(docs)
                 for (var i = 0, len = docs.length; i < len; ++i) {
                     var doc = docs[i];
+                    var briefs = doc.content.match(/<p>(.*?)<\/p>.*?<pre>(.*?)<\/pre>/g);
+                    var _brief = "";
+                    if (_.isArray(briefs) && briefs.length) {
+                        var _len = (briefs.length == 1) ? 1 : ((briefs.length > 5) ? 5 : briefs.length);
+                        for (var j = 0; j < _len; ++j) {
+                            _brief += briefs[j];
+                        }
+                    } else {
+                        _brief = doc.name;
+                    }
                     list.push({
                         title: doc.name,
                         author: doc.author,
                         content: doc.content,
-                        brief: doc.content.substring(0, 100),
+                        brief: _brief,
                         create_tm: new Date(doc.create_tm).toLocaleString(),
                         update_tm: new Date(doc.update_tm).toLocaleString()
                     });

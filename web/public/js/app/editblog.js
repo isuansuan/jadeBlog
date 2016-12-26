@@ -62,9 +62,15 @@ define(function (require, exports, module) {
 
         var $summernote = $('#summernote');
         $summernote.summernote({
+            codemirror: { // codemirror options
+                theme: 'monokai'
+            },
             height: "400px",
             width: "1000px",
             lang: 'zh-CN',
+            minHeight: null,
+            maxHeight: null,
+            focus: true,
             dialogsInBody: true,
             dialogsFade: true,
             popover: {
@@ -136,6 +142,8 @@ define(function (require, exports, module) {
                     window.alert(data.error);
                 } else {
                     window.alert(data.info);
+                    $summernote.summernote('destroy');
+                    window.location.href = '/blog/index?type=' + articleType;
                 }
             });
         });

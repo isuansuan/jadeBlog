@@ -1,6 +1,16 @@
 a {
     color: greenyellow;
     margin: 0 5px;
+    text-decoration: none;
+}
+
+.panel-heading a{
+    text-decoration: none;
+}
+.panel-heading a:hover{
+    opacity:0.8;
+    background-color: #9D9D9D;
+    text-decoration: dotted;
 }
 
 .mask {
