@@ -14,8 +14,7 @@ define(function (require, exports, module) {
         var filename = false;
         try {
             filename = file['name'];
-            //alert(filename);
-        } catch (e) {
+            //alert(filename);        } catch (e) {
             filename = false;
         }
         if (!filename) {
@@ -68,10 +67,12 @@ define(function (require, exports, module) {
         $summernote.summernote({
             tabSize: 4,
             codemirror: {
-                mode: 'text/javascript',
+                theme: 'monokai',
                 htmlMode: true,
                 lineNumbers: true,
-                theme: 'monokai'
+                mode: 'text/html',
+                lineWrapping:true,
+                extraKeys: {"Ctrl-Space": "autocomplete"}
             },
             height: "400px",
             width: "1200px",
