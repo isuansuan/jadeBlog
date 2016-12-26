@@ -44,7 +44,7 @@ define(function (require, exports, module) {
             processData: false,
             success: function (data) {
                 var url = data.url;
-                $('#summernote').summernote('editor.insertImage', url);
+                $('.summernote').summernote('editor.insertImage', url);
                 $(".note-alarm").html("上传成功,请等待加载");
                 setTimeout(function () {
                     $(".note-alarm").remove();

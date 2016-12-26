@@ -52,8 +52,18 @@
       <file leaf-file-name="editblog.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+            <state relative-caret-position="141">
+              <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="external-api.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/external-api.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="34" column="22" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -127,7 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mnode/plugin/express/example/app.js" />
         <option value="$PROJECT_DIR$/web/static/test" />
         <option value="$PROJECT_DIR$/web/public/javascripts/jquery/jquery3.1.1.js" />
         <option value="$PROJECT_DIR$/web/public/config/requirejs.js" />
@@ -177,6 +186,7 @@
         <option value="$PROJECT_DIR$/web/public/lib/md5.js" />
         <option value="$PROJECT_DIR$/web/public/js/main.js" />
         <option value="$PROJECT_DIR$/web/views/header.ejs" />
+        <option value="$PROJECT_DIR$/web/public/lib/summernote/examples/external-api.html" />
         <option value="$PROJECT_DIR$/web/public/js/app/editblog.js" />
       </list>
     </option>
@@ -404,18 +414,18 @@
       <workItem from="1482416072794" duration="5151000" />
       <workItem from="1482503541690" duration="3656000" />
       <workItem from="1482582277026" duration="6105000" />
-      <workItem from="1482762332981" duration="2896000" />
+      <workItem from="1482762332981" duration="3332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20056000" />
+    <option name="totallyTimeSpent" value="20492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22098215" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22098215" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -673,13 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/external-api.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/get-button.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -820,10 +823,18 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/external-api.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+        <state relative-caret-position="141">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
           <folding />
         </state>
       </provider>
