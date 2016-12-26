@@ -30,7 +30,7 @@ router.get('/', function (req, res, next) {
                     var briefs = doc.content.match(/<p>(.*?)<\/p>.*?<pre>(.*?)<\/pre>/g);
                     var _brief = "";
                     if (_.isArray(briefs) && briefs.length) {
-                        var _len = (briefs.length == 1) ? 1 : ((briefs.length > 5) ? 5 : briefs.length);
+                        var _len = (briefs.length > 5) ? 5 : briefs.length;
                         for (var j = 0; j < _len; ++j) {
                             _brief += briefs[j];
                         }
