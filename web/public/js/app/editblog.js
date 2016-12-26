@@ -64,11 +64,11 @@ define(function (require, exports, module) {
             })
         });
 
-        var $summernote = $('#summernote');
+        var $summernote = $('.summernote');
         $summernote.summernote({
             tabSize: 4,
             codemirror: {
-                mode: 'text/html',
+                mode: 'text/javascript',
                 htmlMode: true,
                 lineNumbers: true,
                 theme: 'monokai'
