@@ -7,17 +7,15 @@ require.config({
         "common": ["/lib/common"],
         "summernote": ["/lib/summernote/dist/summernote.min"],
         "codemirror": ["/lib/codemirror5/lib/codemirror"],
-        "codemirrorxml": ["codemirror", "/lib/codemirror5/mode/xml/xml"],
+        "codemirrorxml": ["codemirror","/lib/codemirror5/mode/xml/xml"],
         "summernotezhcn": ["/lib/summernote/lang/summernote-zh-CN"],
-        "showLoading": [
-            '/lib/jquery/jquery.showLoading.min'
-        ]
+        "showLoading": ['/lib/jquery/jquery.showLoading.min']
     },
     shim: {
         'bootstrap': {deps: ['jquery']},
         'codemirror': {deps: ["jquery", "bootstrap"]},
         'codemirrorxml': {deps: ["codemirror"]},
-        'summernote': {deps: ["jquery", "bootstrap",'codemirror']},
+        'summernote': {deps: ['codemirror']},
         'showLoading': {deps: ['jquery']},
         'summernotezhcn':{deps:['summernote']}
     }
