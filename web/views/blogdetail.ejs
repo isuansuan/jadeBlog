@@ -1,0 +1,29 @@
+<% include header.ejs %>
+<% include sidebar.ejs %>
+<div class="col-md-8">
+    <% if(info){%>
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <h3 class="panel-title"><%= info.type%>&nbsp;&nbsp;<%= info.name%></h3>
+            </div>
+            <div class="panel-body">
+                <%- info.content%>
+            </div>
+        </div>
+    <%}else{%>
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <h3 class="panel-title">还没有发布文章</h3>
+            </div>
+            <div class="panel-body">
+            </div>
+        </div>
+    <%}%>
+</div>
+<% include footer.ejs %>
+<script type="text/javascript">
+    require(["/js/main.js"], function () {
+        require(["/js/app/blog.js"]);
+    });
+</script>
+

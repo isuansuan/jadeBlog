@@ -2,7 +2,7 @@
     <ul class="bs-docs-sidenav">
         <% if(sidebar && sidebar.length){%>
             <% for(var i = 0, len = sidebar.length;i < len;i++){ %>
-            <li id="barLink<%= i %>"><a  href="/blog/index?type=<%= sidebar[i][lang]%>"><i
+            <li id="barLink<%= i %>"><a  href="/blog/index?type=<%= sidebar[i][lang]%>&page=1"><i
                             class="glyphicon glyphicon-chevron-right pull-right"></i><%= sidebar[i][lang] %></a></li>
             <% } %>
         <%}%>

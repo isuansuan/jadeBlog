@@ -5,6 +5,7 @@ var Logger = JadeLoader.get('logger');
 var MongooseManager = JadeLoader.get("m");
 var Settings = JadeLoader.get("settings");
 var _ = require("lodash");
+var Async = require("async");
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -18,38 +19,58 @@ router.get('/', function (req, res, next) {
     }
     MongooseManager.schema("article").model(function (error, model, release) {
         if (error) {
-            req.dispatch('blog', {error: "数据库连接失败"}, next);
+            req.dispatch('blog', {error: "db error", info: [], totalCnt: 0, perPageCnt: 1, page: 1}, next);
             return;
         }
 
-        model.getArticlesByType(author, articleType, function (err, docs) {
-            if (!err && docs.length) {
-                var list = [];
-                for (var i = 0, len = docs.length; i < len; ++i) {
-                    var doc = docs[i];
-                    var briefs = doc.content.match(/<p>(.*?)<\/p>.*?<pre>(.*?)<\/pre>/g);
-                    var _brief = "";
-                    if (_.isArray(briefs) && briefs.length) {
-                        var _len = (briefs.length > 5) ? 5 : briefs.length;
-                        for (var j = 0; j < _len; ++j) {
-                            _brief += briefs[j];
+        var totalCnt = 0;
+        var list = [];
+
+        var perPageCnt = 6;//每页2个
+        var skip = perPageCnt * ((req.query.page || 1) - 1);
+        Async.auto({
+            "getCnt": function (cb) {
+                model.getArticlesCountByType(author, articleType, function (err, cnt) {
+                    totalCnt = err ? 0 : cnt;
+                    cb(null);
+                });
+            },
+            "getArticles": ["getCnt", function (resp, cb) {
+                model.getArticlesByType(author, articleType, skip,perPageCnt, function (err, docs) {
+                    if (!err && docs.length) {
+                        for (var i = 0, len = docs.length; i < len; ++i) {
+                            var doc = docs[i];
+                            list.push({
+                                id: doc.id,
+                                title: doc.name,
+                                author: doc.author,
+                                content: doc.content,
+                                brief: doc.brief,
+                                type: articleType,
+                                create_tm: new Date(doc.create_tm).toLocaleString(),
+                                update_tm: new Date(doc.update_tm).toLocaleString()
+                            });
                         }
-                    } else {
-                        _brief = doc.name;
                     }
-                    list.push({
-                        title: doc.name,
-                        author: doc.author,
-                        content: doc.content,
-                        brief: _brief,
-                        create_tm: new Date(doc.create_tm).toLocaleString(),
-                        update_tm: new Date(doc.update_tm).toLocaleString()
-                    });
-                }
-                req.dispatch('blog', {error: "数据库连接失败", info: list}, next);
-            } else {
-                req.dispatch('blog', {error: JSON.stringify(err), info: []}, next);
-            }
+                    cb(null);
+                });
+            }]
+        }, function (err, resp) {
+
+            var c = parseInt(totalCnt / perPageCnt);//去整数部分
+            var e = totalCnt % perPageCnt;//取余数部分
+
+            var pageCnt = c + ((e == 0) ? 0 : 1);//总页数
+
+            req.dispatch('blog', {
+                error: err,
+                info: list,
+                totalCnt: totalCnt,
+                perPageCnt: perPageCnt,
+                page: req.query.page || 1,
+                pageCnt: pageCnt,
+                type: articleType
+            }, next);
             release();
         });
     });

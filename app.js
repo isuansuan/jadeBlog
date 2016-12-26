@@ -52,7 +52,8 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
             return t[0];
         }
 
-        if (!Express.routesList[getReqUrl(url)]) {
+        url = getReqUrl(url);
+        if (!Express.routesList[url]) {
             res.redirect("/index");
         } else {
             var warnUrls = ["/blog/editblog", "/blog/addNew"];
