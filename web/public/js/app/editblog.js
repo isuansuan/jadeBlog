@@ -20,6 +20,8 @@ define(function (require, exports, module) {
         }
         if (!filename) {
             $(".note-alarm").remove();
+            alert("failed");
+            return;
         }
         //以上防止在图片在编辑器内拖拽引发第二次上传导致的提示错误
         var ext = filename.substr(filename.lastIndexOf("."));
@@ -42,7 +44,7 @@ define(function (require, exports, module) {
             processData: false,
             success: function (data) {
                 var url = data.url;
-                $('#summernote').summernote('editor.insertImage', url);
+                $('.summernote').summernote('editor.insertImage', url);
                 $(".note-alarm").html("上传成功,请等待加载");
                 setTimeout(function () {
                     $(".note-alarm").remove();
@@ -68,10 +70,11 @@ define(function (require, exports, module) {
         $summernote.summernote({
             tabSize: 4,
             codemirror: {
-                mode: 'text/javascript',
+                theme: 'monokai',
                 htmlMode: true,
                 lineNumbers: true,
-                theme: 'monokai'
+                mode: 'text/html'                // lineWrapping:true,
+                // extraKeys: {"Ctrl-Space": "autocomplete"}
             },
             height: "400px",
             width: "1200px",
