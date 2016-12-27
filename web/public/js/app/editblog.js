@@ -138,7 +138,16 @@ define(function (require, exports, module) {
                     ]
                 },
                 toolbar: [
-                    ['insert', ['template']]
+                    ['style', ['bold', 'italic', 'underline', 'clear','hr','strikethrough','ul','ol']],
+                    //['style', ["style"]],
+                    ['fontsize', ['fontsize']],
+                    //['color', ['color']],
+                    //['para', ['ul', 'ol', 'paragraph']],
+                    ['height', ['height']],
+                    ['table', ['table']], // no table button
+                    ['insert', ['template',"picture","link","video",'color','style','fontname']],
+                    ['layout',['paragraph','height','fullscreen','codeview']],
+                    ['help', ['help']] //no help button
                 ],
                 template: {
                     path: '/summernoteTpls', // path to your template folder
