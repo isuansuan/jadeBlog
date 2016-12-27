@@ -9,9 +9,14 @@ require.config({
         "codemirror": ["/lib/codemirror5/lib/codemirror"],
         "codemirrorxml": ["codemirror","/lib/codemirror5/mode/xml/xml"],
         "summernotezhcn": ["/lib/summernote/lang/summernote-zh-CN"],
+        "summernotekokr": ["/lib/summernote/lang/summernote-ko-KR"],
         "showLoading": ['/lib/jquery/jquery.showLoading.min'],
+        "summernoteextemoji":["/lib/summernote-ext-emoji/dist/summernote-ext-emoji-min"],
+        "summernoteexthighlight":["/lib/summernote-ext-highlight/src/summernote-ext-highlight"],
+        "summernoteImageTitle":["/lib/summernote/plugin/summernote-image-title"],
+        "summernoteExtTemplate":["/lib/summernote/plugin/summernote-ext-template"],
         "jgrowl": [
-            '/lib/jquery/jquery.jgrowl.min'
+            '/lib/jGrowl/jquery.jgrowl.min'
         ],
         "jform": [
             '/lib/jquery/jquery.form'
@@ -33,6 +38,11 @@ require.config({
         'summernote': {deps: ['codemirror']},
         'showLoading': {deps: ['jquery']},
         'summernotezhcn':{deps:['summernote']},
+        'summernotekokr':{deps:['summernote']},
+        'summernoteextemoji':{deps:['summernote']},
+        'summernoteexthighlight':{deps:['summernote']},
+        'summernoteImageTitle':{deps:['summernote']},
+        'summernoteExtTemplate':{deps:['summernote']},
         'jgrowl': {deps: ['jquery']},
         'jform': {deps: ['jquery']},
         'highcharts': {deps: ['jquery']},
@@ -40,7 +50,7 @@ require.config({
     }
 });
 
-require(['jquery', 'lodash', "md5", "common", "bootstrap"], function ($, _, md5, common, BT) {
+require(['jquery', 'lodash', "md5", "common", "bootstrap",'jgrowl'], function ($, _, md5, common, BT,jgrowl) {
 
     $(document).ready(function () {
         //启用弹出框
@@ -50,6 +60,7 @@ require(['jquery', 'lodash', "md5", "common", "bootstrap"], function ($, _, md5,
         //    interval: 1
         //});
 
+        //$.jGrowl("A message that will live a little longer.", { life: 1000 ,position:'bottom-left'});
         //语言设置
         $("#idLangSet").on("click", function () {
             var lang = $("#idLang").val();

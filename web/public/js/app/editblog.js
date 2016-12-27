@@ -5,7 +5,13 @@ define(function (require, exports, module) {
     var codemirror = require("codemirror");
     var summernote = require("summernote");
     var summernoteZHCN = require("summernotezhcn");
+    var summernotekokr = require("summernotekokr");
     var codemirrorXml = require("codemirrorxml");
+    var summernoteExtEmoji = require("summernote-ext-emoji");
+    var summernoteExtHightLight = require("summernoteexthighlight");
+    var summernoteImageTitle = require("summernoteImageTitle");
+    var summernoteExtTemplate = require("summernoteExtTemplate");
+
 
 
 
@@ -27,7 +33,7 @@ define(function (require, exports, module) {
         var ext = filename.substr(filename.lastIndexOf("."));
         ext = ext.toUpperCase();
         var timestamp = new Date().getTime();
-        var name = timestamp + "_" + $("#summernote").attr('aid') + ext;
+        var name = timestamp + "_" + $(".summernote").attr('aid') + ext;
         //name是文件名，自己随意定义，aid是我自己增加的属性用于区分文件用户
         var data = new FormData();
         data.append("file", file);
@@ -60,6 +66,7 @@ define(function (require, exports, module) {
     }
 
     $(document).ready(function () {
+
         $("#idBtnAddArticleType").on("click", function () {
             $('#idAddArticleTypeDialog').modal({
                 keyboard: true
@@ -67,28 +74,91 @@ define(function (require, exports, module) {
         });
 
         var $summernote = $('.summernote');
-        $summernote.summernote({
-            tabSize: 4,
-            codemirror: {
-                theme: 'monokai',
-                htmlMode: true,
-                lineNumbers: true,
-                mode: 'text/html'                // lineWrapping:true,
-                // extraKeys: {"Ctrl-Space": "autocomplete"}
-            },
-            height: "400px",
-            width: "1200px",
-            lang: 'zh-CN',
-            minHeight: null,
-            maxHeight: null,
-            focus: true,
-            dialogsInBody: true,
-            dialogsFade: true,
-            callbacks: {
-                onImageUpload: function (files, editor, $editable) {
-                    sendFile(files[0], editor, $editable);
+
+        // load github's emoji list
+        $.ajax({
+            url: 'https://api.github.com/emojis'
+        }).then(function (data) {
+            var emojis = Object.keys(data);
+            var emojiUrls = data;
+
+
+            var config = {
+                tabSize: 4,
+                codemirror: {
+                    theme: 'monokai',
+                    htmlMode: true,
+                    lineNumbers: true,
+                    mode: 'text/html'                // lineWrapping:true,
+                    // extraKeys: {"Ctrl-Space": "autocomplete"}
+                },
+                prettifyHtml:true,
+                height: 400,
+                width: 1000,
+                lang: 'zh-CN',
+                minHeight: null,
+                maxHeight: null,
+                focus: true,
+                dialogsInBody: true,
+                dialogsFade: true,
+                callbacks: {
+                    onImageUpload: function (files, editor, $editable) {
+                        sendFile(files[0], editor, $editable);
+                    }
+                },
+                hintDirection: 'bottom',
+                hint: [{
+                    search: function (keyword, callback) {
+                        callback($.grep(emojis, function (item) {
+                            return item.indexOf(keyword)  === 0;
+                        }));
+                    },
+                    match: /\B:([\-+\w]+)$/,
+                    template: function (item) {
+                        var content = emojiUrls[item];
+                        return '<img src="' + content + '" width="20" /> :' + item + ':';
+                    },
+                    content: function (item) {
+                        var url = emojiUrls[item];
+                        if (url) {
+                            return $('<img />').attr('src', url).css('width', 20)[0];
+                        }
+                        return '';
+                    }
+                }],
+                imageTitle: {
+                    specificAltField: true
+                },
+                popover: {
+                    image: [
+                        ['imagesize', ['imageSize100', 'imageSize50', 'imageSize25']],
+                        ['float', ['floatLeft', 'floatRight', 'floatNone']],
+                        ['remove', ['removeMedia']],
+                        ['custom', ['imageTitle']]
+                    ]
+                },
+                toolbar: [
+                    ['style', ['bold', 'italic', 'underline', 'clear','hr','strikethrough','ul','ol']],
+                    //['style', ["style"]],
+                    ['fontsize', ['fontsize']],
+                    //['color', ['color']],
+                    //['para', ['ul', 'ol', 'paragraph']],
+                    ['height', ['height']],
+                    ['table', ['table']], // no table button
+                    ['insert', ['template',"picture","link","video",'color','style','fontname']],
+                    ['layout',['paragraph','height','fullscreen','codeview']],
+                    ['help', ['help']] //no help button
+                ],
+                template: {
+                    path: '/summernoteTpls', // path to your template folder
+                    list: [ // list of your template (without the .html extension)
+                        't1'
+                    ]
                 }
-            }
+            };
+            //config['toolbar'].push('highlight');
+            //config['toolbar'].push(['highlight']);
+            $summernote.summernote(config);
         });
 
         $(".ote-editor .modal-dialog").css({display: "none"});
@@ -98,7 +168,7 @@ define(function (require, exports, module) {
 
         $("#idRetEdit").on("click", function () {
             if (window.confirm("所有内容将清空,确认重置吗？")) {
-                $('#summernote').summernote('reset');
+                $('.summernote').summernote('reset');
             }
         });
 

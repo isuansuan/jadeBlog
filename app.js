@@ -61,7 +61,11 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
                 if (req.session && req.session.user) {
                     next();
                 } else {
-                    res.redirect("/index");
+                    if(url.indexOf("lib") != -1){
+                        next();
+                    }else{
+                        res.redirect("/index");
+                    }
                 }
             } else {
                 next();
