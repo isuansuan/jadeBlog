@@ -11,6 +11,7 @@ define(function (require, exports, module) {
     var summernoteExtHightLight = require("summernoteexthighlight");
     var summernoteImageTitle = require("summernoteImageTitle");
     var summernoteExtTemplate = require("summernoteExtTemplate");
+    var googlePrettify = require('googlePrettify');
 
 
 
@@ -71,6 +72,18 @@ define(function (require, exports, module) {
             $('#idAddArticleTypeDialog').modal({
                 keyboard: true
             })
+        });
+
+        $(document).keydown(function(E){
+            prettyPrint();
+        });
+
+        $("a").on('click',function(){
+            prettyPrint();
+        });
+
+        $("#idCodeHighLight").on("click",function(){
+             prettyPrint();
         });
 
         var $summernote = $('.summernote');
@@ -152,7 +165,15 @@ define(function (require, exports, module) {
                 template: {
                     path: '/summernoteTpls', // path to your template folder
                     list: [ // list of your template (without the .html extension)
-                        't1'
+                        't1',
+                        'code-js',
+                        'code-html',
+                        'code-c',
+                        'code-cpp',
+                        'code-java',
+                        'code-sh',
+                        'code-py',
+                        'code-xml'
                     ]
                 }
             };

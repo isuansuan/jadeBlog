@@ -15,6 +15,7 @@ require.config({
         "summernoteexthighlight":["/lib/summernote-ext-highlight/src/summernote-ext-highlight"],
         "summernoteImageTitle":["/lib/summernote/plugin/summernote-image-title"],
         "summernoteExtTemplate":["/lib/summernote/plugin/summernote-ext-template"],
+        "googlePrettify":['/lib/googlePrettify/prettify'],
         "jgrowl": [
             '/lib/jGrowl/jquery.jgrowl.min'
         ],
@@ -50,9 +51,10 @@ require.config({
     }
 });
 
-require(['jquery', 'lodash', "md5", "common", "bootstrap",'jgrowl'], function ($, _, md5, common, BT,jgrowl) {
+require(['jquery', 'lodash', "md5", "common", "bootstrap",'jgrowl','googlePrettify'], function ($, _, md5, common, BT,jgrowl,googlePrettify) {
 
     $(document).ready(function () {
+        
         //启用弹出框
         //$("[data-toggle='popover']").popover();
 
