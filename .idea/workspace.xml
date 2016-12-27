@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="703c2d8e-07c2-442c-9762-a114f4ec201b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/My97DatePicker/skin/whyGreen/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/My97DatePicker/skin/datePicker.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/My97DatePicker/skin/default/img.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/My97DatePicker/skin/twoer/img.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/My97DatePicker/skin/whyGreen/img.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/My97DatePicker/skin/twoer/img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/My97DatePicker/skin/WdatePicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/My97DatePicker/WdatePicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/My97DatePicker/calendar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/My97DatePicker/skin/twoer/datepicker-dev.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/My97DatePicker/skin/default/datepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/My97DatePicker/skin/twoer/datepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/My97DatePicker/skin/whyGreen/datepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/My97DatePicker/lang/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/highcharts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/jquery.form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/jquery.jgrowl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/My97DatePicker/lang/zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/My97DatePicker/lang/zh-tw.js" />
-      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\bootstrap\css\bootstrap-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\bootstrap\css\bootstrap-responsive.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\bootstrap\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\bootstrap\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\bootstrap\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\bootstrap\img\glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\bootstrap\img\glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\bootstrap\js\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ff\Desktop\blogPro1\web\public\lib\bootstrap\js\bootstrap.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/jadeLoader.log" afterPath="$PROJECT_DIR$/logs/jadeLoader.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/js/main.js" afterPath="$PROJECT_DIR$/web/public/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="703c2d8e-07c2-442c-9762-a114f4ec201b" name="Default" comment="" />
     <ignored path="blogPro1.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,8 +27,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/public/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42992127" vertical-offset="252" max-vertical-offset="3906">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.69448817" vertical-offset="819" max-vertical-offset="3906">
+              <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -956,8 +920,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/public/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42992127" vertical-offset="252" max-vertical-offset="3906">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.69448817" vertical-offset="819" max-vertical-offset="3906">
+          <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
           <folding />
         </state>
       </provider>
