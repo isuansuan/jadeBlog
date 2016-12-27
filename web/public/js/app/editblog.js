@@ -27,7 +27,7 @@ define(function (require, exports, module) {
         var ext = filename.substr(filename.lastIndexOf("."));
         ext = ext.toUpperCase();
         var timestamp = new Date().getTime();
-        var name = timestamp + "_" + $("#summernote").attr('aid') + ext;
+        var name = timestamp + "_" + $(".summernote").attr('aid') + ext;
         //name是文件名，自己随意定义，aid是我自己增加的属性用于区分文件用户
         var data = new FormData();
         data.append("file", file);
@@ -98,7 +98,7 @@ define(function (require, exports, module) {
 
         $("#idRetEdit").on("click", function () {
             if (window.confirm("所有内容将清空,确认重置吗？")) {
-                $('#summernote').summernote('reset');
+                $('.summernote').summernote('reset');
             }
         });
 
