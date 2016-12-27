@@ -60,7 +60,7 @@ require(['jquery', 'lodash', "md5", "common", "bootstrap",'jgrowl'], function ($
         //    interval: 1
         //});
 
-        $.jGrowl("A message that will live a little longer.", { life: 1000 ,position:'bottom-left'});
+        //$.jGrowl("A message that will live a little longer.", { life: 1000 ,position:'bottom-left'});
         //语言设置
         $("#idLangSet").on("click", function () {
             var lang = $("#idLang").val();
