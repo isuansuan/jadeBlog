@@ -7,8 +7,10 @@ define(function (require, exports, module) {
     var summernoteZHCN = require("summernotezhcn");
     var summernotekokr = require("summernotekokr");
     var codemirrorXml = require("codemirrorxml");
-    //var summernoteExtEmoji = require("summernote-ext-emoji");
-
+    var summernoteExtEmoji = require("summernote-ext-emoji");
+    var summernoteExtHightLight = require("summernoteexthighlight");
+    var summernoteImageTitle = require("summernoteImageTitle");
+    var summernoteExtTemplate = require("summernoteExtTemplate");
 
 
 
@@ -65,9 +67,6 @@ define(function (require, exports, module) {
 
     $(document).ready(function () {
 
-        document.emojiSource = '../pngs/';
-
-
         $("#idBtnAddArticleType").on("click", function () {
             $('#idAddArticleTypeDialog').modal({
                 keyboard: true
@@ -83,7 +82,8 @@ define(function (require, exports, module) {
             var emojis = Object.keys(data);
             var emojiUrls = data;
 
-            $summernote.summernote({
+
+            var config = {
                 tabSize: 4,
                 codemirror: {
                     theme: 'monokai',
@@ -92,6 +92,7 @@ define(function (require, exports, module) {
                     mode: 'text/html'                // lineWrapping:true,
                     // extraKeys: {"Ctrl-Space": "autocomplete"}
                 },
+                prettifyHtml:true,
                 height: 400,
                 width: 1000,
                 lang: 'zh-CN',
@@ -105,7 +106,7 @@ define(function (require, exports, module) {
                         sendFile(files[0], editor, $editable);
                     }
                 },
-                hintDirection: 'top',
+                hintDirection: 'bottom',
                 hint: [{
                     search: function (keyword, callback) {
                         callback($.grep(emojis, function (item) {
@@ -124,12 +125,32 @@ define(function (require, exports, module) {
                         }
                         return '';
                     }
-                }]
-            });
+                }],
+                imageTitle: {
+                    specificAltField: true
+                },
+                popover: {
+                    image: [
+                        ['imagesize', ['imageSize100', 'imageSize50', 'imageSize25']],
+                        ['float', ['floatLeft', 'floatRight', 'floatNone']],
+                        ['remove', ['removeMedia']],
+                        ['custom', ['imageTitle']]
+                    ]
+                },
+                toolbar: [
+                    ['insert', ['template']]
+                ],
+                template: {
+                    path: '/summernoteTpls', // path to your template folder
+                    list: [ // list of your template (without the .html extension)
+                        't1'
+                    ]
+                }
+            };
+            //config['toolbar'].push('highlight');
+            //config['toolbar'].push(['highlight']);
+            $summernote.summernote(config);
         });
-
-
-
 
         $(".ote-editor .modal-dialog").css({display: "none"});
         //$(".modal").attr("aria-hidden","true");

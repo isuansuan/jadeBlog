@@ -2200,3 +2200,21 @@
 [2016-12-27 10:37:14.263] [INFO] jadeLoader - jade Loader Finished  
 [2016-12-27 10:38:04.278] [INFO] jadeLoader - jade Loader Finished  
 [2016-12-27 10:38:23.708] [INFO] jadeLoader - jade Loader Finished  
+[2016-12-27 10:44:23.712] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-27 10:44:23.713] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-27 10:50:23.716] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-27 10:50:23.717] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-27 10:56:23.726] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-27 10:56:23.726] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-27 11:02:23.733] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-27 11:02:23.734] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-27 11:08:23.741] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-27 11:08:23.742] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-27 11:14:23.751] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-27 11:14:23.751] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-27 11:20:23.758] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-27 11:20:23.758] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-27 11:26:23.762] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-27 11:26:23.763] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  
+[2016-12-27 11:32:23.770] [DEBUG] jadeLoader - hotLoad module start.  
+[2016-12-27 11:32:23.770] [DEBUG] jadeLoader - hotLoad module finish,cost 0 milliSecond  

@@ -11,7 +11,10 @@ require.config({
         "summernotezhcn": ["/lib/summernote/lang/summernote-zh-CN"],
         "summernotekokr": ["/lib/summernote/lang/summernote-ko-KR"],
         "showLoading": ['/lib/jquery/jquery.showLoading.min'],
-        "summernote-ext-emoji":["lib/summernote-ext-emoji/dist/summernote-ext-emoji-min"],
+        "summernoteextemoji":["/lib/summernote-ext-emoji/dist/summernote-ext-emoji-min"],
+        "summernoteexthighlight":["/lib/summernote-ext-highlight/src/summernote-ext-highlight"],
+        "summernoteImageTitle":["/lib/summernote/plugin/summernote-image-title"],
+        "summernoteExtTemplate":["/lib/summernote/plugin/summernote-ext-template"],
         "jgrowl": [
             '/lib/jquery/jquery.jgrowl.min'
         ],
@@ -36,7 +39,10 @@ require.config({
         'showLoading': {deps: ['jquery']},
         'summernotezhcn':{deps:['summernote']},
         'summernotekokr':{deps:['summernote']},
-        'summernote-ext-emoji':{deps:['summernote']},
+        'summernoteextemoji':{deps:['summernote']},
+        'summernoteexthighlight':{deps:['summernote']},
+        'summernoteImageTitle':{deps:['summernote']},
+        'summernoteExtTemplate':{deps:['summernote']},
         'jgrowl': {deps: ['jquery']},
         'jform': {deps: ['jquery']},
         'highcharts': {deps: ['jquery']},
