@@ -16,7 +16,7 @@ require.config({
         "summernoteImageTitle":["/lib/summernote/plugin/summernote-image-title"],
         "summernoteExtTemplate":["/lib/summernote/plugin/summernote-ext-template"],
         "jgrowl": [
-            '/lib/jquery/jquery.jgrowl.min'
+            '/lib/jGrowl/jquery.jgrowl.min'
         ],
         "jform": [
             '/lib/jquery/jquery.form'
@@ -50,7 +50,7 @@ require.config({
     }
 });
 
-require(['jquery', 'lodash', "md5", "common", "bootstrap"], function ($, _, md5, common, BT) {
+require(['jquery', 'lodash', "md5", "common", "bootstrap",'jgrowl'], function ($, _, md5, common, BT,jgrowl) {
 
     $(document).ready(function () {
         //启用弹出框
@@ -60,6 +60,7 @@ require(['jquery', 'lodash', "md5", "common", "bootstrap"], function ($, _, md5,
         //    interval: 1
         //});
 
+        $.jGrowl("A message that will live a little longer.", { life: 1000 ,position:'bottom-left'});
         //语言设置
         $("#idLangSet").on("click", function () {
             var lang = $("#idLang").val();
