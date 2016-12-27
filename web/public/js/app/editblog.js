@@ -5,7 +5,11 @@ define(function (require, exports, module) {
     var codemirror = require("codemirror");
     var summernote = require("summernote");
     var summernoteZHCN = require("summernotezhcn");
+    var summernotekokr = require("summernotekokr");
     var codemirrorXml = require("codemirrorxml");
+    //var summernoteExtEmoji = require("summernote-ext-emoji");
+
+
 
 
 
@@ -60,6 +64,10 @@ define(function (require, exports, module) {
     }
 
     $(document).ready(function () {
+
+        document.emojiSource = '../pngs/';
+
+
         $("#idBtnAddArticleType").on("click", function () {
             $('#idAddArticleTypeDialog').modal({
                 keyboard: true
@@ -67,29 +75,61 @@ define(function (require, exports, module) {
         });
 
         var $summernote = $('.summernote');
-        $summernote.summernote({
-            tabSize: 4,
-            codemirror: {
-                theme: 'monokai',
-                htmlMode: true,
-                lineNumbers: true,
-                mode: 'text/html'                // lineWrapping:true,
-                // extraKeys: {"Ctrl-Space": "autocomplete"}
-            },
-            height: "400px",
-            width: "1200px",
-            lang: 'zh-CN',
-            minHeight: null,
-            maxHeight: null,
-            focus: true,
-            dialogsInBody: true,
-            dialogsFade: true,
-            callbacks: {
-                onImageUpload: function (files, editor, $editable) {
-                    sendFile(files[0], editor, $editable);
-                }
-            }
+
+        // load github's emoji list
+        $.ajax({
+            url: 'https://api.github.com/emojis'
+        }).then(function (data) {
+            var emojis = Object.keys(data);
+            var emojiUrls = data;
+
+            $summernote.summernote({
+                tabSize: 4,
+                codemirror: {
+                    theme: 'monokai',
+                    htmlMode: true,
+                    lineNumbers: true,
+                    mode: 'text/html'                // lineWrapping:true,
+                    // extraKeys: {"Ctrl-Space": "autocomplete"}
+                },
+                height: 400,
+                width: 1000,
+                lang: 'zh-CN',
+                minHeight: null,
+                maxHeight: null,
+                focus: true,
+                dialogsInBody: true,
+                dialogsFade: true,
+                callbacks: {
+                    onImageUpload: function (files, editor, $editable) {
+                        sendFile(files[0], editor, $editable);
+                    }
+                },
+                hintDirection: 'top',
+                hint: [{
+                    search: function (keyword, callback) {
+                        callback($.grep(emojis, function (item) {
+                            return item.indexOf(keyword)  === 0;
+                        }));
+                    },
+                    match: /\B:([\-+\w]+)$/,
+                    template: function (item) {
+                        var content = emojiUrls[item];
+                        return '<img src="' + content + '" width="20" /> :' + item + ':';
+                    },
+                    content: function (item) {
+                        var url = emojiUrls[item];
+                        if (url) {
+                            return $('<img />').attr('src', url).css('width', 20)[0];
+                        }
+                        return '';
+                    }
+                }]
+            });
         });
+
+
+
 
         $(".ote-editor .modal-dialog").css({display: "none"});
         //$(".modal").attr("aria-hidden","true");

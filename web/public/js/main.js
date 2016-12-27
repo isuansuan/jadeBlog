@@ -9,7 +9,9 @@ require.config({
         "codemirror": ["/lib/codemirror5/lib/codemirror"],
         "codemirrorxml": ["codemirror","/lib/codemirror5/mode/xml/xml"],
         "summernotezhcn": ["/lib/summernote/lang/summernote-zh-CN"],
+        "summernotekokr": ["/lib/summernote/lang/summernote-ko-KR"],
         "showLoading": ['/lib/jquery/jquery.showLoading.min'],
+        "summernote-ext-emoji":["lib/summernote-ext-emoji/dist/summernote-ext-emoji-min"],
         "jgrowl": [
             '/lib/jquery/jquery.jgrowl.min'
         ],
@@ -33,6 +35,8 @@ require.config({
         'summernote': {deps: ['codemirror']},
         'showLoading': {deps: ['jquery']},
         'summernotezhcn':{deps:['summernote']},
+        'summernotekokr':{deps:['summernote']},
+        'summernote-ext-emoji':{deps:['summernote']},
         'jgrowl': {deps: ['jquery']},
         'jform': {deps: ['jquery']},
         'highcharts': {deps: ['jquery']},
