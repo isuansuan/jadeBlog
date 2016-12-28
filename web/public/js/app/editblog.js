@@ -14,8 +14,6 @@ define(function (require, exports, module) {
     var googlePrettify = require('googlePrettify');
 
 
-
-
     function sendFile(file, editor, $editable) {
         $(".note-toolbar.btn-toolbar").append('正在上传图片');
         var filename = false;
@@ -74,14 +72,45 @@ define(function (require, exports, module) {
             })
         });
 
-        $(document).keydown(function(E){
-            prettyPrint();
-        });
+        function changePretty() {
+            var arr = $.find("[class*='prettyprinted']");
+            // window.alert(arr);
+            $.each(arr,function(){
+                //遍历时,将每个对象的class按空格分割为数组
+                var arrCls = this.className.split(' ');
+                //通过过滤函数去掉含有current的类,保留其他的class(如果有的话)
+                this.className = $.grep(arrCls,function(n,i){
+                    return n.indexOf('prettyprinted') > 0;
+                },true);
 
-        $("a").on('click',function(){
-            prettyPrint();
-        });
+                var newName = "";
+                for(var i=0;i<arrCls.length;i++){
+                    if(arrCls[i] != 'prettyprinted'){
+                        newName += arrCls[i];
+                        newName +=" ";
+                    }
+                }
+                this.className = newName.trim();
+                // window.alert(this.className);
+                // var newName =
+            });
+        }
 
+        // $(document).keydown(function (E) {
+        //     prettyPrint();
+        //     if(E.keyCode == 13) {
+        //         // changePretty();
+        //         prettyPrint();
+        //     }
+        // });
+        //
+        // // $("a").on('click',function(){
+        //     prettyPrint();
+        // });
+        //
+        $("#isCloseHighLight").on("click",function(){
+            changePretty();
+        });
         $("#idCodeHighLight").on("click",function(){
              prettyPrint();
         });
@@ -105,7 +134,7 @@ define(function (require, exports, module) {
                     mode: 'text/html'                // lineWrapping:true,
                     // extraKeys: {"Ctrl-Space": "autocomplete"}
                 },
-                prettifyHtml:true,
+                prettifyHtml: true,
                 height: 400,
                 width: 1000,
                 lang: 'zh-CN',
@@ -123,7 +152,7 @@ define(function (require, exports, module) {
                 hint: [{
                     search: function (keyword, callback) {
                         callback($.grep(emojis, function (item) {
-                            return item.indexOf(keyword)  === 0;
+                            return item.indexOf(keyword) === 0;
                         }));
                     },
                     match: /\B:([\-+\w]+)$/,
@@ -151,15 +180,15 @@ define(function (require, exports, module) {
                     ]
                 },
                 toolbar: [
-                    ['style', ['bold', 'italic', 'underline', 'clear','hr','strikethrough','ul','ol']],
+                    ['style', ['bold', 'italic', 'underline', 'clear', 'hr', 'strikethrough', 'ul', 'ol']],
                     //['style', ["style"]],
                     ['fontsize', ['fontsize']],
                     //['color', ['color']],
                     //['para', ['ul', 'ol', 'paragraph']],
                     ['height', ['height']],
                     ['table', ['table']], // no table button
-                    ['insert', ['template',"picture","link","video",'color','style','fontname']],
-                    ['layout',['paragraph','height','fullscreen','codeview']],
+                    ['insert', ['template', "picture", "link", "video", 'color', 'style', 'fontname']],
+                    ['layout', ['paragraph', 'height', 'fullscreen', 'codeview']],
                     ['help', ['help']] //no help button
                 ],
                 template: {
