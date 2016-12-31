@@ -16,6 +16,9 @@ router.post('/', function (req, res, next) {
         articleType = req.body.articleType,
         articleName = req.body.articleName;
 
+    console.log(articleType);
+    console.log(JSON.stringify(JadeLoader.get("articleTypes")));
+
     var index = JadeLoader.get("articleTypes").indexOf(articleType);
     if (index == -1) {
         res.json({error: "文章类型不存在"});
@@ -46,6 +49,32 @@ router.post('/', function (req, res, next) {
         } else {
             res.json({error: "更新失败"});
         }
+    });
+});
+
+router.post("/deleteBlogType", function (req, res, next) {
+    var type = req.body.type;
+    if (type == undefined) {
+        res.json({error: '参数非法'});
+        return;
+    }
+
+    MongooseManager.schema("article").model(function (err, model, release) {
+        if (!err) {
+            model.delType(req.session.user, type, function (err, resp) {
+                if (!err) {
+                    JadeLoader.get("func_setbar")(req.session.user, function () {
+                        res.json({error: null, info: JadeLoader.get("articleTypes")});
+                    });
+                } else {
+                    res.json({error: err});
+                }
+                release();
+            });
+        } else {
+            res.json({error: err});
+        }
+        release();
     });
 });
 
@@ -113,6 +142,7 @@ module.exports = {
     R: router,
     L: [
         "addNewType",
-        "deleteBlog"
+        "deleteBlog",
+        'deleteBlogType'
     ]
 };

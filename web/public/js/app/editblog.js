@@ -72,12 +72,18 @@ define(function (require, exports, module) {
     $(document).ready(function () {
         $('body').showLoading();
 
-        function myPrettyPrint(){
+        function myPrettyPrint() {
             prettyPrint();
         }
 
         $("#idBtnAddArticleType").on("click", function () {
             $('#idAddArticleTypeDialog').modal({
+                keyboard: true
+            })
+        });
+
+        $("#idBtnDelArticleType").on("click", function () {
+            $('#idDelArticleTypeDialog').modal({
                 keyboard: true
             })
         });
@@ -165,10 +171,10 @@ define(function (require, exports, module) {
                         $.jGrowl("summernote编辑器 初始化完成", {life: 1000, position: 'bottom-left'});
                     },
                     onEnter: function () {
-                        setTimeout(function(){
+                        setTimeout(function () {
                             changePretty();
                             myPrettyPrint();
-                        },10);
+                        }, 10);
                     },
                     onFocus: function () {
                     },
@@ -293,7 +299,7 @@ define(function (require, exports, module) {
         //提交文章
         $("#idArticleCommit").on("click", function () {
             var code = $summernote.summernote('code');
-            var articleType = $("#idArticleTypes").val();
+            var articleType = $("#idArticleTypes").find("option:selected").text();
             var articleName = $("#idArticleName").val();
 
             if (articleName.length < 3) {
@@ -311,8 +317,6 @@ define(function (require, exports, module) {
                 articleType: articleType,
                 articleName: articleName
             }, function (data) {
-                $('body').hideLoading();
-
                 if (data.error) {
                     $.jGrowl(data.error, {life: 1000, position: 'bottom-left'});
                 } else {
@@ -320,6 +324,46 @@ define(function (require, exports, module) {
                     $summernote.summernote('destroy');
                     window.location.href = '/blog/index?type=' + articleType;
                 }
+                $('body').hideLoading();
+            });
+        });
+
+        //删除文章类型提交拦截
+        $("#BtnArticleTypeDel").on("click", function () {
+            var articleType = $("#idDelArticleTypes").find("option:selected").text();
+            if (articleType == undefined) {
+                $.jGrowl(articleType, {life: 1000, position: 'bottom-left'});
+                return;
+            }
+            if (!window.confirm("确认删除？")) {
+                return;
+            }
+            $('body').showLoading();
+
+            $.post("/blog/editblog/deleteBlogType", {
+                type: articleType
+            }, function (data) {
+
+                if (data.error) {
+                    $.jGrowl(data.error, {life: 1000, position: 'bottom-left'});
+                } else {
+                    var $sel = $("#idArticleTypes");
+                    $sel.empty();
+                    data.info.forEach(function (t) {
+                        var o = "<option value='Value'>" + t + "</option>";
+                        $sel.append(o);
+                    });
+
+                    var $sel1 = $("#idDelArticleTypes");
+                    $sel1.empty();
+                    data.info.forEach(function (t) {
+                        var o = "<option value='Value'>" + t + "</option>";
+                        $sel1.append(o);
+                    });
+
+                    $.jGrowl("删除成功", {life: 1000, position: 'bottom-left'});
+                }
+                $('body').hideLoading();
             });
         });
 

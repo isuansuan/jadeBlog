@@ -54,9 +54,13 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
 
         url = getReqUrl(url);
         if (!Express.routesList[url]) {
-            res.redirect("/index");
+            if(req.method.toLowerCase() == 'post'){
+                res.json({error:"路由非法"});
+            }else{
+                res.redirect("/index");
+            }
         } else {
-            var warnUrls = ["/blog/editblog", "/blog/addNew"];
+            var warnUrls = ["/blog/editblog", "/blog/addNew","/blog/editblog/deleteBlog","/blog/editblog/addNewType"];
             if (warnUrls.indexOf(url) != -1) {
                 if (req.session && req.session.user) {
                     next();
@@ -64,7 +68,11 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
                     if(url.indexOf("lib") != -1){
                         next();
                     }else{
-                        res.redirect("/index");
+                        if(req.method.toLowerCase() == 'post'){
+                            res.json({error:"无权限"});
+                        }else{
+                            res.redirect("/index");
+                        }
                     }
                 }
             } else {

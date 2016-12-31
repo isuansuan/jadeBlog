@@ -14,6 +14,7 @@
             </div>
             <div class="pull-right">
                 <button type="submit" class="btn btn-success btn-small" id="idBtnAddArticleType">添加新的文章类型</button>
+                <button type="submit" class="btn btn-danger btn-small" id="idBtnDelArticleType">删除文章类型</button>
             </div>
         </div>
         <div class="form-group">
@@ -38,7 +39,46 @@
     </form>
 </div>
 
-<!-- 联系（Modal） -->
+<!-- 删除文章类型（Modal） -->
+<div class="modal fade" id="idDelArticleTypeDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    删除文章类型
+                </h4>
+            </div>
+            <div class="modal-body" style="text-align: center">
+                <form action="/blog/editblog/del" method="post" onsubmit="return false;" class="form center-block text-center text-primary">
+                    <div class="form-group">
+                        <select class="form-control" style="width:400px;" data-size="5" data-style="btn-success" id="idDelArticleTypes">
+                            <% for(var i = 0, len = sidebar.length;i < len;i++){  if(sidebar[i].en == "News"){continue;}%>
+                            <option><%= sidebar[i].ch %></option>
+                            <% } %>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-lg" id="BtnArticleTypeDel">确认删除</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">关闭
+                </button>
+                <!--<button type="button" class="btn btn-primary">-->
+                <!--提交更改-->
+                <!--</button>-->
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- 添加新的文章类型（Modal） -->
 <div class="modal fade" id="idAddArticleTypeDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none">
     <div class="modal-dialog">
         <div class="modal-content">

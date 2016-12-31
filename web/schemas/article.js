@@ -123,6 +123,28 @@ schema.statics.getOneArticle = function (author, type, name, callback) {
 //    });
 //});
 
+//删除type
+schema.statics.delType = function (author, type, callback) {
+    var self = this;
+    this.findOne({author: author, type: "articleList"}).lean().exec(function (err, doc) {
+        if (!err && doc) {
+            var typeList = JSON.parse(doc.extra);
+            var index = typeList.indexOf(type);
+            if (index >= 0) {
+                typeList.splice(index, 1);
+                self.findByIdAndUpdate({_id: doc._id}, {$set: {extra: JSON.stringify(typeList)}}, function (err, resp) {
+                    callback(err, resp);
+                });
+            } else {
+                callback(err);
+            }
+        } else {
+            callback(err);
+        }
+    });
+
+};
+
 schema.statics.getTypes = function (author, callback) {
     //var condition = {
     //    author: author

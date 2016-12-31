@@ -4,7 +4,8 @@
     <% if(info){%>
         <div class="panel panel-warning">
             <div class="panel-heading">
-                <h3 class="panel-title"><%= info.type%>&nbsp;&nbsp;<%= info.name%></h3>
+                <h3 class="panel-title  glyphicon glyphicon-book" style="color:orangered;font-size: x-large"><span style="margin-left:10px;color:black"><%= info.type%></span></h3>
+                <span style="text-align: center;margin-left:100px;" class="label label-danger"><%= info.name%></span>
             </div>
             <div class="panel-body">
                 <%- info.content%>
