@@ -157,7 +157,7 @@ define(function (require, exports, module) {
                 height: 400,
                 width: 1000,
                 lang: 'zh-CN',
-                minHeight: null,
+                minHeight: "400px",
                 maxHeight: null,
                 focus: true,
                 dialogsInBody: true,

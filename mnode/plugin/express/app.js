@@ -151,12 +151,13 @@ ExpressPlugin.prototype.start = function (callback) {
         self.emit('ready');
     });
 
+
     self.on('ready', function () {
         self.app.set('views', Path.join(self.path, 'views'));
         self.app.set('view engine', "ejs");
         self.app.use(MorganLogger('dev'));
-        self.app.use(BodyParser.json());
-        self.app.use(BodyParser.urlencoded({extended: false}));
+        self.app.use(BodyParser.json({limit:'50mb'}));
+        self.app.use(BodyParser.urlencoded({limit:"50mb",extended: false}));
         self.app.use(CookieParser());
         self.app.use(Favicon(self.path + '/public/images/favicon.ico'));
 
