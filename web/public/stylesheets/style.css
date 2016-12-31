@@ -41,6 +41,10 @@ a {
 .login {
     z-index: 2;
 }
+
+.panel{
+    width:100%;
+}
 .footer {
     position: fixed;
     bottom: 0px;

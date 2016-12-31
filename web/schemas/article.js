@@ -193,6 +193,7 @@ schema.statics.getCount = function (callback) {
     });
 };
 
+
 schema.statics.deleteOne = function (id, callback) {
     this.remove({id: id}, function (err, resp) {
         callback(err, resp);
@@ -214,7 +215,7 @@ schema.statics.insertArticle = function (author, type, name, content, callback) 
         }
 
         var newData = new self({
-            id: cnt + 1,
+            id: new Date().getTime(),
             author: author,
             type: type,
             name: name,
@@ -222,6 +223,7 @@ schema.statics.insertArticle = function (author, type, name, content, callback) 
             brief: _brief
         });
         newData.save(function (err, resp) {
+            console.error("aaaa",err)
             callback(err, resp);
         });
     });

@@ -298,6 +298,7 @@ define(function (require, exports, module) {
 
         //提交文章
         $("#idArticleCommit").on("click", function () {
+            changePretty();
             var code = $summernote.summernote('code');
             var articleType = $("#idArticleTypes").find("option:selected").text();
             var articleName = $("#idArticleName").val();
@@ -310,6 +311,8 @@ define(function (require, exports, module) {
                 $.jGrowl("文章内容不能为空", {life: 1000, position: 'bottom-left'});
                 return false;
             }
+
+
             $('body').showLoading();
 
             $.post("/blog/editblog", {

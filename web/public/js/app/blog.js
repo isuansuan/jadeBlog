@@ -3,8 +3,9 @@ define(function (require, exports, module) {
     var _ = require("lodash");
     var BS = require("bootstrap");
     var summernote = require("summernote");
-
+    var googlePrettify = require('googlePrettify');
     $(document).ready(function () {
+        prettyPrint();
         $('.btn-danger.delBlogBtn').on("click",function(){
             var id = $(this).val();
             if(id == undefined){

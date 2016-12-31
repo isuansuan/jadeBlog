@@ -62,7 +62,6 @@ require.config({
 require(['jquery', 'lodash', "md5", "common", "bootstrap",'jgrowl','googlePrettify'], function ($, _, md5, common, BT,jgrowl,googlePrettify) {
 
     $(document).ready(function () {
-        
         //启用弹出框
         //$("[data-toggle='popover']").popover();
 
