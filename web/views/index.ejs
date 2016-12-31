@@ -1,12 +1,6 @@
 <% include header.ejs %>
 
-
-
-
 <% include sidebar.ejs %>
-
-
-
 <div class="col-md-6" style="float: left;">
 
     <div id="idCarousel" class="carousel slide">
@@ -50,12 +44,12 @@
     <div class="row-fluid">
         <% for(var i = 0, len = mainpage.childPage.length;i < len;++i){ %>
         <div class="col-md-4">
-            <h2><%= mainpage.childPage[i][lang] %></h2>
+            <h3><%= mainpage.childPage[i][lang] %></h3>
 
             <p></p>
 
-            <p><a class="btn btn-danger" href="<%= mainpage.childPage[i].link %>" target="_blank">View
-                    details &raquo;</a></p>
+            <p><a class="btn btn-danger" href="<%= mainpage.childPage[i].link %>" target="_blank">
+                    前往 &raquo;</a></p>
         </div>
         <!--/span-->
         <% } %>
@@ -64,11 +58,9 @@
     <% if(userName){ %>
     <div class="row-fluid">
         <div class="col-md-4">
-            <h2>写博客</h2>
-
-            <p>会员专享</p>
-
-            <p><a class="btn btn-info" href="/blog/editblog">前往编辑博客 &raquo;</a></p>
+            <h3>写博客</h3>
+            <p></p>
+            <p><a class="btn btn-info" href="/blog/editblog">前往 &raquo;</a></p>
         </div>
 
         <div class="col-md-4">

@@ -12,6 +12,11 @@ define(function (require, exports, module) {
     var summernoteImageTitle = require("summernoteImageTitle");
     var summernoteExtTemplate = require("summernoteExtTemplate");
     var googlePrettify = require('googlePrettify');
+    var showLoading = require("showLoading");
+    var lua = require("googlePrettifyLangLua");
+    var go = require("googlePrettifyLangGo");
+    var css = require("googlePrettifyLangCss");
+    var sql = require("googlePrettifyLangSql");
 
 
     function sendFile(file, editor, $editable) {
@@ -65,6 +70,11 @@ define(function (require, exports, module) {
     }
 
     $(document).ready(function () {
+        $('body').showLoading();
+
+        function myPrettyPrint(){
+            prettyPrint();
+        }
 
         $("#idBtnAddArticleType").on("click", function () {
             $('#idAddArticleTypeDialog').modal({
@@ -75,45 +85,48 @@ define(function (require, exports, module) {
         function changePretty() {
             var arr = $.find("[class*='prettyprinted']");
             // window.alert(arr);
-            $.each(arr,function(){
+            $.each(arr, function () {
                 //遍历时,将每个对象的class按空格分割为数组
                 var arrCls = this.className.split(' ');
                 //通过过滤函数去掉含有current的类,保留其他的class(如果有的话)
-                this.className = $.grep(arrCls,function(n,i){
+                this.className = $.grep(arrCls, function (n, i) {
                     return n.indexOf('prettyprinted') > 0;
-                },true);
+                }, true);
 
                 var newName = "";
-                for(var i=0;i<arrCls.length;i++){
-                    if(arrCls[i] != 'prettyprinted'){
+                for (var i = 0; i < arrCls.length; i++) {
+                    if (arrCls[i] != 'prettyprinted') {
                         newName += arrCls[i];
-                        newName +=" ";
+                        newName += " ";
                     }
                 }
                 this.className = newName.trim();
-                // window.alert(this.className);
-                // var newName =
             });
         }
 
-        // $(document).keydown(function (E) {
-        //     prettyPrint();
-        //     if(E.keyCode == 13) {
-        //         // changePretty();
-        //         prettyPrint();
-        //     }
-        // });
-        //
-        // // $("a").on('click',function(){
-        //     prettyPrint();
-        // });
-        //
-        $("#isCloseHighLight").on("click",function(){
+        $("#isCloseHighLight").on("click", function () {
             changePretty();
         });
-        $("#idCodeHighLight").on("click",function(){
-             prettyPrint();
+        $("#idCodeHighLight").on("click", function () {
+            changePretty();
+            myPrettyPrint();
         });
+
+        var HelloButton = function (context) {
+            var ui = $.summernote.ui;
+
+            // create button
+            var button = ui.button({
+                contents: '<i class="fa fa-child"/> js',
+                tooltip: 'javascript',
+                click: function () {
+                    // invoke insertText method with 'hello' on editor module.
+                    context.invoke('editor.insertText', 'javascript');
+                }
+            });
+
+            return button.render();   // return button as jquery object
+        };
 
         var $summernote = $('.summernote');
 
@@ -146,6 +159,41 @@ define(function (require, exports, module) {
                 callbacks: {
                     onImageUpload: function (files, editor, $editable) {
                         sendFile(files[0], editor, $editable);
+                    },
+                    onInit: function () {
+                        $('body').hideLoading();
+                        $.jGrowl("summernote编辑器 初始化完成", {life: 1000, position: 'bottom-left'});
+                    },
+                    onEnter: function () {
+                        setTimeout(function(){
+                            changePretty();
+                            myPrettyPrint();
+                        },10);
+                    },
+                    onFocus: function () {
+                    },
+                    onKeyup: function () {
+
+                    },
+                    onKeydown: function (e) {
+
+                        // $("pre").each(function(){
+                        //     var cls = $(this).attr('class');
+                        //     if(cls && cls.indexOf("prettyprinted") >= 0){
+                        //         cls = cls.replace("prettyprinted"," ");
+                        //
+                        //         $.jGrowl(cls, {life: 1000, position: 'bottom-left'});
+                        //         if(cls.indexOf('linenums') < 0){
+                        //             cls += ' linenums';
+                        //         }
+                        //         $(this).attr('class',cls);
+                        //     }else{
+                        //         if(cls.indexOf('linenums') < 0){
+                        //             cls += ' linenums';
+                        //             $(this).attr('class',cls);
+                        //         }
+                        //     }
+                        // });
                     }
                 },
                 hintDirection: 'bottom',
@@ -189,20 +237,29 @@ define(function (require, exports, module) {
                     ['table', ['table']], // no table button
                     ['insert', ['template', "picture", "link", "video", 'color', 'style', 'fontname']],
                     ['layout', ['paragraph', 'height', 'fullscreen', 'codeview']],
-                    ['help', ['help']] //no help button
+                    ['help', ['help']], //no help button
+                    ['mybutton', ['hello']]
                 ],
+                buttons: {
+                    hello: HelloButton
+                },
                 template: {
                     path: '/summernoteTpls', // path to your template folder
                     list: [ // list of your template (without the .html extension)
-                        't1',
                         'code-js',
+                        'code-php',
                         'code-html',
+                        'code-css',
+                        'code-sql',
                         'code-c',
                         'code-cpp',
                         'code-java',
                         'code-sh',
                         'code-py',
-                        'code-xml'
+                        'code-xml',
+                        'code-lua',
+                        'code-go',
+                        't1'
                     ]
                 }
             };
@@ -240,22 +297,26 @@ define(function (require, exports, module) {
             var articleName = $("#idArticleName").val();
 
             if (articleName.length < 3) {
-                window.alert("文章名称必须大于3个字符");
+                $.jGrowl("文章名称必须大于3个字符", {life: 1000, position: 'bottom-left'});
                 return false;
             }
             if (code.length == 0) {
-                window.alert("文章内容不能为空");
+                $.jGrowl("文章内容不能为空", {life: 1000, position: 'bottom-left'});
                 return false;
             }
+            $('body').showLoading();
+
             $.post("/blog/editblog", {
                 html: code,
                 articleType: articleType,
                 articleName: articleName
             }, function (data) {
+                $('body').hideLoading();
+
                 if (data.error) {
-                    window.alert(data.error);
+                    $.jGrowl(data.error, {life: 1000, position: 'bottom-left'});
                 } else {
-                    window.alert(data.info);
+                    $.jGrowl(data.info, {life: 1000, position: 'bottom-left'});
                     $summernote.summernote('destroy');
                     window.location.href = '/blog/index?type=' + articleType;
                 }
@@ -266,14 +327,14 @@ define(function (require, exports, module) {
         $("#BtnArticleTypeAdd").on("click", function () {
             var type = $("#idTextArticleType").val();
             if (type.length == 0) {
-                window.alert("内容不能为空");
+                $.jGrowl("内容不能为空", {life: 1000, position: 'bottom-left'});
                 return false;
             }
             $.post("/blog/editblog/addNewType", {
                 type: type
             }, function (data) {
                 if (data.error) {
-                    window.alert(data.error);
+                    $.jGrowl(data.error, {life: 1000, position: 'bottom-left'});
                 } else {
                     var $sel = $("#idArticleTypes");
                     $sel.empty();
@@ -282,7 +343,7 @@ define(function (require, exports, module) {
                         $sel.append(o);
                     });
 
-                    window.alert("添加成功");
+                    $.jGrowl("添加成功", {life: 1000, position: 'bottom-left'});
                 }
             });
         });

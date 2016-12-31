@@ -10,6 +10,7 @@ router.get('/', function (req, res, next) {
     req.dispatch('editblog', {}, next);
 });
 
+//提交新文章
 router.post('/', function (req, res, next) {
     var html = req.body.html,
         articleType = req.body.articleType,
@@ -48,6 +49,30 @@ router.post('/', function (req, res, next) {
     });
 });
 
+//删除博客
+router.post("/deleteBlog", function (req, res, next) {
+    var id = req.body.id;
+    if (id == undefined) {
+        res.json({error: '参数非法'});
+        return;
+    }
+    MongooseManager.schema("article").model(function (err, model, release) {
+        if (!err) {
+            model.deleteOne(id, function (err, resp) {
+                if (!err) {
+                    res.json({error: null});
+                } else {
+                    res.json({error: err});
+                }
+                release();
+            })
+        } else {
+            res.json({error: err});
+        }
+    });
+});
+
+//添加新的博客类型
 router.post("/addNewType", function (req, res, next) {
     var type = req.body.type;
     if (type.length == 0) {
@@ -87,6 +112,7 @@ router.post("/addNewType", function (req, res, next) {
 module.exports = {
     R: router,
     L: [
-        "addNewType"
+        "addNewType",
+        "deleteBlog"
     ]
 };

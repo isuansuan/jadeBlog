@@ -2,12 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="703c2d8e-07c2-442c-9762-a114f4ec201b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/googlePrettify/lang/css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/googlePrettify/lang/go.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/googlePrettify/lang/lua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/googlePrettify/lang/sql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/googlePrettify/tomrrowNightEyes.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/lib/jquery/showloading/jquery.showloading.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/summernoteTpls/code-css.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/summernoteTpls/code-go.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/summernoteTpls/code-lua.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/summernoteTpls/code-php.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/summernoteTpls/code-sql.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/public/lib/jquery/jquery.showLoading.min.js" afterPath="$PROJECT_DIR$/web/public/lib/jquery/showloading/jquery.showLoading.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/blog.log" afterPath="$PROJECT_DIR$/logs/blog.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/jadeLoader.log" afterPath="$PROJECT_DIR$/logs/jadeLoader.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/js/app/blog.js" afterPath="$PROJECT_DIR$/web/public/js/app/blog.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/js/app/editblog.js" afterPath="$PROJECT_DIR$/web/public/js/app/editblog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/summernoteTpls/t1.html" afterPath="$PROJECT_DIR$/web/public/summernoteTpls/t1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/editblog.ejs" afterPath="$PROJECT_DIR$/web/views/editblog.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/js/main.js" afterPath="$PROJECT_DIR$/web/public/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/web/public/stylesheets/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/summernoteTpls/code-c.html" afterPath="$PROJECT_DIR$/web/public/summernoteTpls/code-c.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/summernoteTpls/code-cpp.html" afterPath="$PROJECT_DIR$/web/public/summernoteTpls/code-cpp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/summernoteTpls/code-html.html" afterPath="$PROJECT_DIR$/web/public/summernoteTpls/code-html.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/summernoteTpls/code-java.html" afterPath="$PROJECT_DIR$/web/public/summernoteTpls/code-java.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/summernoteTpls/code-js.html" afterPath="$PROJECT_DIR$/web/public/summernoteTpls/code-js.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/summernoteTpls/code-py.html" afterPath="$PROJECT_DIR$/web/public/summernoteTpls/code-py.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/summernoteTpls/code-sh.html" afterPath="$PROJECT_DIR$/web/public/summernoteTpls/code-sh.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/summernoteTpls/code-xml.html" afterPath="$PROJECT_DIR$/web/public/summernoteTpls/code-xml.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/routes/blog/editblog.js" afterPath="$PROJECT_DIR$/web/routes/blog/editblog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/schemas/article.js" afterPath="$PROJECT_DIR$/web/schemas/article.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/blog.ejs" afterPath="$PROJECT_DIR$/web/views/blog.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/header.ejs" afterPath="$PROJECT_DIR$/web/views/header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/index.ejs" afterPath="$PROJECT_DIR$/web/views/index.ejs" />
     </list>
     <ignored path="blogPro1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,101 +54,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="code-js.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-js.html">
+      <file leaf-file-name="editblog.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
+            <state relative-caret-position="1948">
+              <caret line="348" column="11" selection-start-line="348" selection-start-column="11" selection-end-line="348" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/public/js/app/blog.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-38">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="editblog.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
+        <entry file="file://$PROJECT_DIR$/web/routes/blog/editblog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="87" column="50" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="50" />
+            <state relative-caret-position="169">
+              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="code-sh.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-sh.html">
+      <file leaf-file-name="blog.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/views/blog.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
+            <state relative-caret-position="100">
+              <caret line="17" column="98" selection-start-line="17" selection-start-column="98" selection-end-line="17" selection-end-column="98" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blogdetail.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/views/blogdetail.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="code-xml.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-xml.html">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/public/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+            <state relative-caret-position="399">
+              <caret line="58" column="11" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="t1.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/t1.html">
+      <file leaf-file-name="article.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/schemas/article.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="175" column="28" selection-start-line="175" selection-start-column="28" selection-end-line="175" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blogdetail.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/routes/blog/blogdetail.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="16" column="42" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="97" column="42" selection-start-line="97" selection-start-column="34" selection-end-line="97" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="code-cpp.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-cpp.html">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/public/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="code-java.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-java.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="42" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="code-py.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-py.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="code-c.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-c.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="code-html.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-html.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="42" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+            <state relative-caret-position="-1188">
+              <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -143,32 +171,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mnode/node_modules/newbeely-nodejs/lib/utils/timeUtils.js" />
-        <option value="$PROJECT_DIR$/web/routes/summernote/fileUpload.js" />
-        <option value="$PROJECT_DIR$/web/routes/user/editblog.js" />
-        <option value="$PROJECT_DIR$/web/schemas/blog.js" />
-        <option value="$PROJECT_DIR$/mnode/plugin/express/app.js" />
-        <option value="$PROJECT_DIR$/mnode/node_modules/express/lib/application.js" />
-        <option value="$PROJECT_DIR$/web/schemas/siderBar.js" />
-        <option value="$PROJECT_DIR$/web/schemas/users.js" />
-        <option value="$PROJECT_DIR$/web/public/js/app/index.js" />
-        <option value="$PROJECT_DIR$/web/public/lib/bootstrap/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/web/routes/user/register.js" />
         <option value="$PROJECT_DIR$/web/utils/common.js" />
         <option value="$PROJECT_DIR$/web/views/footer.ejs" />
-        <option value="$PROJECT_DIR$/web/public/js/app/blog.js" />
-        <option value="$PROJECT_DIR$/web/views/index.ejs" />
         <option value="$PROJECT_DIR$/web/public/stylesheets/sidebar.css" />
         <option value="$PROJECT_DIR$/web/config/settings.js" />
-        <option value="$PROJECT_DIR$/web/routes/blog/editblog.js" />
         <option value="$PROJECT_DIR$/web/routes/user/login.js" />
         <option value="$PROJECT_DIR$/web/routes/blog/blogdetail.js" />
         <option value="$PROJECT_DIR$/web/views/blogdetail.ejs" />
         <option value="$PROJECT_DIR$/web/views/sidebar.ejs" />
-        <option value="$PROJECT_DIR$/web/views/blog.ejs" />
-        <option value="$PROJECT_DIR$/web/schemas/article.js" />
         <option value="$PROJECT_DIR$/web/routes/blog/index.js" />
-        <option value="$PROJECT_DIR$/web/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/../a.html" />
         <option value="$PROJECT_DIR$/web/public/lib/md5.js" />
         <option value="$PROJECT_DIR$/web/public/lib/summernote/examples/external-api.html" />
@@ -179,21 +191,37 @@
         <option value="$PROJECT_DIR$/web/public/lib/summernote/plugin/summernote-image-titles.js" />
         <option value="$PROJECT_DIR$/web/public/lib/summernote/plugin/summernote-ext-template.js" />
         <option value="$PROJECT_DIR$/web/public/lib/googlePrettify/prettify.css" />
-        <option value="$PROJECT_DIR$/web/views/header.ejs" />
         <option value="$PROJECT_DIR$/web/public/summernoteTpls/code.html" />
-        <option value="$PROJECT_DIR$/web/public/js/main.js" />
         <option value="$PROJECT_DIR$/web/public/lib/googlePrettify/prettify.js" />
         <option value="$PROJECT_DIR$/web/views/editblog.ejs" />
-        <option value="$PROJECT_DIR$/web/public/js/app/editblog.js" />
-        <option value="$PROJECT_DIR$/web/public/summernoteTpls/code-xml.html" />
-        <option value="$PROJECT_DIR$/web/public/summernoteTpls/code-sh.html" />
-        <option value="$PROJECT_DIR$/web/public/summernoteTpls/code-py.html" />
+        <option value="$PROJECT_DIR$/web/public/summernoteTpls/t1.html" />
+        <option value="$PROJECT_DIR$/web/views/index.ejs" />
+        <option value="$PROJECT_DIR$/web/public/lib/googlePrettify/tomrrowNightEyes.css" />
+        <option value="$PROJECT_DIR$/web/views/header.ejs" />
         <option value="$PROJECT_DIR$/web/public/summernoteTpls/code-js.html" />
         <option value="$PROJECT_DIR$/web/public/summernoteTpls/code-java.html" />
         <option value="$PROJECT_DIR$/web/public/summernoteTpls/code-html.html" />
         <option value="$PROJECT_DIR$/web/public/summernoteTpls/code-cpp.html" />
         <option value="$PROJECT_DIR$/web/public/summernoteTpls/code-c.html" />
-        <option value="$PROJECT_DIR$/web/public/summernoteTpls/t1.html" />
+        <option value="$PROJECT_DIR$/web/public/summernoteTpls/code-py.html" />
+        <option value="$PROJECT_DIR$/web/public/summernoteTpls/code-sh.html" />
+        <option value="$PROJECT_DIR$/web/public/summernoteTpls/code-xml.html" />
+        <option value="$PROJECT_DIR$/web/public/summernoteTpls/code-php.html" />
+        <option value="$PROJECT_DIR$/web/public/summernoteTpls/code-css.html" />
+        <option value="$PROJECT_DIR$/web/public/summernoteTpls/code-go.html" />
+        <option value="$PROJECT_DIR$/web/public/summernoteTpls/code-lua.html" />
+        <option value="$PROJECT_DIR$/web/public/lib/googlePrettify/lang/css.js" />
+        <option value="$PROJECT_DIR$/web/public/lib/googlePrettify/lang/go.js" />
+        <option value="$PROJECT_DIR$/web/public/lib/googlePrettify/lang/lua.js" />
+        <option value="$PROJECT_DIR$/web/public/lib/googlePrettify/lang/sql.js" />
+        <option value="$PROJECT_DIR$/web/public/js/main.js" />
+        <option value="$PROJECT_DIR$/web/public/summernoteTpls/code-sql.html" />
+        <option value="$PROJECT_DIR$/web/schemas/article.js" />
+        <option value="$PROJECT_DIR$/web/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/web/public/js/app/editblog.js" />
+        <option value="$PROJECT_DIR$/web/views/blog.ejs" />
+        <option value="$PROJECT_DIR$/web/routes/blog/editblog.js" />
+        <option value="$PROJECT_DIR$/web/public/js/app/blog.js" />
       </list>
     </option>
   </component>
@@ -235,7 +263,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -285,6 +313,82 @@
               <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogPro1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogPro1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogPro1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogPro1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schemas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogPro1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogPro1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogPro1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogPro1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -322,7 +426,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="summernoteTpls" />
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogPro1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogPro1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -394,7 +520,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -410,19 +536,19 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator.GG59G8M3QYURG1Y\Desktop\blogPro1\web\public\summernoteTpls" />
+      <recent name="C:\Users\Administrator.GG59G8M3QYURG1Y\Desktop\blogPro1\web\public\lib\googlePrettify\lang" />
+      <recent name="C:\Users\Administrator.GG59G8M3QYURG1Y\Desktop\blogPro1\web\public\lib\jquery\showloading" />
+      <recent name="C:\Users\ff\Desktop\blogPro1\web\public\images" />
+      <recent name="C:\Users\ff\Desktop\blogPro1\web\public\lib\jquery" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator.GG59G8M3QYURG1Y\Desktop\blogPro1\web\public\lib\jquery\showloading" />
       <recent name="C:\Users\ff\Desktop\blogPro1\web\routes\blog" />
       <recent name="C:\Users\ff\Desktop\blogPro1\web\public\images\slides" />
       <recent name="C:\Users\ff\Desktop\blogPro1\web\public\images" />
       <recent name="C:\Users\ff\Desktop\blogPro1\web\public\js" />
-      <recent name="C:\Users\ff\Desktop\blogPro1\web\public\lib" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator.GG59G8M3QYURG1Y\Desktop\blogPro1\web\public\summernoteTpls" />
-      <recent name="C:\Users\ff\Desktop\blogPro1\web\public\images" />
-      <recent name="C:\Users\ff\Desktop\blogPro1\web\public\lib\jquery" />
-      <recent name="C:\Users\ff\Desktop\blogPro1\web\routes\blog" />
-      <recent name="C:\Users\ff\Desktop\blogPro1\web\views" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
@@ -512,22 +638,23 @@
       <workItem from="1482762332981" duration="3592000" />
       <workItem from="1482845689664" duration="5761000" />
       <workItem from="1482931862272" duration="4535000" />
+      <workItem from="1483156351916" duration="16215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31048000" />
+    <option name="totallyTimeSpent" value="47263000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19866072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26860118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32626426" sideWeight="0.5029762" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32952693" sideWeight="0.28943452" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32626426" sideWeight="0.49702382" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32952693" sideWeight="0.71056545" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -563,160 +690,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/public/js/app/blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/stylesheets/sidebar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/routes/blog/editblog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/routes/blog/blogdetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/blogdetail.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mnode/node_modules/ejs/lib/ejs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="480" column="11" selection-start-line="480" selection-start-column="11" selection-end-line="480" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/sidebar.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="4" column="93" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/blog.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/schemas/article.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="68" column="75" selection-start-line="68" selection-start-column="75" selection-end-line="68" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/routes/blog/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/jquery-custom-event.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/hint-userdefine.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/airmode.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/lang.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/lib/jquery/jquery.showLoading.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/bs3fa4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/codemirror.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/footer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/lib/codemirror5/demo/activeline.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/lib/codemirror5/demo/html5complete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/lib/codemirror5/demo/requirejs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="55" column="52" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/public/lib/summernote/examples/external-api.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -816,29 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/public/lib/googlePrettify/prettify.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -851,22 +801,90 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="33" column="87" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="87" column="50" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="50" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/public/images/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-xml.html">
+    <entry file="file://$PROJECT_DIR$/web/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+          <caret line="62" column="63" selection-start-line="62" selection-start-column="63" selection-end-line="62" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/lib/jquery/showloading/jquery.showloading.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/lib/googlePrettify/tomrrowNightEyes.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="585" selection-start-line="1" selection-start-column="585" selection-end-line="1" selection-end-column="585" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-java.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-html.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-cpp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-c.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-py.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -874,63 +892,198 @@
     <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-sh.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
+          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-py.html">
+    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-xml.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-js.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-java.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="42" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-html.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="42" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-cpp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-c.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+        <state relative-caret-position="21">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/t1.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-php.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-go.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-lua.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/lib/googlePrettify/lang/css.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="159" column="17" selection-start-line="159" selection-start-column="17" selection-end-line="159" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/lib/googlePrettify/lang/go.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/lib/googlePrettify/lang/sql.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/lib/googlePrettify/lang/lua.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/uploads/1482808628735_wifi.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-sql.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/utils/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="49" column="36" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/summernoteTpls/code-css.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1188">
+          <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/routes/blog/blogdetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="97" column="42" selection-start-line="97" selection-start-column="34" selection-end-line="97" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="58" column="11" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/schemas/article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="175" column="28" selection-start-line="175" selection-start-column="28" selection-end-line="175" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/blogdetail.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/blog.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="17" column="98" selection-start-line="17" selection-start-column="98" selection-end-line="17" selection-end-column="98" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/routes/blog/editblog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/js/app/editblog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1948">
+          <caret line="348" column="11" selection-start-line="348" selection-start-column="11" selection-end-line="348" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/js/app/blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding />
         </state>
       </provider>

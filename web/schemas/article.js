@@ -56,7 +56,7 @@ schema.statics.getArticlesCountByType = function (author, type, callback) {
  * @param type
  * @param callback
  */
-schema.statics.getArticlesByType = function (author, type,skip, limit,callback) {
+schema.statics.getArticlesByType = function (author, type, skip, limit, callback) {
     var condition = {
         author: author,
         type: type
@@ -168,6 +168,12 @@ schema.statics.insertType = function (author, type, callback) {
 schema.statics.getCount = function (callback) {
     this.count({}, function (err, c) {
         callback(err ? 0 : c);
+    });
+};
+
+schema.statics.deleteOne = function (id, callback) {
+    this.remove({id: id}, function (err, resp) {
+        callback(err, resp);
     });
 };
 

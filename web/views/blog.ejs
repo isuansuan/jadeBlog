@@ -5,15 +5,18 @@
 
     <% if(info && info.length){ %>
 
-    <% for(var i = 0, len = info.length;i < len;++i){ var doc = info[i];var clsIndex = i % 4;var panelClsList = ["panel-warning", "panel-success", "panel-info", "panel-success"]; %>
+    <% for(var i = 0, len = info.length;i < len;++i){  var doc = info[i];var clsIndex = i % 4;var panelClsList = ["panel-warning", "panel-success", "panel-info", "panel-success"]; %>
     <div class="panel <%= panelClsList[clsIndex] %>">
         <div class="panel-heading myPanel">
-            <a href="/blog/blogdetail?id=<%= doc.id%>"><span class="panel-title label label-info glyphicon glyphicon-fire" style="font-size: 20px;color:red"><%= doc.title %></span>
+            <a href="/blog/blogdetail?id=<%= doc.id%>"><span class="panel-title label label-info glyphicon glyphicon-link" style="font-size: 20px;color:red;"><%= doc.title %></span>
             <span style="font-family:'微软雅黑';font-size: 14px;color:darkblue"><h4 class="">
                     作者:<%= doc.author %></h4>发布时间:<%= doc.create_tm %></span><span style="margin-left:50px;color:blue;">更新时间:<%= doc.update_tm %></span>
             </a></div>
         <div class="panel-body">
             <%- doc.brief %>
+            <% if(userName){%>
+                <span class="pull-right"><button type="button" class="btn-danger delBlogBtn" value="<%= doc.id%>">删除</button></span>
+            <%}%>
         </div>
     </div>
     <% } %>
@@ -62,7 +65,7 @@
 <% include footer.ejs %>
 <script type="text/javascript">
     require(["/js/main.js"], function () {
-
+        require(["/js/app/blog.js"]);
     });
 </script>
 

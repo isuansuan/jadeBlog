@@ -10,12 +10,16 @@ require.config({
         "codemirrorxml": ["codemirror","/lib/codemirror5/mode/xml/xml"],
         "summernotezhcn": ["/lib/summernote/lang/summernote-zh-CN"],
         "summernotekokr": ["/lib/summernote/lang/summernote-ko-KR"],
-        "showLoading": ['/lib/jquery/jquery.showLoading.min'],
+        "showLoading": ['/lib/jquery/showloading/jquery.showLoading.min'],
         "summernoteextemoji":["/lib/summernote-ext-emoji/dist/summernote-ext-emoji-min"],
         "summernoteexthighlight":["/lib/summernote-ext-highlight/src/summernote-ext-highlight"],
         "summernoteImageTitle":["/lib/summernote/plugin/summernote-image-title"],
         "summernoteExtTemplate":["/lib/summernote/plugin/summernote-ext-template"],
         "googlePrettify":['/lib/googlePrettify/prettify'],
+        "googlePrettifyLangLua":['/lib/googlePrettify/prettify/lang/lua'],
+        "googlePrettifyLangGo":['/lib/googlePrettify/prettify/lang/go'],
+        "googlePrettifyLangCss":['/lib/googlePrettify/prettify/lang/css'],
+        "googlePrettifyLangSql":['/lib/googlePrettify/prettify/lang/sql'],
         "jgrowl": [
             '/lib/jGrowl/jquery.jgrowl.min'
         ],
@@ -47,7 +51,11 @@ require.config({
         'jgrowl': {deps: ['jquery']},
         'jform': {deps: ['jquery']},
         'highcharts': {deps: ['jquery']},
-        'bootstrapSelect': {deps: ['jquery','bootstrap']}
+        'bootstrapSelect': {deps: ['jquery','bootstrap']},
+        "googlePrettifyLangLua":{deps: ['jquery','bootstrap']},
+        "googlePrettifyLangGo":{deps: ['jquery','bootstrap']},
+        "googlePrettifyLangCss":{deps: ['jquery','bootstrap']},
+        "googlePrettifyLangSql":{deps: ['jquery','bootstrap']}
     }
 });
 
