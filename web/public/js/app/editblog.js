@@ -123,7 +123,7 @@ define(function (require, exports, module) {
 
             // create button
             var button = ui.button({
-                contents: '<i class="fa fa-child"/> js',
+                contents: '<i class="fa fa-child"/> javascript',
                 tooltip: 'javascript',
                 click: function () {
                     // invoke insertText method with 'hello' on editor module.
@@ -135,6 +135,7 @@ define(function (require, exports, module) {
         };
 
         var $summernote = $('.summernote');
+
 
         // load github's emoji list
         $.ajax({
@@ -153,6 +154,7 @@ define(function (require, exports, module) {
                     mode: 'text/html'                // lineWrapping:true,
                     // extraKeys: {"Ctrl-Space": "autocomplete"}
                 },
+                fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Merriweather'],
                 prettifyHtml: true,
                 height: 400,
                 width: 1000,
@@ -179,7 +181,14 @@ define(function (require, exports, module) {
                     onFocus: function () {
                     },
                     onKeyup: function () {
-
+                        // var markupStr = 'hello world';
+                        // $('.summernote').summernote('code', markupStr);
+                    },
+                    onChange: function (contents, $editable) {
+                        // console.log('onChange:', contents, $editable);
+                    },
+                    onpaste: function (e) {
+                        // console.log('Called event paste');
                     },
                     onKeydown: function (e) {
 
@@ -231,10 +240,20 @@ define(function (require, exports, module) {
                         ['float', ['floatLeft', 'floatRight', 'floatNone']],
                         ['remove', ['removeMedia']],
                         ['custom', ['imageTitle']]
+                    ],
+                    link: [
+                        ['link', ['linkDialogShow', 'unlink']]
+                    ],
+                    air: [
+                        ['color', ['color']],
+                        ['font', ['bold', 'underline', 'clear']],
+                        ['para', ['ul', 'paragraph']],
+                        ['table', ['table']],
+                        ['insert', ['link', 'picture']]
                     ]
                 },
                 toolbar: [
-                    ['style', ['bold', 'italic', 'underline', 'clear', 'hr', 'strikethrough', 'ul', 'ol']],
+                    ['style', ['bold', 'italic', 'underline', 'clear', 'hr', 'strikethrough', 'ul', 'ol', 'superscript', 'subscript']],
                     //['style', ["style"]],
                     ['fontsize', ['fontsize']],
                     //['color', ['color']],
@@ -242,7 +261,7 @@ define(function (require, exports, module) {
                     ['height', ['height']],
                     ['table', ['table']], // no table button
                     ['insert', ['template', "picture", "link", "video", 'color', 'style', 'fontname']],
-                    ['layout', ['paragraph', 'height', 'fullscreen', 'codeview']],
+                    ['layout', ['paragraph', 'height', 'fullscreen', 'codeview', "undo", "redo"]],
                     ['help', ['help']], //no help button
                     ['mybutton', ['hello']]
                 ],
@@ -267,7 +286,7 @@ define(function (require, exports, module) {
                         'code-go',
                         't1'
                     ]
-                }
+                },
             };
             //config['toolbar'].push('highlight');
             //config['toolbar'].push(['highlight']);
