@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="703c2d8e-07c2-442c-9762-a114f4ec201b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/jadeLoader.log" afterPath="$PROJECT_DIR$/logs/jadeLoader.log" />
-    </list>
+    <list default="true" id="703c2d8e-07c2-442c-9762-a114f4ec201b" name="Default" comment="" />
     <ignored path="blogPro1.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -478,12 +476,12 @@
       <workItem from="1482931862272" duration="4535000" />
       <workItem from="1483156351916" duration="28307000" />
       <workItem from="1483240483327" duration="3755000" />
-      <workItem from="1483322487335" duration="14400000" />
+      <workItem from="1483322487335" duration="14458000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77510000" />
+    <option name="totallyTimeSpent" value="77568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
