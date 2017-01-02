@@ -48,8 +48,9 @@ define(function (require, exports, module) {
             });
         }
 
-        addPrettyNums();
+        // addPrettyNums();
         prettyPrint();
+
         $('.btn-danger.delBlogBtn').on("click", function () {
             var id = $(this).val();
             if (id == undefined) {
