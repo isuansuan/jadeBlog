@@ -34,7 +34,8 @@ require.config({
         ],
         "bootstrapSelect": [
             '/lib/bootstrap3/bootstrap-select/js/bootstrap-select'
-        ]
+        ],
+        "jqueryZclip":["/lib/jquery/jquery.zclip.min"]
     },
     shim: {
         'bootstrap': {deps: ['jquery']},
@@ -55,7 +56,8 @@ require.config({
         "googlePrettifyLangLua":{deps: ['jquery','bootstrap']},
         "googlePrettifyLangGo":{deps: ['jquery','bootstrap']},
         "googlePrettifyLangCss":{deps: ['jquery','bootstrap']},
-        "googlePrettifyLangSql":{deps: ['jquery','bootstrap']}
+        "googlePrettifyLangSql":{deps: ['jquery','bootstrap']},
+        "jqueryZclip":{deps: ['jquery']}
     }
 });
 

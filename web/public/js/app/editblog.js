@@ -71,6 +71,8 @@ define(function (require, exports, module) {
 
     $(document).ready(function () {
         $('body').showLoading();
+        
+        
 
         function myPrettyPrint() {
             prettyPrint();
