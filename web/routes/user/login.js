@@ -15,11 +15,14 @@ router.get('/', function (req, res, next) {
 
 //发送邮件到指定邮箱
 function sendEmail(email, text, callback) {
-    var token = JadeLoader.Jader('utils').get('encrypt-utils').md5(email + new Date().getTime());
-    JadeLoader.set('findEmail-' + email, token, 10 * 60*1000);//10分钟后自动删除
-    //邮件内容为修改密码的URL,token用于请求参数
-    var src = "http://localhost:8085/user/updatePsw?token=" + token + "&email=" + email;
-    text = "点击 <a href='" + src + "'>" + src + "</a> 找回密码";
+
+    if(!text){
+        var token = JadeLoader.Jader('utils').get('encrypt-utils').md5(email + new Date().getTime());
+        JadeLoader.set('findEmail-' + email, token, 10 * 60*1000);//10分钟后自动删除
+        //邮件内容为修改密码的URL,token用于请求参数
+        var src = "http://localhost:8085/user/updatePsw?token=" + token + "&email=" + email;
+        text = "点击 <a href='" + src + "'>" + src + "</a> 找回密码";
+    }
 
     EmailHelper.send(email, text, null, function (err, resp) {
         callback(err, resp);
