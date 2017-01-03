@@ -36,6 +36,8 @@
     "mysql": "^2.12.0",
     "newbeely-nodejs": "1.x",
     "node-schedule": "*",
+    "nodemailer": "^2.7.0",
+    "nodemailer-smtp-transport": "^2.7.2",
     "pomelo-logger": "0.1.x",
     "pomelo-scheduler": "0.3.x",
     "process-nextick-args": "*",

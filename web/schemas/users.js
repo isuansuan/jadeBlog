@@ -42,6 +42,26 @@ schema.statics.findData = function (email, password, callback) {
 };
 
 /**
+ * 查询指定用户是否存在
+ */
+schema.statics.UserExists = function (email, callback) {
+    this.findOne({email: email}, {
+        create_tm: 0,
+        _id: 0,
+        email: 1,
+        password: 0,
+        userid: 0,
+        last_update_tm: 0
+    }).lean().exec(function (err, doc) {
+        if (!err && doc) {
+            callback(true);
+        } else {
+            callback(false);
+        }
+    });
+};
+
+/**
  * 获取用户数量
  * @param callback
  */
@@ -51,7 +71,11 @@ schema.statics.getUserCount = function (callback) {
     });
 };
 
-
+schema.statics.updatePassword = function(email,password,callback){
+    this.findOneAndUpdate({email:email},{$set:{password:password}},function(err,resp){
+        callback(err,resp);
+    })
+};
 /**
  * 插入有个新用户
  * @param username
@@ -62,7 +86,7 @@ schema.statics.getUserCount = function (callback) {
 schema.statics.insertData = function (username, email, password, callback) {
     var self = this;
     this.getUserCount(function (cnt) {
-        console.log("cnt:",cnt)
+        console.log("cnt:", cnt)
         var newData = new self({
             userid: cnt + 1,
             email: email,

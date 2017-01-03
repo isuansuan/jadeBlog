@@ -200,7 +200,16 @@ JadeLoader.prototype.get = function (key) {
             var tKey = this.pKey;
             this.pKey = null;
             if (tKey == this.userKey) {
-                return this.mapList[tKey][key];
+                if (this.mapList[tKey][key].timeout) {
+                    if (new Date() - this.mapList[tKey][key].sTime > (this.mapList[tKey][key].timeout * 1000)) {
+                        this.mapList[tKey][key] = null;
+                        return null;
+                    }else{
+                        return this.mapList[tKey][key].doc;
+                    }
+                } else {
+                    return this.mapList[tKey][key].doc;
+                }
             } else {
                 return this.mapList[tKey][key].app;
             }
@@ -208,7 +217,16 @@ JadeLoader.prototype.get = function (key) {
     } else {
         if (this.mapList[this.userKey]) {
             if (this.mapList[this.userKey][key]) {
-                return this.mapList[this.userKey][key];
+                if (this.mapList[this.userKey][key].timeout) {
+                    if (new Date() - this.mapList[this.userKey][key].sTime > (this.mapList[this.userKey][key].timeout * 1000)) {
+                        this.mapList[this.userKey][key] = null;
+                        return null;
+                    } else {
+                        return this.mapList[this.userKey][key].doc;
+                    }
+                }else{
+                    return this.mapList[this.userKey][key].doc;
+                }
             }
         }
         this.emit("error", "JadeLoader::Jader,please call Jader(pKey).get(key)");
@@ -216,11 +234,16 @@ JadeLoader.prototype.get = function (key) {
     return null;
 };
 
-JadeLoader.prototype.set = function (key, doc) {
+JadeLoader.prototype.set = function (key, doc, timeoutSecond) {
     if (!this.mapList[this.userKey]) {
         this.mapList[this.userKey] = [];
     }
-    this.mapList[this.userKey][key] = doc;
+
+    this.mapList[this.userKey][key] = {
+        doc: doc,
+        sTime: timeoutSecond ? (new Date() ) : null,
+        timeout: timeoutSecond || null
+    };
 };
 
 module.exports = Singleton.getInstance(JadeLoader);

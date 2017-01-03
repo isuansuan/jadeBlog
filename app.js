@@ -53,6 +53,7 @@ JadeLoader.init(Path.join(__dirname, "./"), true, 360, function () {
         }
 
         url = getReqUrl(url);
+        console.error(url)
         if (!Express.routesList[url]) {
             if(req.method.toLowerCase() == 'post'){
                 res.json({error:"路由非法"});

@@ -66,6 +66,10 @@ pre{
     margin-left: 8px;
     /*border-bottom: #ffda09;*/
 }
+.container-fluid{
+    padding-left:10px;
+    padding-right:15px;
+}
 .code-header .code-copy-link{
     color:greenyellow;
 }

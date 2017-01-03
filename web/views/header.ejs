@@ -160,8 +160,36 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <span><a href="#" class="pull-right" style="margin-left:10px;">找回密码</a></span>
+                <span><a id="idFindPsw" href="#" class="pull-right" style="margin-left:10px;">找回密码</a></span>
                 <span><a href="#" class="pull-right" style="margin-left:10px;" id="idRegister2">注册</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--找回密码-->
+<div class="modal fade" id="findPswModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" id="idClosePswModal">X</button>
+                <h3 class="text-center text-primary">找回密码</h3>
+            </div>
+            <div class="modal-body">
+                <form action="/user/login" method="post" onsubmit="return false" class="form text-center text-primary">
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control input-lg" name="email" id="idFindPswEmail" placeholder="电子邮箱" required="true" title=""
+                               data-container="false" data-toggle="popover" data-placement="right"
+                               data-content="邮箱格式非法">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" id="idFindPswAction">确认</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <!--<span><a id="idFindPsw" href="#" class="pull-right" style="margin-left:10px;">找回密码</a></span>-->
+                <!--<span><a href="#" class="pull-right" style="margin-left:10px;" id="idRegister2">注册</a></span>-->
             </div>
         </div>
     </div>
