@@ -32,7 +32,7 @@ function sendEmail(email, text, callback) {
 //找回密码
 router.post("/findpsw", function (req, res, next) {
     var email = req.body.email;
-    if (!Common(email)) {
+    if (!Common.isEmail(email)) {
         req.json({error: "邮箱格式非法"});
         return;
     }
